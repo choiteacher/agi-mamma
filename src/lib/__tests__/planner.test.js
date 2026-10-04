@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest';
 import menu from '../../data/menu-sets.seed.json';
 import recipes from '../../data/recipes.seed.json';
 import { addDays, diffDays, weekday } from '../dates';
-import { buildPlan } from '../planner';
+import { buildPlan, reusableIngredients } from '../planner';
 
 const TODAY = '2026-10-04'; // 일요일
 const SETS = menu.sets;
@@ -75,11 +75,31 @@ describe('일정 범위와 기본 규칙', () => {
     }
   });
 
-  it('재고가 있는데 끼니를 비워 두지 않는다', () => {
-    const p = plan({ stock: [{ id: 'one', setId: SETS[0].id, location: 'fridge', portions: 4, date: TODAY, asOf: TODAY }] });
+  it('완료한 세트가 남아 있으면 끼니를 비워 두지 않는다', () => {
+    const frz = SETS.filter((s) => s.freezable && s.month === 10);
+    const p = plan({ cookLog: ['2026-10-01', '2026-10-02', '2026-10-03'].map((d, i) => log(d, frz[i].id)) });
     const firstTwoDays = p.meals.filter((m) => m.date <= addDays(TODAY, 1));
-    // 일요일 3끼 + 월요일 2끼 = 5끼: 재고 4끼 + 월요일에 새로 만든 세트로 모두 채운다
+    // 지난주 만든 세 세트의 냉동분으로 일요일 3끼·월요일 2끼를 서로 다른 세트로 모두 채운다
     expect(firstTwoDays.every((m) => m.setId)).toBe(true);
+  });
+
+  it('같은 날 두 끼에 같은 세트를 내지 않는다(그것밖에 없으면 간단식으로 비움)', () => {
+    const byDay = new Map();
+    for (const m of plan().meals) byDay.set(m.date, [...(byDay.get(m.date) || []), m]);
+    for (const list of byDay.values()) {
+      const ids = list.map((m) => m.setId).filter(Boolean);
+      expect(new Set(ids).size).toBe(ids.length);
+    }
+    // 세트가 쌓인 2주 뒤부터는 간단식으로 비우는 끼니가 없다
+    expect(plan().meals.filter((m) => m.date >= addDays(TODAY, 14) && !m.setId)).toEqual([]);
+  });
+
+  it('냉동해 둔 몫은 나중 끼니에 해동(freezer)으로 나온다', () => {
+    const meals = plan().meals;
+    const frozenUse = meals.filter((m) => m.source === 'freezer');
+    expect(frozenUse.length).toBeGreaterThan(0);
+    // 요리한 날이 아닌 뒷날에 나온다
+    for (const m of frozenUse) expect(m.date > m.lotId.slice(5, 15)).toBe(true);
   });
 });
 
@@ -111,50 +131,33 @@ describe('체크(요리 완료) 후 재조정', () => {
     expect(p.sessions.find((s) => s.date === '2026-10-02')).toMatchObject({ status: 'done', setId: SETS[3].id });
   });
 
-  it('재고에 남아 있는 세트는 새로 만들지 않는다', () => {
-    // 재고가 없으면 첫 세션에 고를 세트를 재고에 넣어 둔다
+  it('완료해서 냉동분이 남은 세트는 새로 만들지 않는다', () => {
     const usual = planned(plan())[0];
-    const p = plan({ stock: [{ id: 'st', setId: usual.setId, location: 'freezer', portions: 6, date: '2026-09-20', asOf: TODAY }] });
-    const first = planned(p)[0];
-    expect(p.stockRemaining.st).toBeGreaterThan(0);
-    expect(first.setId).not.toBe(usual.setId);
+    const p = plan({ cookLog: [log('2026-10-02', usual.setId)] });
+    expect(planned(p)[0].setId).not.toBe(usual.setId);
   });
 });
 
 describe('재고 충분/소진', () => {
-  const tenOct = SETS.filter((s) => s.month === 10);
-  // 쉬려면 서로 다른 세트가 4개(minStockVariety) 이상 있어야 한다
-  const bigStock = ['a', 'b', 'c', 'd'].map((id, i) => ({
-    id,
-    setId: tenOct[i].id,
-    location: 'freezer',
-    portions: 3,
-    date: '2026-10-01',
-    asOf: TODAY
-  }));
+  // 냉동 가능한 10월 세트 4개를 10/1~10/4에 하나씩 만들었다고 기록 (쉬려면 서로 다른 세트 4개 이상 필요)
+  const frz = SETS.filter((s) => s.month === 10 && s.freezable);
+  const fourDone = ['2026-10-01', '2026-10-02', '2026-10-03', '2026-10-04'].map((d, i) => log(d, frz[i].id));
 
-  it('재고 양이 충분해도 세트 종류가 적으면 쉬지 않는다', () => {
-    const p = plan({ stock: bigStock.slice(0, 2).map((s) => ({ ...s, portions: 6 })) });
+  it('남은 양이 충분해도 세트 종류가 적으면 쉬지 않는다', () => {
+    const p = plan({ cookLog: fourDone.slice(2) });
     expect(p.sessions.find((s) => s.date === '2026-10-05').status).toBe('planned');
   });
 
-  it('앞으로 3일 치 재고가 충분하면 그 요리 요일은 쉰다', () => {
-    const p = plan({ stock: bigStock });
+  it('앞으로 3일 치가 충분하면 그 요리 요일은 쉰다', () => {
+    const p = plan({ cookLog: fourDone });
     expect(p.sessions.find((s) => s.date === '2026-10-05')).toMatchObject({ status: 'rest' });
   });
 
-  it('재고가 줄어 부족해지면 다음 요리 요일에 새 세션을 잡는다', () => {
-    const p = plan({ stock: bigStock });
+  it('남은 몫이 줄어 부족해지면 다음 요리 요일에 새 세션을 잡는다', () => {
+    const p = plan({ cookLog: fourDone });
     const firstPlanned = planned(p)[0];
     expect(firstPlanned.date > '2026-10-05').toBe(true);
     expect([1, 3, 5]).toContain(weekday(firstPlanned.date));
-  });
-
-  it('오늘 아침 기준 재고 남은 끼니 수를 알려 준다', () => {
-    const p = plan({ stock: bigStock });
-    expect(p.stockRemaining).toEqual({ a: 3, b: 3, c: 3, d: 3 });
-    const later = buildPlan({ sets: SETS, recipes, stock: bigStock, today: '2026-10-06' });
-    expect(Object.values(later.stockRemaining).reduce((x, y) => x + y, 0)).toBeLessThan(12);
   });
 });
 
@@ -174,6 +177,34 @@ describe('미루기 / 못 했어요', () => {
     const original = buildPlan({ sets: SETS, recipes, today: monday });
     const undone = buildPlan({ sets: SETS, recipes, today: monday, cookLog: [log(monday, null, 'skipped', { deleted: true })] });
     expect(undone.sessions).toEqual(original.sessions);
+  });
+});
+
+describe('남은 재료 이어 쓰기', () => {
+  const recipeOf = (id, name, items) => ({ id, name, ingredients: items.map((item) => ({ item, amount: '' })) });
+  const rs = new Map(
+    [
+      recipeOf('r1', '애호박나물', ['애호박', '양파']),
+      recipeOf('r2', '새우살애호박국', ['애호박', '칵테일새우']),
+      recipeOf('r3', '쇠고기무국', ['무', '애호박', '소고기 국거리']),
+      recipeOf('r4', '콩나물국', ['콩나물']),
+      recipeOf('r5', '콩나물무침', ['콩나물', '참기름'])
+    ].map((r) => [r.id, r])
+  );
+  const setOf = (id, protein, ...ids) => ({ id, protein, dishes: ids.map((r) => ({ role: 'dish', recipe_id: r, name: rs.get(r).name })) });
+
+  it('남기 쉬운 재료를 다른 맛 요리에 곁들여 쓰면 이어 쓴다', () => {
+    expect(reusableIngredients(setOf('a', '돼지고기', 'r1'), setOf('b', '소고기', 'r3'), rs)).toEqual(['애호박']);
+  });
+  it('두 세트 모두 그 재료가 주재료(요리 이름)면 맛이 비슷해 이어 쓰지 않는다', () => {
+    expect(reusableIngredients(setOf('a', '돼지고기', 'r1'), setOf('b', '해산물', 'r2'), rs)).toEqual([]);
+    expect(reusableIngredients(setOf('a', '돼지고기', 'r4'), setOf('b', '소고기', 'r5'), rs)).toEqual([]);
+  });
+  it('주 단백질이 같으면 이어 쓰지 않는다', () => {
+    expect(reusableIngredients(setOf('a', '소고기', 'r1'), setOf('b', '소고기', 'r3'), rs)).toEqual([]);
+  });
+  it('양념·오래 두는 재료(양파, 참기름)는 따지지 않는다', () => {
+    expect(reusableIngredients(setOf('a', '돼지고기', 'r1'), setOf('b', '소고기', 'r5'), rs)).toEqual([]);
   });
 });
 

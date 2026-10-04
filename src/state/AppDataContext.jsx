@@ -8,10 +8,13 @@ import { buildPlan } from '../lib/planner';
 import { todayYmd } from '../lib/dates';
 import { createLocalStorageAdapter, newId, nowIso } from '../lib/storage';
 import { buildExport, mergeData } from '../lib/sync';
+import { latestRatings } from '../lib/videoChoice';
+import baseRatings from '../data/video-ratings.json';
 
 // ==============================|| APP DATA ||============================== //
-// 사용자 데이터(설정, 요리 기록, 재고)는 storage adapter를 통해서만 읽고 쓴다.
-// 기록과 재고는 지우지 않고 deleted 표시를 남긴다(나중에 공유 코드 병합 시 updated_at 비교에 필요).
+// 사용자 데이터(설정, 요리 기록)는 storage adapter를 통해서만 읽고 쓴다.
+// 기록은 지우지 않고 deleted 표시를 남긴다(나중에 공유 코드 병합 시 updated_at 비교에 필요).
+// 재고(stock)는 화면에서 뺐다(냉장·냉동은 사용자가 직접 관리). 이전 버전 데이터는 공유 코드·백업 호환을 위해 그대로 둔다.
 
 const AppDataContext = createContext(null);
 const adapter = createLocalStorageAdapter();
@@ -36,12 +39,23 @@ export function AppDataProvider({ children }) {
   const [meta, setMeta] = useState(() => adapter.load('meta', {}));
   const [cookLog, setCookLog] = useState(() => adapter.load('cookLog', []));
   const [stock, setStock] = useState(() => adapter.load('stock', []));
+  const [videoRatings, setVideoRatings] = useState(() => adapter.load('videoRatings', []));
   const [today, setToday] = useState(() => todayYmd());
 
   useEffect(() => void adapter.save('settings', userSettings), [userSettings]);
   useEffect(() => void adapter.save('meta', meta), [meta]);
   useEffect(() => void adapter.save('cookLog', cookLog), [cookLog]);
   useEffect(() => void adapter.save('stock', stock), [stock]);
+  useEffect(() => void adapter.save('videoRatings', videoRatings), [videoRatings]);
+
+  // 영상 평가: 저장소에 모인 평가(video-ratings.json) + 이 기기 평가, 같은 영상은 더 최근 것
+  const ratingMap = useMemo(() => latestRatings(baseRatings, videoRatings), [videoRatings]);
+  const rateVideo = useCallback(({ videoId, recipeId, channelId, rating }) => {
+    setVideoRatings((list) => [
+      ...list.filter((r) => r.id !== videoId),
+      { id: videoId, recipeId, channelId, rating, updated_at: nowIso() }
+    ]);
+  }, []);
 
   // 앱을 켜 둔 채 날짜가 바뀌면 다시 계산
   useEffect(() => {
@@ -55,11 +69,10 @@ export function AppDataProvider({ children }) {
   }, []);
 
   const activeLog = useMemo(() => cookLog.filter((e) => !e.deleted), [cookLog]);
-  const activeStock = useMemo(() => stock.filter((s) => !s.deleted), [stock]);
 
   const plan = useMemo(
-    () => buildPlan({ sets: SETS, recipes: RECIPES, settings, cookLog: activeLog, stock: activeStock, today }),
-    [settings, activeLog, activeStock, today]
+    () => buildPlan({ sets: SETS, recipes: RECIPES, settings, cookLog: activeLog, today }),
+    [settings, activeLog, today]
   );
 
   // 같은 날짜 기록이 둘 이상이면(두 기기에서 따로 기록 후 병합) 가장 최근에 고친 것을 쓴다
@@ -89,54 +102,22 @@ export function AppDataProvider({ children }) {
     [activeLog, upsertLog]
   );
 
-  // 요리 완료: 냉장/냉동 몫을 재고로 등록
+  // 요리 완료. 끼니표는 완료한 세트를 "제안대로 냉장·냉동했다"고 보고 계산한다.
   const completeSession = useCallback(
-    (date, setId, { fridge, freezer }) => {
-      const log = latestOn(activeLog, date);
-      const logId = log ? log.id : newId();
+    (date, setId) => {
       const set = setsById.get(setId);
-      const all = cookableDishes(set).map((d) => d.recipe_id);
-      setCookLog((list) => {
-        const rest = list.filter((e) => e.id !== logId);
-        return [...rest, { ...(log || { id: logId, date }), setId, status: 'done', checked: all, fridge, freezer, updated_at: nowIso() }];
-      });
-      const lots = [
-        ['fridge', fridge],
-        ['freezer', freezer]
-      ]
-        .filter(([, n]) => n > 0)
-        .map(([location, portions]) => ({ id: newId(), logId, setId, location, portions, date, asOf: date, updated_at: nowIso() }));
-      setStock((list) => [...list, ...lots]);
+      upsertLog(date, { setId, status: 'done', checked: cookableDishes(set).map((d) => d.recipe_id) });
     },
-    [activeLog]
+    [upsertLog]
   );
 
-  // 완료 취소: 재고에서 빼고 다시 "요리 중"으로
-  const uncompleteSession = useCallback(
-    (date) => {
-      const log = latestOn(activeLog, date);
-      if (!log) return;
-      setStock((list) => list.map((s) => (s.logId === log.id && !s.deleted ? { ...s, deleted: true, updated_at: nowIso() } : s)));
-      upsertLog(date, { status: 'cooking' });
-    },
-    [activeLog, upsertLog]
-  );
+  // 완료 취소: 다시 "요리 중"으로
+  const uncompleteSession = useCallback((date) => upsertLog(date, { status: 'cooking' }), [upsertLog]);
 
   const skipSession = useCallback((date) => upsertLog(date, { status: 'skipped', setId: null, checked: [] }), [upsertLog]);
 
   const clearLog = useCallback((date) => {
     setCookLog((list) => list.map((e) => (e.date === date && !e.deleted ? { ...e, deleted: true, updated_at: nowIso() } : e)));
-  }, []);
-
-  const updateStockPortions = useCallback(
-    (id, portions) => {
-      setStock((list) => list.map((s) => (s.id === id ? { ...s, portions: Math.max(0, portions), asOf: today, updated_at: nowIso() } : s)));
-    },
-    [today]
-  );
-
-  const deleteStock = useCallback((id) => {
-    setStock((list) => list.map((s) => (s.id === id ? { ...s, deleted: true, updated_at: nowIso() } : s)));
   }, []);
 
   const updateSettings = useCallback((patch) => setUserSettings((cur) => ({ ...cur, ...patch, updated_at: nowIso() })), []);
@@ -152,18 +133,22 @@ export function AppDataProvider({ children }) {
   );
 
   // 공유/백업: 내보낼 데이터, 가져온 데이터 병합 미리보기와 적용
-  const exportData = useCallback(() => buildExport({ settings: userSettings, cookLog, stock }), [userSettings, cookLog, stock]);
+  const exportData = useCallback(
+    () => buildExport({ settings: userSettings, cookLog, stock, videoRatings }),
+    [userSettings, cookLog, stock, videoRatings]
+  );
   const previewImport = useCallback(
-    (incoming) => mergeData({ settings: userSettings, cookLog, stock }, incoming),
-    [userSettings, cookLog, stock]
+    (incoming) => mergeData({ settings: userSettings, cookLog, stock, videoRatings }, incoming),
+    [userSettings, cookLog, stock, videoRatings]
   );
   const applyMerged = useCallback((merged) => {
     setUserSettings(merged.settings || {});
     setCookLog(merged.cookLog);
     setStock(merged.stock);
+    setVideoRatings(merged.videoRatings || []);
   }, []);
   const markBackup = useCallback(() => setMeta((m) => ({ ...m, lastBackupAt: nowIso() })), []);
-  const hasData = cookLog.length > 0 || stock.length > 0;
+  const hasData = cookLog.length > 0 || stock.length > 0 || videoRatings.length > 0;
 
   const value = {
     today,
@@ -171,6 +156,8 @@ export function AppDataProvider({ children }) {
     updateSettings,
     resetSettings,
     toggleFavorite,
+    ratingMap,
+    rateVideo,
     exportData,
     previewImport,
     applyMerged,
@@ -178,15 +165,12 @@ export function AppDataProvider({ children }) {
     meta,
     hasData,
     plan,
-    stock: activeStock,
     logFor,
     toggleDish,
     completeSession,
     uncompleteSession,
     skipSession,
-    clearLog,
-    updateStockPortions,
-    deleteStock
+    clearLog
   };
   return <AppDataContext.Provider value={value}>{children}</AppDataContext.Provider>;
 }

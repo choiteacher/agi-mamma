@@ -15,7 +15,8 @@
     "check-secrets": "node scripts/check-secrets.mjs --all",
     "prepare": "node scripts/install-hooks.mjs",
     "month-pack": "node scripts/make-month-pack.mjs",
-    "curate": "node scripts/curate.mjs"
+    "curate": "node scripts/curate.mjs",
+    "apply-ratings": "node scripts/apply-ratings.mjs"
   },
   "dependencies": {
     "@tanem/react-nprogress": "^5.0.51",

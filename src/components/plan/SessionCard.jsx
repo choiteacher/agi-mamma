@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 // react-bootstrap
 import { Badge, Button, Card, Form } from 'react-bootstrap';
@@ -72,11 +72,14 @@ const SessionCard = ({ session }) => {
                 </li>
               ))}
             </ul>
+            {session.reuse && session.reuse.length > 0 && (
+              <div className="small text-info mb-2">
+                지난 요리에서 남았을 {session.reuse.join(', ')}을(를) 이어서 써요. (맛이 겹치지 않는 세트만 골랐어요)
+              </div>
+            )}
             {session.status === 'done' && log && (
               <div className="d-flex align-items-center gap-2 flex-wrap">
-                <span className="text-success">
-                  재고 등록: 냉장 {log.fridge || 0}끼 · 냉동 {log.freezer || 0}끼
-                </span>
+                <span className="text-success">다 만들었어요! 끼니표에 반영했습니다.</span>
                 {session.date >= today && (
                   <Button size="sm" variant="outline-secondary" onClick={() => uncompleteSession(session.date)}>
                     완료 취소
@@ -84,7 +87,16 @@ const SessionCard = ({ session }) => {
                 )}
               </div>
             )}
-            {canCheck && allChecked && <CompleteForm session={session} set={set} settings={settings} onDone={completeSession} />}
+            {canCheck && allChecked && (
+              <div className="complete-form border rounded p-2 mb-2">
+                <div className="mb-2 small">
+                  {session.split && session.split.freezer
+                    ? `아이 몫 ${session.split.fridge}끼는 냉장, ${session.split.freezer}끼는 소분해서 냉동해 두세요. 냉동분은 끼니표에 "해동"으로 나와요.`
+                    : '냉동이 어려운 세트라 냉장해 두고 이틀 안에 드세요. 남으면 어른 몫으로.'}
+                </div>
+                <Button onClick={() => completeSession(session.date, set.id)}>다 만들었어요</Button>
+              </div>
+            )}
             {(session.status === 'planned' || session.status === 'cooking') && session.date >= today && (
               <Button size="sm" variant="outline-danger" className="mt-2" onClick={() => skipSession(session.date)}>
                 {session.date === today ? '오늘 못 했어요 (미루기)' : '이날 미루기'}
@@ -139,45 +151,5 @@ const SetMeta = ({ set, session }) => (
     )}
   </div>
 );
-
-const CompleteForm = ({ session, set, settings, onDone }) => {
-  const total = settings.childMealsPerSet;
-  const [fridge, setFridge] = useState(set.freezable ? 1 : total);
-  const [freezer, setFreezer] = useState(set.freezable ? total - 1 : 0);
-  return (
-    <div className="complete-form border rounded p-2 mb-2">
-      <div className="mb-2">다 만들었어요! 아이 몫을 어디에 보관할까요? (끼니 수)</div>
-      <div className="d-flex gap-3 flex-wrap align-items-end">
-        <Form.Group>
-          <Form.Label className="small mb-0">냉장</Form.Label>
-          <Form.Control
-            type="number"
-            inputMode="numeric"
-            min={0}
-            value={fridge}
-            onChange={(e) => setFridge(Number(e.target.value))}
-            style={{ width: 90 }}
-          />
-        </Form.Group>
-        <Form.Group>
-          <Form.Label className="small mb-0">냉동</Form.Label>
-          <Form.Control
-            type="number"
-            inputMode="numeric"
-            min={0}
-            value={freezer}
-            disabled={!set.freezable}
-            onChange={(e) => setFreezer(Number(e.target.value))}
-            style={{ width: 90 }}
-          />
-        </Form.Group>
-        <Button onClick={() => onDone(session.date, set.id, { fridge, freezer })}>재고에 넣기</Button>
-      </div>
-      {!set.all_freezable && set.freezable && (
-        <div className="small text-muted mt-1">나물·무침 등 냉동이 어려운 요리는 냉동분에서 빠질 수 있어요.</div>
-      )}
-    </div>
-  );
-};
 
 export default SessionCard;

@@ -18,7 +18,6 @@ const menuItems = {
       type: 'group',
       icon: 'icon-ui',
       children: [
-        { id: 'stock', title: '재고(냉장·냉동)', type: 'item', icon: 'feather icon-package', url: '/stock' },
         { id: 'recipes', title: '레시피', type: 'item', icon: 'feather icon-book', url: '/recipes' },
         { id: 'shopping', title: '장보기 목록', type: 'item', icon: 'feather icon-shopping-cart', url: '/shopping' }
       ]

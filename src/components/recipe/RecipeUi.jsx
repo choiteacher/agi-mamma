@@ -1,11 +1,12 @@
 import React, { createContext, useCallback, useContext, useEffect, useRef, useState } from 'react';
 
 // react-bootstrap
-import { Badge, Col, Modal, Overlay, Popover, Row } from 'react-bootstrap';
+import { Badge, Button, Col, Modal, Overlay, Popover, Row } from 'react-bootstrap';
 
 // project import
 import media from '../../data/recipe-media.json';
-import { recipesById } from '../../state/AppDataContext';
+import { recipesById, useAppData } from '../../state/AppDataContext';
+import { chooseVideo } from '../../lib/videoChoice';
 
 // ==============================|| RECIPE UI ||============================== //
 // - 데스크톱: 요리명에 1초 이상 마우스를 올리면 간략 조리법 말풍선, 벗어나면 닫힘
@@ -110,18 +111,51 @@ const NeedCheck = () => (
   </Badge>
 );
 
-const pickedVideo = (recipeId) => {
-  const m = media[recipeId];
-  if (!m || !m.picked) return null;
-  return (m.candidates || []).find((c) => c.videoId === m.picked) || null;
+// 👍/👎 는 누르는 즉시 이 기기에 저장된다. 👎 영상은 바로 다음 후보로 바뀌고, 같은 채널 영상의 순서에도 반영된다.
+const RatingBar = ({ video, recipeId }) => {
+  const { ratingMap, rateVideo } = useAppData();
+  const current = ratingMap.get(video.videoId)?.rating || 0;
+  const rate = (value) =>
+    rateVideo({ videoId: video.videoId, recipeId, channelId: video.channelId, rating: current === value ? 0 : value });
+  return (
+    <div className="video-rating d-flex align-items-center gap-1 mt-1">
+      <span className="small text-muted me-1">이 영상 어때요?</span>
+      <Button
+        size="sm"
+        variant={current === 1 ? 'primary' : 'outline-secondary'}
+        className="py-0 px-2"
+        onClick={() => rate(1)}
+        aria-pressed={current === 1}
+        aria-label="좋아요"
+        title="좋아요: 이 영상을 계속 보여 주고, 이 채널 영상을 더 앞에 둬요"
+      >
+        👍
+      </Button>
+      <Button
+        size="sm"
+        variant={current === -1 ? 'danger' : 'outline-secondary'}
+        className="py-0 px-2"
+        onClick={() => rate(-1)}
+        aria-pressed={current === -1}
+        aria-label="별로예요"
+        title="별로예요: 다음 후보 영상으로 바꾸고, 이 채널 영상은 뒤로 미뤄요"
+      >
+        👎
+      </Button>
+    </div>
+  );
 };
 
-const VideoPane = ({ video }) => {
+const VideoPane = ({ video, recipeId, hasCandidates }) => {
   if (!video) {
     return (
       <div className="video-placeholder">
-        <div>영상 준비 중</div>
-        <small className="text-muted">고른 영상이 생기면 여기에 나옵니다.</small>
+        <div>{hasCandidates ? '알맞은 영상이 없어요' : '영상 준비 중'}</div>
+        <small className="text-muted">
+          {hasCandidates
+            ? '요리 이름이 맞는 후보가 없거나 후보를 모두 별로로 평가했어요. 글 레시피를 봐 주세요.'
+            : '영상이 생기면 여기에 나옵니다.'}
+        </small>
       </div>
     );
   }
@@ -133,6 +167,7 @@ const VideoPane = ({ video }) => {
         <a href={watchUrl} target="_blank" rel="noopener noreferrer">
           유튜브에서 보기
         </a>
+        <RatingBar video={video} recipeId={recipeId} />
       </div>
     );
   }
@@ -154,6 +189,7 @@ const VideoPane = ({ video }) => {
           유튜브에서 보기
         </a>
       </div>
+      <RatingBar video={video} recipeId={recipeId} />
     </div>
   );
 };
@@ -186,7 +222,8 @@ const VideoSummary = ({ video }) => {
 
 function RecipeModal({ recipeId, onClose }) {
   const recipe = recipeId ? recipesById.get(recipeId) : null;
-  const video = recipe ? pickedVideo(recipe.id) : null;
+  const { ratingMap } = useAppData();
+  const video = recipe ? chooseVideo(media[recipe.id], recipe.name, ratingMap) : null;
   return (
     <Modal show={!!recipe} onHide={onClose} size="xl" fullscreen="md-down" centered scrollable>
       {recipe && (
@@ -204,7 +241,7 @@ function RecipeModal({ recipeId, onClose }) {
           <Modal.Body>
             <Row className="g-3">
               <Col lg={6}>
-                <VideoPane video={video} />
+                <VideoPane video={video} recipeId={recipe.id} hasCandidates={!!media[recipe.id]?.candidates?.length} />
               </Col>
               <Col lg={6}>
                 <VideoSummary video={video} />

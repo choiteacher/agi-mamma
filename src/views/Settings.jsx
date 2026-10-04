@@ -232,6 +232,10 @@ const Backup = () => {
         데이터는 이 기기의 브라우저에만 저장됩니다. 브라우저 데이터를 지우면 사라지니 가끔 파일로 백업해 두세요.
         {meta.lastBackupAt ? ` 마지막 백업: ${meta.lastBackupAt.slice(0, 10)}` : ' 아직 백업한 적이 없습니다.'}
       </p>
+      <p className="small text-muted mb-2">
+        레시피 영상에 누른 👍/👎 도 백업 파일에 들어갑니다. 이 파일을 PC로 옮겨 <code>npm run apply-ratings -- 파일이름.json</code> 을
+        실행하면 영상 고르는 기준에 반영되고, 커밋·push 하면 두 사람 기기 모두에 적용됩니다.
+      </p>
       <div className="d-flex gap-2 flex-wrap">
         <Button onClick={download}>백업 파일 저장</Button>
         <Button variant="outline-primary" onClick={() => fileRef.current && fileRef.current.click()}>

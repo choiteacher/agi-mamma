@@ -2,14 +2,16 @@
 
 .gate,
 .gate-loading {
-  --gate-veil: rgba(10, 10, 20, 0.92);
-  --gate-text: #f4f1f6;
-  --gate-muted: rgba(244, 241, 246, 0.62);
-  --gate-accent: #ff8fab;
-  --gate-accent-strong: #ff6f91;
-  --gate-error: #ffb4a8;
-  --gate-field: rgba(255, 255, 255, 0.08);
-  --gate-border: rgba(255, 255, 255, 0.18);
+  /* 앱 화면(템플릿)과 같은 색: 밝은 배경 #f6f7fb, 파란 강조 #4099ff, 헤더와 같은 파란 그라데이션 */
+  --gate-veil: rgba(246, 247, 251, 0.72);
+  --gate-text: #222;
+  --gate-muted: #6b7280;
+  --gate-accent: #4099ff;
+  --gate-accent-strong: #2f86f6;
+  --gate-gradient: linear-gradient(-135deg, #4099ff 0%, #73b4ff 100%);
+  --gate-error: #e5484d;
+  --gate-field: #fff;
+  --gate-border: #dfe3ea;
   font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
   color: var(--gate-text);
   word-break: keep-all;
@@ -23,20 +25,20 @@
   justify-content: center;
   padding: 16px;
   overflow: hidden;
-  background: #120f1c;
+  background: #f6f7fb;
 }
 
 /* 장식용 배경: 흐릿한 색 덩어리 + 진한 반투명 막 */
 .gate-backdrop {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #3a1d3f 0%, #1c2447 55%, #12302d 100%);
+  background: #f6f7fb;
 }
 
 .gate-blob {
   position: absolute;
   border-radius: 50%;
-  opacity: 0.85;
+  opacity: 0.55;
 }
 
 .gate-blob-1 {
@@ -44,7 +46,7 @@
   height: 60vmax;
   left: -18vmax;
   top: -20vmax;
-  background: radial-gradient(circle, #ff8fab 0%, transparent 65%);
+  background: radial-gradient(circle, #73b4ff 0%, transparent 65%);
 }
 
 .gate-blob-2 {
@@ -52,7 +54,7 @@
   height: 50vmax;
   right: -15vmax;
   bottom: -18vmax;
-  background: radial-gradient(circle, #ffd29d 0%, transparent 65%);
+  background: radial-gradient(circle, #b9a6f2 0%, transparent 65%);
 }
 
 .gate-blob-3 {
@@ -60,7 +62,7 @@
   height: 36vmax;
   right: 10vmax;
   top: 5vmax;
-  background: radial-gradient(circle, #8fd3c8 0%, transparent 65%);
+  background: radial-gradient(circle, #9fd8f5 0%, transparent 65%);
 }
 
 .gate-veil {
@@ -75,23 +77,29 @@
   position: relative;
   width: 100%;
   max-width: 360px;
-  padding: 32px 24px 20px;
-  border: 1px solid var(--gate-border);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.04);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  padding: 0 24px 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow:
+    0 12px 40px rgba(64, 153, 255, 0.18),
+    0 2px 6px rgba(0, 0, 0, 0.06);
   text-align: center;
   box-sizing: border-box;
 }
 
+/* 카드 위쪽 띠: 앱 헤더와 같은 그라데이션 */
 .gate-pigs {
+  margin: 0 -24px;
+  padding: 22px 0 18px;
+  background: var(--gate-gradient);
   font-size: 32px;
   letter-spacing: 4px;
   line-height: 1;
 }
 
 .gate-title {
-  margin: 12px 0 24px;
+  margin: 18px 0 22px;
   font-size: 22px;
   font-weight: 700;
 }
@@ -124,7 +132,7 @@
 
 .gate-input:focus {
   border-color: var(--gate-accent);
-  box-shadow: 0 0 0 3px rgba(255, 143, 171, 0.25);
+  box-shadow: 0 0 0 3px rgba(64, 153, 255, 0.2);
 }
 
 .gate-input:disabled {
@@ -135,7 +143,7 @@
   height: 50px;
   border: 0;
   border-radius: 12px;
-  background: var(--gate-accent-strong);
+  background: var(--gate-gradient);
   color: #fff;
   font-size: 17px;
   font-weight: 700;
@@ -143,7 +151,7 @@
 }
 
 .gate-button:disabled {
-  background: rgba(255, 111, 145, 0.4);
+  background: #b9d8ff;
   cursor: default;
 }
 
@@ -201,5 +209,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #0a0a14;
+  background: #f6f7fb;
+  color: var(--gate-muted);
 }

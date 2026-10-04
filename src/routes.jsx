@@ -42,7 +42,6 @@ export const routes = [
       { exact: 'true', path: '/week', element: lazy(() => import('./views/WeekPlan')) },
       { exact: 'true', path: '/calendar', element: lazy(() => import('./views/MonthCalendar')) },
       { exact: 'true', path: '/meals', element: lazy(() => import('./views/MealTable')) },
-      { exact: 'true', path: '/stock', element: lazy(() => import('./views/Stock')) },
       { exact: 'true', path: '/recipes', element: lazy(() => import('./views/Recipes')) },
       { exact: 'true', path: '/shopping', element: lazy(() => import('./views/Shopping')) },
       { exact: 'true', path: '/settings', element: lazy(() => import('./views/Settings')) },

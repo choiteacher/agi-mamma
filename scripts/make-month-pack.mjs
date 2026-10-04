@@ -22,10 +22,12 @@ import { YouTubeError, searchCandidates } from './lib/youtube.mjs';
 import { DEFAULT_MODEL, summarizeRequest } from './lib/gemini.mjs';
 import { buildPlan } from '../src/lib/planner.js';
 import { addDays, todayYmd } from '../src/lib/dates.js';
+import { channelBias, chooseVideo, latestRatings, titleMatches } from '../src/lib/videoChoice.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const MEDIA_PATH = path.join(ROOT, 'src', 'data', 'recipe-media.json');
 const PREFS_PATH = path.join(ROOT, 'src', 'data', 'channel-prefs.json');
+const RATINGS_PATH = path.join(ROOT, 'src', 'data', 'video-ratings.json');
 const STATE_PATH = path.join(ROOT, 'scripts', 'output', 'key-state.json');
 
 const args = process.argv.slice(2);
@@ -57,13 +59,7 @@ export function upcomingRecipeIds({ sets, recipes, today, days = 30 }) {
   return ids;
 }
 
-// 영상 제목에 요리 이름이 들어 있는지 (띄어쓰기 무시, 쇠고기/소고기·달걀/계란은 같은 말로)
-const normName = (s) =>
-  s
-    .replace(/\s+/g, '')
-    .replace(/쇠고기/g, '소고기')
-    .replace(/계란/g, '달걀');
-export const titleMatches = (title, dishName) => normName(title).includes(normName(dishName));
+export { titleMatches };
 
 export const searchQuery = (recipe) => `${recipe.name.replace(/\s+/g, ' ')} 유아식 만들기`;
 
@@ -72,19 +68,23 @@ async function main() {
   const recipes = readJson(path.join(ROOT, 'src', 'data', 'recipes.seed.json'), []);
   const recipesById = new Map(recipes.map((r) => [r.id, r]));
   const media = readJson(MEDIA_PATH, {});
-  const prefs = readJson(PREFS_PATH, {});
+  // 채널 가산점 = curate 에서 고른 횟수 + 사이트 👍/👎 합계(npm run apply-ratings 로 모은 것)
+  const ratingMap = latestRatings(readJson(RATINGS_PATH, []));
+  const bias = channelBias(ratingMap);
+  const prefs = { ...readJson(PREFS_PATH, {}) };
+  for (const [ch, v] of Object.entries(bias)) prefs[ch] = (prefs[ch] || 0) + v;
 
   const upcoming = upcomingRecipeIds({ sets, recipes, today: todayYmd() });
   const hasCandidates = (id) => Boolean(media[id] && media[id].candidates && media[id].candidates.length);
   const needsSummary = (id) => hasCandidates(id) && media[id].candidates.some((c) => !c.summary);
   const targets = upcoming.filter((id) => !hasCandidates(id) || (!NO_SUMMARY && needsSummary(id)));
 
-  // 제목에 요리 이름이 들어간 후보 중 점수 1위를 임시로 고른다. 맞는 후보가 없으면 고르지 않는다(글 레시피만).
+  // 임시 선택: 사이트와 같은 규칙(chooseVideo) - 제목에 요리 이름이 든 후보 중 👎 아닌 것, 채널 선호 반영.
   // 사람이 고른 것(pickedBy 없음)은 건드리지 않고, 임시 선택(pickedBy: "auto")은 실행할 때마다 다시 계산한다.
   const autoPick = (id) => {
     const m = media[id];
     if (!AUTO_PICK || !m || (m.picked && m.pickedBy !== 'auto') || !hasCandidates(id)) return false;
-    const best = [...m.candidates].filter((c) => titleMatches(c.title, recipesById.get(id).name)).sort((a, b) => b.score - a.score)[0];
+    const best = chooseVideo({ ...m, picked: null }, recipesById.get(id).name, ratingMap, bias);
     const picked = best ? best.videoId : null;
     if (picked === m.picked) return false;
     media[id] = { ...m, picked, pickedAt: picked ? new Date().toISOString() : null, pickedBy: picked ? 'auto' : null };

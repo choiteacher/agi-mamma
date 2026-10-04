@@ -6,8 +6,8 @@
 export const APP_ID = 'agi-mamma';
 export const DATA_VERSION = 1;
 
-export function buildExport({ settings, cookLog, stock }, now = new Date().toISOString()) {
-  return { app: APP_ID, version: DATA_VERSION, exportedAt: now, settings, cookLog, stock };
+export function buildExport({ settings, cookLog, stock, videoRatings = [] }, now = new Date().toISOString()) {
+  return { app: APP_ID, version: DATA_VERSION, exportedAt: now, settings, cookLog, stock, videoRatings };
 }
 
 export function validateImport(data) {
@@ -41,6 +41,8 @@ function mergeList(local, incoming) {
 export function mergeData(local, incoming) {
   const cook = mergeList(local.cookLog || [], incoming.cookLog || []);
   const stock = mergeList(local.stock || [], incoming.stock || []);
+  // 영상 평가는 영상 id 기준 (예전 데이터에는 없음)
+  const ratings = mergeList(local.videoRatings || [], incoming.videoRatings || []);
   let settings = local.settings;
   let settingsResult = 'same';
   if (incoming.settings && newer(incoming.settings, local.settings || {})) {
@@ -50,8 +52,8 @@ export function mergeData(local, incoming) {
     settingsResult = 'local';
   }
   return {
-    merged: { settings, cookLog: cook.list, stock: stock.list },
-    summary: { cookLog: cook.summary, stock: stock.summary, settings: settingsResult }
+    merged: { settings, cookLog: cook.list, stock: stock.list, videoRatings: ratings.list },
+    summary: { cookLog: cook.summary, stock: stock.summary, videoRatings: ratings.summary, settings: settingsResult }
   };
 }
 
@@ -97,9 +99,10 @@ export async function decodeShareCode(code) {
   }
 }
 
-export const describeSummary = ({ cookLog, stock, settings }) => [
+export const describeSummary = ({ cookLog, stock, videoRatings = { added: 0, updated: 0 }, settings }) => [
   `요리 기록: 새로 ${cookLog.added}건, 갱신 ${cookLog.updated}건`,
-  `재고: 새로 ${stock.added}건, 갱신 ${stock.updated}건`,
+  `영상 평가: 새로 ${videoRatings.added}건, 갱신 ${videoRatings.updated}건`,
+  ...(stock.added || stock.updated ? [`재고(이전 버전 기록): 새로 ${stock.added}건, 갱신 ${stock.updated}건`] : []),
   settings === 'incoming'
     ? '설정: 가져온 쪽이 더 최근이라 바꿉니다'
     : settings === 'local'
