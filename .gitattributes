@@ -1,0 +1,2 @@
+# 텍스트 파일은 LF로 통일한다(.prettierrc의 endOfLine: lf와 맞춤, 훅 스크립트는 sh로 실행됨).
+* text=auto eol=lf

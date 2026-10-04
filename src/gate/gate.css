@@ -1,0 +1,205 @@
+/* 비밀번호 화면 전용 스타일. 템플릿 스타일(index.scss)은 잠금 해제 후에만 불러오므로 여기서 모두 정의한다. */
+
+.gate,
+.gate-loading {
+  --gate-veil: rgba(10, 10, 20, 0.92);
+  --gate-text: #f4f1f6;
+  --gate-muted: rgba(244, 241, 246, 0.62);
+  --gate-accent: #ff8fab;
+  --gate-accent-strong: #ff6f91;
+  --gate-error: #ffb4a8;
+  --gate-field: rgba(255, 255, 255, 0.08);
+  --gate-border: rgba(255, 255, 255, 0.18);
+  font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+  color: var(--gate-text);
+  word-break: keep-all;
+}
+
+.gate {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  overflow: hidden;
+  background: #120f1c;
+}
+
+/* 장식용 배경: 흐릿한 색 덩어리 + 진한 반투명 막 */
+.gate-backdrop {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #3a1d3f 0%, #1c2447 55%, #12302d 100%);
+}
+
+.gate-blob {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+.gate-blob-1 {
+  width: 60vmax;
+  height: 60vmax;
+  left: -18vmax;
+  top: -20vmax;
+  background: radial-gradient(circle, #ff8fab 0%, transparent 65%);
+}
+
+.gate-blob-2 {
+  width: 50vmax;
+  height: 50vmax;
+  right: -15vmax;
+  bottom: -18vmax;
+  background: radial-gradient(circle, #ffd29d 0%, transparent 65%);
+}
+
+.gate-blob-3 {
+  width: 36vmax;
+  height: 36vmax;
+  right: 10vmax;
+  top: 5vmax;
+  background: radial-gradient(circle, #8fd3c8 0%, transparent 65%);
+}
+
+.gate-veil {
+  position: absolute;
+  inset: 0;
+  background: var(--gate-veil);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+}
+
+.gate-card {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  padding: 32px 24px 20px;
+  border: 1px solid var(--gate-border);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.gate-pigs {
+  font-size: 32px;
+  letter-spacing: 4px;
+  line-height: 1;
+}
+
+.gate-title {
+  margin: 12px 0 24px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.gate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.gate-label {
+  font-size: 14px;
+  color: var(--gate-muted);
+}
+
+/* 16px 이상이어야 iOS가 입력 시 화면을 확대하지 않는다. */
+.gate-input {
+  width: 100%;
+  height: 50px;
+  padding: 0 14px;
+  border: 1px solid var(--gate-border);
+  border-radius: 12px;
+  background: var(--gate-field);
+  color: var(--gate-text);
+  font-size: 18px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.gate-input:focus {
+  border-color: var(--gate-accent);
+  box-shadow: 0 0 0 3px rgba(255, 143, 171, 0.25);
+}
+
+.gate-input:disabled {
+  opacity: 0.6;
+}
+
+.gate-button {
+  height: 50px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--gate-accent-strong);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.gate-button:disabled {
+  background: rgba(255, 111, 145, 0.4);
+  cursor: default;
+}
+
+.gate-status {
+  min-height: 20px;
+  margin: 0;
+  font-size: 14px;
+  color: var(--gate-error);
+}
+
+.gate-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--gate-muted);
+}
+
+.gate-link {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--gate-accent);
+  font-size: 13px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.gate-message {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--gate-muted);
+}
+
+.gate-message code {
+  color: var(--gate-text);
+}
+
+.gate-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+
+.gate-loading {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0a14;
+}

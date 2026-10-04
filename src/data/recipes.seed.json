@@ -1,0 +1,3303 @@
+[
+  {
+    "id": "seaweed-soup",
+    "name": "미역국",
+    "aliases": [],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 25,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "마른 미역",
+        "amount": "20g"
+      },
+      {
+        "item": "소고기 국거리",
+        "amount": "200g"
+      },
+      {
+        "item": "참기름",
+        "amount": "1큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1/2큰술"
+      },
+      {
+        "item": "국간장",
+        "amount": "2큰술"
+      },
+      {
+        "item": "물",
+        "amount": "2L"
+      }
+    ],
+    "steps_short": [
+      "미역을 20분 불려 먹기 좋게 썬다",
+      "참기름에 소고기와 미역을 볶는다",
+      "물을 붓고 20분 끓여 국간장으로 약하게 간한다"
+    ],
+    "steps_full": [
+      "마른 미역을 찬물에 20분 불린 뒤 바락바락 씻어 아이 한입 크기(1~2cm)로 썬다.",
+      "냄비에 참기름을 두르고 잘게 썬 소고기를 볶다가 겉이 익으면 미역과 다진 마늘을 넣고 2분 더 볶는다.",
+      "물을 붓고 센 불에서 끓어오르면 중약불로 20분 끓인다.",
+      "국간장 1큰술로 간해 아이 몫을 먼저 덜고, 어른 몫은 국간장을 조금 더 넣는다."
+    ],
+    "batch_group": "gangdong-2025-10-25-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "미역은 길면 삼키기 어려우니 짧게 썰어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "seaweed-doenjang-soup",
+    "name": "미역된장국",
+    "aliases": [],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 20,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "마른 미역",
+        "amount": "15g"
+      },
+      {
+        "item": "두부",
+        "amount": "1/2모(150g)"
+      },
+      {
+        "item": "된장",
+        "amount": "2큰술"
+      },
+      {
+        "item": "멸치다시마 육수 2L(또는 물 2L + 국물용 멸치 10마리 + 다시마",
+        "amount": "1장)"
+      }
+    ],
+    "steps_short": [
+      "육수를 내고 된장을 푼다",
+      "불린 미역과 깍둑 썬 두부를 넣는다",
+      "10분 끓인다"
+    ],
+    "steps_full": [
+      "물에 멸치와 다시마를 넣고 10분 끓여 건져 내 육수를 만든다.",
+      "미역은 20분 불려 1~2cm로 썰고, 두부는 1cm 깍둑썰기 한다.",
+      "육수에 된장 1큰술을 체에 걸러 풀고 미역을 넣어 10분 끓인다.",
+      "두부를 넣고 5분 더 끓인 뒤 아이 몫을 덜고, 어른 몫은 된장을 더 풀어 간을 맞춘다."
+    ],
+    "batch_group": "jincheon-2025-10-16-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "된장은 짠 편이라 아이 몫은 연하게 덜어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "beef-radish-soup",
+    "name": "쇠고기무국",
+    "aliases": [
+      "쇠고기뭇국"
+    ],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 30,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "소고기 국거리",
+        "amount": "250g"
+      },
+      {
+        "item": "무",
+        "amount": "400g"
+      },
+      {
+        "item": "대파",
+        "amount": "1/2대"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1/2큰술"
+      },
+      {
+        "item": "참기름",
+        "amount": "1큰술"
+      },
+      {
+        "item": "국간장",
+        "amount": "2큰술"
+      },
+      {
+        "item": "물",
+        "amount": "2L"
+      }
+    ],
+    "steps_short": [
+      "무를 얇게 나박썰기 한다",
+      "참기름에 소고기와 무를 볶는다",
+      "물을 붓고 무가 투명해질 때까지 20분 끓인다"
+    ],
+    "steps_full": [
+      "무는 1.5cm 크기로 얇게 나박썰기 하고, 소고기는 잘게 썬다.",
+      "냄비에 참기름을 두르고 소고기를 볶다가 무를 넣고 3분 볶는다.",
+      "물과 다진 마늘을 넣고 끓어오르면 거품을 걷어 내고 중불에서 20분 끓인다.",
+      "송송 썬 대파를 넣고 국간장 1큰술로 간해 아이 몫을 덜고, 어른 몫은 간을 더한다."
+    ],
+    "batch_group": "jincheon-2025-10-17-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "무는 푹 익혀 부드럽게 해 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "beef-cabbage-soup",
+    "name": "쇠고기얼갈이탕",
+    "aliases": [],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 30,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "소고기 국거리",
+        "amount": "200g"
+      },
+      {
+        "item": "얼갈이배추",
+        "amount": "300g"
+      },
+      {
+        "item": "된장",
+        "amount": "1큰술"
+      },
+      {
+        "item": "국간장",
+        "amount": "1큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1/2큰술"
+      },
+      {
+        "item": "물",
+        "amount": "2L"
+      }
+    ],
+    "steps_short": [
+      "얼갈이를 데쳐 잘게 썬다",
+      "소고기를 볶고 물을 붓는다",
+      "얼갈이와 된장을 넣고 15분 끓인다"
+    ],
+    "steps_full": [
+      "얼갈이배추는 끓는 물에 1분 데쳐 찬물에 헹군 뒤 물기를 짜고 2cm로 썬다.",
+      "냄비에 잘게 썬 소고기를 볶다가 물을 붓고 끓어오르면 거품을 걷는다.",
+      "얼갈이, 다진 마늘을 넣고 된장을 체에 걸러 푼다.",
+      "중불에서 15분 끓이고 국간장으로 약하게 간한 뒤 아이 몫을 먼저 던다."
+    ],
+    "batch_group": "gangdong-2025-10-28-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "잎채소는 질기면 삼키기 어려우니 짧게 썰어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "enoki-tofu-doenjang-soup",
+    "name": "팽이두부된장국",
+    "aliases": [],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "팽이버섯",
+        "amount": "1봉(150g)"
+      },
+      {
+        "item": "두부",
+        "amount": "1/2모(150g)"
+      },
+      {
+        "item": "애호박",
+        "amount": "1/3개"
+      },
+      {
+        "item": "된장",
+        "amount": "2큰술"
+      },
+      {
+        "item": "멸치다시마 육수",
+        "amount": "2L"
+      }
+    ],
+    "steps_short": [
+      "팽이는 1cm로, 두부·애호박은 깍둑 썬다",
+      "육수에 된장을 풀고 애호박을 넣는다",
+      "두부와 팽이를 넣고 5분 끓인다"
+    ],
+    "steps_full": [
+      "팽이버섯은 밑동을 자르고 1cm 길이로 짧게 썬다. 두부와 애호박은 1cm 깍둑썰기 한다.",
+      "육수에 된장 1큰술을 체에 걸러 풀고 애호박을 넣어 5분 끓인다.",
+      "두부와 팽이버섯을 넣고 5분 더 끓인다.",
+      "아이 몫을 덜고, 어른 몫은 된장을 더 풀어 간을 맞춘다."
+    ],
+    "batch_group": "jincheon-2025-10-10-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "팽이버섯은 길면 목에 걸리기 쉬우니 꼭 짧게 썰어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "enoki-clear-soup",
+    "name": "팽이장국",
+    "aliases": [],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "팽이버섯",
+        "amount": "1봉(150g)"
+      },
+      {
+        "item": "양파",
+        "amount": "1/2개"
+      },
+      {
+        "item": "대파",
+        "amount": "1/3대"
+      },
+      {
+        "item": "국간장",
+        "amount": "1큰술"
+      },
+      {
+        "item": "멸치다시마 육수",
+        "amount": "2L"
+      }
+    ],
+    "steps_short": [
+      "팽이와 양파를 짧게 썬다",
+      "육수에 양파를 넣고 5분 끓인다",
+      "팽이와 대파를 넣고 국간장으로 약하게 간한다"
+    ],
+    "steps_full": [
+      "팽이버섯은 1cm 길이로, 양파는 1cm 크기로 썬다.",
+      "육수에 양파를 넣고 5분 끓인다.",
+      "팽이버섯과 송송 썬 대파를 넣고 3분 더 끓인다.",
+      "국간장으로 약하게 간해 아이 몫을 덜고, 어른 몫은 소금으로 간을 더한다."
+    ],
+    "batch_group": "gangdong-2025-10-11-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "팽이버섯은 짧게 썰어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "clear-bokchoy-soup",
+    "name": "맑은청경채국",
+    "aliases": [
+      "청경채맑은국"
+    ],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "청경채",
+        "amount": "4포기(200g)"
+      },
+      {
+        "item": "두부",
+        "amount": "1/3모(100g)"
+      },
+      {
+        "item": "양파",
+        "amount": "1/3개"
+      },
+      {
+        "item": "국간장",
+        "amount": "1큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1작은술"
+      },
+      {
+        "item": "멸치다시마 육수",
+        "amount": "2L"
+      }
+    ],
+    "steps_short": [
+      "청경채를 1~2cm로 썬다",
+      "육수에 양파와 두부를 넣고 끓인다",
+      "청경채를 넣고 2분만 더 끓인다"
+    ],
+    "steps_full": [
+      "청경채는 한 장씩 떼어 씻고 1~2cm로 썬다. 두부와 양파는 1cm 크기로 썬다.",
+      "육수에 양파, 두부, 다진 마늘을 넣고 5분 끓인다.",
+      "청경채를 넣고 2분만 더 끓여 숨이 죽으면 불을 끈다.",
+      "국간장으로 약하게 간해 아이 몫을 덜고, 어른 몫은 소금으로 간을 더한다."
+    ],
+    "batch_group": "gangdong-2025-10-15-D",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "잎채소 국은 다시 데우면 색과 식감이 많이 변해 냉장 보관을 권합니다.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "bean-sprout-soup",
+    "name": "콩나물국",
+    "aliases": [],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "콩나물",
+        "amount": "300g"
+      },
+      {
+        "item": "대파",
+        "amount": "1/2대"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1/2큰술"
+      },
+      {
+        "item": "국간장",
+        "amount": "1큰술"
+      },
+      {
+        "item": "소금",
+        "amount": "약간"
+      },
+      {
+        "item": "멸치다시마 육수",
+        "amount": "2L"
+      }
+    ],
+    "steps_short": [
+      "콩나물을 씻어 2~3cm로 자른다",
+      "육수에 콩나물을 넣고 뚜껑을 덮은 채 8분 끓인다",
+      "마늘·대파를 넣고 약하게 간한다"
+    ],
+    "steps_full": [
+      "콩나물은 씻어서 아이가 먹기 좋게 2~3cm로 자른다.",
+      "육수에 콩나물을 넣고 뚜껑을 덮은 채 8분 끓인다(중간에 열면 비린내가 날 수 있다).",
+      "다진 마늘과 송송 썬 대파를 넣고 2분 더 끓인다.",
+      "국간장으로 약하게 간해 아이 몫을 덜고, 어른 몫은 소금으로 간을 더한다."
+    ],
+    "batch_group": "wonju-2025-10-13-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "콩나물은 길면 목에 걸릴 수 있으니 짧게 잘라 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "perilla-radish-soup",
+    "name": "들깨무챗국",
+    "aliases": [],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 25,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "무",
+        "amount": "400g"
+      },
+      {
+        "item": "들깨가루",
+        "amount": "4큰술"
+      },
+      {
+        "item": "들기름",
+        "amount": "1큰술"
+      },
+      {
+        "item": "국간장",
+        "amount": "1큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1/2큰술"
+      },
+      {
+        "item": "멸치다시마 육수",
+        "amount": "2L"
+      }
+    ],
+    "steps_short": [
+      "무를 가늘게 채 썬다",
+      "들기름에 무를 볶고 육수를 붓는다",
+      "무가 익으면 들깨가루를 풀어 5분 끓인다"
+    ],
+    "steps_full": [
+      "무는 3cm 길이로 가늘게 채 썬다.",
+      "냄비에 들기름을 두르고 무를 3분 볶다가 육수와 다진 마늘을 넣는다.",
+      "중불에서 15분 끓여 무가 투명해지면 들깨가루를 풀고 5분 더 끓인다.",
+      "국간장으로 약하게 간해 아이 몫을 덜고, 어른 몫은 간을 더한다."
+    ],
+    "batch_group": "gangdong-2025-10-27-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "견과·씨앗류 반응이 처음이라면 들깨는 소량부터 확인해 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "pollock-soup",
+    "name": "북엇국",
+    "aliases": [],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 20,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "북어채",
+        "amount": "60g"
+      },
+      {
+        "item": "무",
+        "amount": "200g"
+      },
+      {
+        "item": "달걀",
+        "amount": "2개"
+      },
+      {
+        "item": "참기름",
+        "amount": "1큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1/2큰술"
+      },
+      {
+        "item": "국간장",
+        "amount": "1큰술"
+      },
+      {
+        "item": "물",
+        "amount": "2L"
+      }
+    ],
+    "steps_short": [
+      "북어채를 물에 헹궈 잘게 찢는다",
+      "참기름에 북어채와 무를 볶고 물을 붓는다",
+      "15분 끓이고 달걀을 풀어 넣는다"
+    ],
+    "steps_full": [
+      "북어채는 물에 살짝 헹궈 물기를 짜고, 가시가 있는지 손으로 확인하며 잘게 찢는다.",
+      "무는 얇게 나박썰기 한다. 냄비에 참기름을 두르고 북어채와 무를 3분 볶는다.",
+      "물과 다진 마늘을 넣고 중불에서 15분 끓인다.",
+      "달걀을 풀어 둘러 넣고 1분 뒤 불을 끈다. 국간장으로 약하게 간해 아이 몫을 덜고, 어른 몫은 간을 더한다."
+    ],
+    "batch_group": "wonju-2025-11-12-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "북어채에 남은 잔가시를 꼭 확인해 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "shrimp-zucchini-soup",
+    "name": "새우살애호박국",
+    "aliases": [],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "칵테일새우",
+        "amount": "150g"
+      },
+      {
+        "item": "애호박",
+        "amount": "1개"
+      },
+      {
+        "item": "양파",
+        "amount": "1/2개"
+      },
+      {
+        "item": "국간장",
+        "amount": "1큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1작은술"
+      },
+      {
+        "item": "멸치다시마 육수",
+        "amount": "2L"
+      }
+    ],
+    "steps_short": [
+      "새우는 잘게, 애호박·양파는 깍둑 썬다",
+      "육수에 양파·애호박을 넣고 5분 끓인다",
+      "새우를 넣고 3분 더 끓인다"
+    ],
+    "steps_full": [
+      "새우는 해동해 내장을 확인하고 1cm로 잘게 썬다. 애호박과 양파는 1cm 크기로 썬다.",
+      "육수에 양파, 애호박, 다진 마늘을 넣고 5분 끓인다.",
+      "새우를 넣고 3분 더 끓여 새우가 완전히 익게 한다.",
+      "국간장으로 약하게 간해 아이 몫을 덜고, 어른 몫은 소금으로 간을 더한다."
+    ],
+    "batch_group": "jincheon-2025-10-20-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "갑각류를 처음 먹는다면 소량부터 확인해 주세요. 새우는 완전히 익혀 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "mild-pork-potato-soup",
+    "name": "순살감자탕",
+    "aliases": [],
+    "category": "국",
+    "difficulty": 2,
+    "active_minutes": 40,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "돼지 등뼈살(순살) 또는 앞다리살",
+        "amount": "500g"
+      },
+      {
+        "item": "감자",
+        "amount": "3개"
+      },
+      {
+        "item": "우거지(데친 것)",
+        "amount": "200g"
+      },
+      {
+        "item": "된장",
+        "amount": "2큰술"
+      },
+      {
+        "item": "국간장",
+        "amount": "1큰술"
+      },
+      {
+        "item": "들깨가루",
+        "amount": "3큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1큰술"
+      },
+      {
+        "item": "생강",
+        "amount": "약간"
+      },
+      {
+        "item": "물",
+        "amount": "2.5L"
+      }
+    ],
+    "steps_short": [
+      "고기를 데쳐 헹군다",
+      "물·된장·마늘·생강을 넣고 고기를 25분 끓인다",
+      "감자·우거지·들깨가루를 넣고 15분 더 끓인다 (고춧가루 없이)"
+    ],
+    "steps_full": [
+      "고기는 끓는 물에 5분 데쳐 찬물에 헹궈 잡내를 뺀다.",
+      "냄비에 물, 된장 1큰술, 다진 마늘, 생강을 넣고 고기를 넣어 중불에서 25분 끓인다.",
+      "감자는 2cm 크기로, 우거지는 2cm 길이로 썰어 넣고 15분 더 끓인다.",
+      "들깨가루를 풀고 국간장으로 간한다. 고춧가루·다대기는 넣지 않는다.",
+      "아이 몫은 고기를 결 반대로 잘게 찢고 감자를 으깨어 덜어 준다. 어른은 따로 고춧가루를 곁들여도 된다."
+    ],
+    "batch_group": "gangdong-2025-11-04-D",
+    "mild_version": true,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "원래 매운 요리라 고춧가루 없이 맑은 된장 국물로 끓입니다. 뼈 조각이 섞이지 않았는지 확인해 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "kimchi-tuna-stew",
+    "name": "참치김치찌개",
+    "aliases": [],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 25,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "배추김치",
+        "amount": "300g"
+      },
+      {
+        "item": "참치캔",
+        "amount": "1개(150g)"
+      },
+      {
+        "item": "두부",
+        "amount": "1/2모(150g)"
+      },
+      {
+        "item": "양파",
+        "amount": "1/2개"
+      },
+      {
+        "item": "대파",
+        "amount": "1/2대"
+      },
+      {
+        "item": "국간장",
+        "amount": "1작은술"
+      },
+      {
+        "item": "물",
+        "amount": "1.5L"
+      }
+    ],
+    "steps_short": [
+      "김치를 물에 헹궈 양념을 씻고 잘게 썬다",
+      "김치와 참치를 볶다가 물을 붓는다",
+      "두부·양파를 넣고 15분 끓인다 (고춧가루 없이)"
+    ],
+    "steps_full": [
+      "김치는 찬물에 2~3번 헹궈 양념을 씻어 내고 꼭 짜서 1cm로 썬다. 참치는 기름을 따라 낸다.",
+      "냄비에 김치를 3분 볶다가 참치와 물을 넣는다.",
+      "두부와 양파를 1cm로 썰어 넣고 중불에서 15분 끓인다.",
+      "대파를 넣고 국간장으로 약하게 간한다. 아이 몫을 덜고 난 뒤 어른 몫에 고춧가루를 넣어도 된다."
+    ],
+    "batch_group": "gangdong-2025-11-25-D",
+    "mild_version": true,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "씻은 김치로 맵지 않게 끓입니다. 참치에 섞인 뼈 조각이 없는지 확인해 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "soft-tofu-clear-soup",
+    "name": "순두부백탕",
+    "aliases": [
+      "연두부맑은국"
+    ],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "순두부",
+        "amount": "2봉(700g)"
+      },
+      {
+        "item": "애호박",
+        "amount": "1/2개"
+      },
+      {
+        "item": "양파",
+        "amount": "1/2개"
+      },
+      {
+        "item": "달걀",
+        "amount": "2개"
+      },
+      {
+        "item": "새우젓 또는 국간장",
+        "amount": "1작은술"
+      },
+      {
+        "item": "멸치다시마 육수",
+        "amount": "1.5L"
+      }
+    ],
+    "steps_short": [
+      "애호박과 양파를 작게 썬다",
+      "육수에 채소를 끓이고 순두부를 숟가락으로 떠 넣는다",
+      "달걀을 풀어 넣고 약하게 간한다"
+    ],
+    "steps_full": [
+      "애호박과 양파는 1cm 크기로 썬다.",
+      "육수에 애호박과 양파를 넣고 5분 끓인다.",
+      "순두부를 숟가락으로 큼직하게 떠 넣고 3분 끓인다.",
+      "달걀을 풀어 넣고 1분 뒤 불을 끈다. 아이 몫을 덜고, 어른 몫은 새우젓으로 간한다."
+    ],
+    "batch_group": "jincheon-2025-11-04-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "원래 매운 순두부찌개 대신 맑게 끓인 국입니다. 순두부는 다시 얼리면 식감이 변해 냉장을 권합니다.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "mushroom-doenjang-soup",
+    "name": "버섯된장국",
+    "aliases": [],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "느타리·표고 등 버섯",
+        "amount": "200g"
+      },
+      {
+        "item": "애호박",
+        "amount": "1/2개"
+      },
+      {
+        "item": "두부",
+        "amount": "1/2모"
+      },
+      {
+        "item": "된장",
+        "amount": "2큰술"
+      },
+      {
+        "item": "멸치다시마 육수",
+        "amount": "2L"
+      }
+    ],
+    "steps_short": [
+      "버섯과 채소를 1cm로 썬다",
+      "육수에 된장을 풀고 채소를 넣는다",
+      "두부를 넣고 10분 끓인다"
+    ],
+    "steps_full": [
+      "버섯은 1cm 크기로 잘게 찢거나 썰고, 애호박과 두부는 1cm 깍둑썰기 한다.",
+      "육수에 된장 1큰술을 체에 걸러 풀고 버섯과 애호박을 넣어 5분 끓인다.",
+      "두부를 넣고 5분 더 끓인다.",
+      "아이 몫을 덜고, 어른 몫은 된장을 더 풀어 간을 맞춘다."
+    ],
+    "batch_group": "jincheon-2025-11-13-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "버섯은 질길 수 있어 잘게 썰어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "chard-doenjang-soup",
+    "name": "근대된장국",
+    "aliases": [],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 20,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "근대",
+        "amount": "300g"
+      },
+      {
+        "item": "된장",
+        "amount": "2큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1/2큰술"
+      },
+      {
+        "item": "대파",
+        "amount": "1/3대"
+      },
+      {
+        "item": "멸치다시마 육수",
+        "amount": "2L"
+      }
+    ],
+    "steps_short": [
+      "근대를 씻어 2cm로 썬다",
+      "육수에 된장을 풀어 끓인다",
+      "근대를 넣고 10분 끓인다"
+    ],
+    "steps_full": [
+      "근대는 줄기의 질긴 섬유를 벗기고 씻어 2cm로 썬다.",
+      "육수에 된장 1큰술을 체에 걸러 풀고 끓인다.",
+      "근대와 다진 마늘을 넣고 중불에서 10분 끓인다.",
+      "대파를 넣고 아이 몫을 덜고, 어른 몫은 된장을 더 풀어 간을 맞춘다."
+    ],
+    "batch_group": "gangdong-2025-10-14-D",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "잎과 줄기를 짧게 썰어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "siraegi-doenjang-soup",
+    "name": "시래기된장국",
+    "aliases": [],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 25,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "삶은 시래기",
+        "amount": "300g"
+      },
+      {
+        "item": "된장",
+        "amount": "2큰술"
+      },
+      {
+        "item": "들기름",
+        "amount": "1큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1/2큰술"
+      },
+      {
+        "item": "멸치다시마 육수",
+        "amount": "2L"
+      }
+    ],
+    "steps_short": [
+      "삶은 시래기를 2cm로 썰어 된장 1큰술에 무친다",
+      "들기름에 볶다가 육수를 붓는다",
+      "20분 푹 끓인다"
+    ],
+    "steps_full": [
+      "삶은 시래기는 질긴 겉껍질을 벗기고 물기를 짜서 2cm로 썬다.",
+      "시래기에 된장 1큰술과 다진 마늘을 넣고 조물조물 무친다.",
+      "냄비에 들기름을 두르고 시래기를 3분 볶다가 육수를 붓는다.",
+      "중약불에서 20분 푹 끓여 부드럽게 만든다. 아이 몫을 덜고, 어른 몫은 된장을 더 푼다."
+    ],
+    "batch_group": "wonju-2025-11-24-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "시래기는 질기기 쉬워 충분히 익히고 짧게 썰어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "miso-soup",
+    "name": "미소장국",
+    "aliases": [],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "두부",
+        "amount": "1/2모(150g)"
+      },
+      {
+        "item": "마른 미역",
+        "amount": "5g"
+      },
+      {
+        "item": "대파",
+        "amount": "1/3대"
+      },
+      {
+        "item": "미소된장",
+        "amount": "3큰술"
+      },
+      {
+        "item": "가쓰오부시 또는 멸치다시마 육수",
+        "amount": "2L"
+      }
+    ],
+    "steps_short": [
+      "두부는 작게 깍둑 썰고 미역은 불려 잘게 썬다",
+      "육수에 두부와 미역을 넣어 3분 끓인다",
+      "불을 줄이고 미소된장을 푼다"
+    ],
+    "steps_full": [
+      "두부는 1cm 깍둑썰기 하고, 미역은 10분 불려 잘게 썬다.",
+      "육수에 두부와 미역을 넣고 3분 끓인다.",
+      "불을 약하게 줄이고 미소된장 2큰술을 체에 걸러 푼 뒤 끓어오르기 직전에 불을 끈다.",
+      "대파를 올려 아이 몫을 덜고, 어른 몫은 미소된장을 더 푼다."
+    ],
+    "batch_group": "wonju-2025-10-01-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "미소된장은 짠 편이라 아이 몫은 연하게 덜어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "tofu-pouch-clear-soup",
+    "name": "맑은유부국",
+    "aliases": [],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "유부",
+        "amount": "10장"
+      },
+      {
+        "item": "무",
+        "amount": "200g"
+      },
+      {
+        "item": "대파",
+        "amount": "1/3대"
+      },
+      {
+        "item": "국간장",
+        "amount": "1큰술"
+      },
+      {
+        "item": "멸치다시마 육수",
+        "amount": "2L"
+      }
+    ],
+    "steps_short": [
+      "유부를 끓는 물에 데쳐 기름을 빼고 가늘게 썬다",
+      "육수에 무를 넣고 10분 끓인다",
+      "유부와 대파를 넣고 3분 더 끓인다"
+    ],
+    "steps_full": [
+      "유부는 끓는 물을 부어 기름기를 빼고 1cm 폭으로 썬다. 무는 얇게 나박썰기 한다.",
+      "육수에 무를 넣고 10분 끓인다.",
+      "유부와 대파를 넣고 3분 더 끓인다.",
+      "국간장으로 약하게 간해 아이 몫을 덜고, 어른 몫은 소금으로 간을 더한다."
+    ],
+    "batch_group": "gangdong-2025-11-01-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "유부는 쫄깃해 작게 썰어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "dumpling-soup",
+    "name": "물만두국",
+    "aliases": [],
+    "category": "국",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "시판 물만두",
+        "amount": "30개"
+      },
+      {
+        "item": "달걀",
+        "amount": "2개"
+      },
+      {
+        "item": "대파",
+        "amount": "1/3대"
+      },
+      {
+        "item": "국간장",
+        "amount": "1큰술"
+      },
+      {
+        "item": "멸치다시마 육수",
+        "amount": "2L"
+      }
+    ],
+    "steps_short": [
+      "육수를 끓인다",
+      "물만두를 넣고 떠오를 때까지 5분 끓인다",
+      "달걀을 풀어 넣고 약하게 간한다"
+    ],
+    "steps_full": [
+      "육수를 끓인다.",
+      "끓으면 물만두를 넣고 만두가 떠오르고 속이 익을 때까지 5분 끓인다.",
+      "달걀을 풀어 둘러 넣고 대파를 넣는다.",
+      "국간장으로 약하게 간한다. 아이 몫 만두는 반으로 잘라 속까지 식혀 준다."
+    ],
+    "batch_group": "jincheon-2025-10-13-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "만두는 통째로 주지 말고 잘라서, 속이 뜨겁지 않게 식혀 주세요. 남은 국은 만두가 불어 다시 끓여 먹기 어렵습니다.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "unyang-bulgogi",
+    "name": "언양식쇠불고기",
+    "aliases": [],
+    "category": "단백질",
+    "difficulty": 2,
+    "active_minutes": 30,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "소고기 불고기용(다진 것 또는 얇은 것)",
+        "amount": "600g"
+      },
+      {
+        "item": "양파",
+        "amount": "1/2개"
+      },
+      {
+        "item": "간장",
+        "amount": "3큰술"
+      },
+      {
+        "item": "배 간 것 3큰술(또는 설탕",
+        "amount": "1큰술)"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1큰술"
+      },
+      {
+        "item": "참기름",
+        "amount": "1큰술"
+      },
+      {
+        "item": "깨",
+        "amount": "약간"
+      }
+    ],
+    "steps_short": [
+      "고기를 잘게 다지거나 썰어 양념에 20분 재운다",
+      "납작하게 펴서 팬에 굽는다",
+      "아이 몫은 잘게 잘라 준다"
+    ],
+    "steps_full": [
+      "고기는 아이가 씹기 쉽게 잘게 다지거나 2cm로 썬다. 양파는 곱게 다진다.",
+      "간장, 배 간 것, 다진 마늘, 참기름, 양파를 섞어 고기를 20분 재운다.",
+      "고기를 손바닥만 하게 납작하게 펴서 기름 두른 팬에 중약불로 앞뒤 4~5분씩 굽는다.",
+      "아이 몫은 1cm로 잘라 주고, 남은 것은 한 끼씩 나눠 식혀서 보관한다."
+    ],
+    "batch_group": "jincheon-2025-10-10-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "고기는 속까지 완전히 익혀 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "beef-shiitake-stirfry",
+    "name": "쇠고기표고버섯볶음",
+    "aliases": [],
+    "category": "단백질",
+    "difficulty": 2,
+    "active_minutes": 20,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "소고기 잡채용",
+        "amount": "400g"
+      },
+      {
+        "item": "표고버섯",
+        "amount": "6개"
+      },
+      {
+        "item": "양파",
+        "amount": "1/2개"
+      },
+      {
+        "item": "당근",
+        "amount": "1/3개"
+      },
+      {
+        "item": "간장",
+        "amount": "2큰술"
+      },
+      {
+        "item": "올리고당",
+        "amount": "1큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1/2큰술"
+      },
+      {
+        "item": "참기름",
+        "amount": "1작은술"
+      }
+    ],
+    "steps_short": [
+      "소고기를 간장·마늘로 밑간한다",
+      "채소를 가늘게 썰어 먼저 볶는다",
+      "고기를 넣어 익히고 올리고당으로 마무리한다"
+    ],
+    "steps_full": [
+      "소고기는 2cm로 썰어 간장 1큰술과 다진 마늘로 10분 밑간한다.",
+      "표고·양파·당근은 2cm 길이로 가늘게 썬다.",
+      "팬에 기름을 두르고 양파와 당근을 2분 볶은 뒤 고기와 표고를 넣어 고기가 익을 때까지 볶는다.",
+      "간장 1큰술, 올리고당을 넣고 1분 더 볶은 뒤 참기름으로 마무리한다."
+    ],
+    "batch_group": "wonju-2025-11-24-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "버섯과 고기는 잘게 썰어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "braised-quail-eggs",
+    "name": "메추리알장조림",
+    "aliases": [],
+    "category": "단백질",
+    "difficulty": 1,
+    "active_minutes": 30,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "깐 메추리알 600g(약",
+        "amount": "50개)"
+      },
+      {
+        "item": "소고기 홍두깨살",
+        "amount": "200g(선택)"
+      },
+      {
+        "item": "간장",
+        "amount": "5큰술"
+      },
+      {
+        "item": "물",
+        "amount": "2컵"
+      },
+      {
+        "item": "올리고당",
+        "amount": "2큰술"
+      },
+      {
+        "item": "마늘",
+        "amount": "5쪽"
+      }
+    ],
+    "steps_short": [
+      "물·간장·마늘을 끓인다",
+      "메추리알(과 고기)을 넣고 중약불에서 20분 조린다",
+      "아이 몫은 반드시 반으로 자른다"
+    ],
+    "steps_full": [
+      "냄비에 물, 간장, 마늘을 넣고 끓인다. 고기를 넣는다면 덩어리째 넣어 15분 먼저 삶는다.",
+      "메추리알을 넣고 중약불에서 뚜껑을 연 채 20분 조린다.",
+      "올리고당을 넣고 5분 더 조려 윤기를 낸다.",
+      "고기는 결대로 잘게 찢는다. 아이 몫 메추리알은 반드시 반 또는 4등분으로 잘라 준다."
+    ],
+    "batch_group": "gangdong-2025-11-18-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "메추리알은 통째로 주면 목에 걸릴 수 있어요. 꼭 잘라 주세요. 장조림은 짜니 아이 몫은 국물을 덜 묻혀 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "mild-braised-chicken",
+    "name": "간장닭볶음탕",
+    "aliases": [],
+    "category": "단백질",
+    "difficulty": 2,
+    "active_minutes": 45,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "닭볶음탕용 닭 1kg(또는 닭다리살",
+        "amount": "800g)"
+      },
+      {
+        "item": "감자",
+        "amount": "3개"
+      },
+      {
+        "item": "당근",
+        "amount": "1/2개"
+      },
+      {
+        "item": "양파",
+        "amount": "1개"
+      },
+      {
+        "item": "간장",
+        "amount": "6큰술"
+      },
+      {
+        "item": "올리고당",
+        "amount": "2큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1큰술"
+      },
+      {
+        "item": "생강",
+        "amount": "약간"
+      },
+      {
+        "item": "물",
+        "amount": "3컵"
+      }
+    ],
+    "steps_short": [
+      "닭을 데쳐 헹군다",
+      "물·간장·마늘·생강에 닭을 넣고 20분 끓인다",
+      "감자·당근·양파를 넣고 15분 조린다 (고춧가루 없이)"
+    ],
+    "steps_full": [
+      "닭은 끓는 물에 3분 데쳐 헹구고 껍질과 기름을 정리한다.",
+      "냄비에 닭, 물, 간장, 다진 마늘, 생강을 넣고 중불에서 20분 끓인다.",
+      "감자·당근은 2cm, 양파는 큼직하게 썰어 넣고 15분 더 조린다.",
+      "올리고당을 넣고 국물이 자작해질 때까지 5분 더 조린다.",
+      "아이 몫은 뼈를 바르고 살을 잘게 찢어 감자와 함께 준다."
+    ],
+    "batch_group": "wonju-2025-11-12-L",
+    "mild_version": true,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "닭뼈와 잔뼈를 꼭 발라 주세요. 고춧가루 없이 간장으로만 조립니다.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "mild-andong-jjimdak",
+    "name": "안동찜닭",
+    "aliases": [],
+    "category": "단백질",
+    "difficulty": 2,
+    "active_minutes": 45,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "닭다리살",
+        "amount": "800g"
+      },
+      {
+        "item": "당면",
+        "amount": "50g"
+      },
+      {
+        "item": "감자",
+        "amount": "2개"
+      },
+      {
+        "item": "당근",
+        "amount": "1/2개"
+      },
+      {
+        "item": "양파",
+        "amount": "1개"
+      },
+      {
+        "item": "간장",
+        "amount": "7큰술"
+      },
+      {
+        "item": "흑설탕 또는 올리고당",
+        "amount": "2큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1큰술"
+      },
+      {
+        "item": "물",
+        "amount": "3컵"
+      }
+    ],
+    "steps_short": [
+      "당면을 30분 불린다",
+      "닭과 간장 양념을 20분 끓이고 감자·당근을 넣는다",
+      "당면과 양파를 넣고 5분 조린다 (건고추·청양고추 없이)"
+    ],
+    "steps_full": [
+      "당면은 찬물에 30분 불린다. 닭다리살은 한입 크기로 썬다.",
+      "냄비에 닭, 물, 간장, 설탕, 다진 마늘을 넣고 중불에서 15분 끓인다.",
+      "감자와 당근을 2cm로 썰어 넣고 10분 더 끓인다.",
+      "양파와 불린 당면을 넣고 5분 조린다. 원래 넣는 건고추·청양고추는 뺀다.",
+      "아이 몫은 당면을 2~3cm로 자르고 닭은 잘게 찢어 준다."
+    ],
+    "batch_group": "jincheon-2025-10-16-L",
+    "mild_version": true,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "맵지 않게 고추류를 빼고 만듭니다. 당면은 길면 삼키기 어려우니 짧게 잘라 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "pumpkin-chicken-galbi",
+    "name": "단호박닭갈비",
+    "aliases": [],
+    "category": "단백질",
+    "difficulty": 2,
+    "active_minutes": 30,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "닭다리살",
+        "amount": "700g"
+      },
+      {
+        "item": "단호박",
+        "amount": "1/4통(300g)"
+      },
+      {
+        "item": "양배추",
+        "amount": "1/6통"
+      },
+      {
+        "item": "양파",
+        "amount": "1/2개"
+      },
+      {
+        "item": "간장",
+        "amount": "4큰술"
+      },
+      {
+        "item": "올리고당",
+        "amount": "2큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1큰술"
+      },
+      {
+        "item": "카레가루",
+        "amount": "1작은술(선택)"
+      }
+    ],
+    "steps_short": [
+      "닭을 간장 양념에 15분 재운다",
+      "단호박을 전자레인지로 반쯤 익힌다",
+      "닭과 채소를 함께 볶아 익힌다 (고추장 없이)"
+    ],
+    "steps_full": [
+      "닭다리살은 2cm로 썰어 간장, 올리고당, 다진 마늘(카레가루)에 15분 재운다.",
+      "단호박은 껍질째 2cm로 썰어 전자레인지에 3분 돌려 반쯤 익힌다. 양배추·양파는 2cm로 썬다.",
+      "팬에 기름을 두르고 닭을 4분 볶다가 채소와 단호박을 넣어 닭이 완전히 익을 때까지 6분 더 볶는다.",
+      "아이 몫은 닭을 잘게 썰고 단호박은 껍질을 벗겨 준다."
+    ],
+    "batch_group": "wonju-2025-10-13-L",
+    "mild_version": true,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "원래 고추장 양념인 닭갈비를 간장 양념으로 바꿨습니다. 닭은 속까지 완전히 익혀 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "cheese-chicken-galbi",
+    "name": "치즈닭갈비",
+    "aliases": [],
+    "category": "단백질",
+    "difficulty": 2,
+    "active_minutes": 30,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "닭다리살",
+        "amount": "700g"
+      },
+      {
+        "item": "양배추",
+        "amount": "1/6통"
+      },
+      {
+        "item": "고구마",
+        "amount": "1개"
+      },
+      {
+        "item": "양파",
+        "amount": "1/2개"
+      },
+      {
+        "item": "간장",
+        "amount": "4큰술"
+      },
+      {
+        "item": "올리고당",
+        "amount": "2큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1큰술"
+      },
+      {
+        "item": "모차렐라 치즈",
+        "amount": "150g"
+      }
+    ],
+    "steps_short": [
+      "닭을 간장 양념에 15분 재운다",
+      "고구마·채소와 함께 볶아 익힌다",
+      "불을 끄기 전 치즈를 올려 녹인다 (고추장 없이)"
+    ],
+    "steps_full": [
+      "닭다리살은 2cm로 썰어 간장, 올리고당, 다진 마늘에 15분 재운다.",
+      "고구마는 1cm 두께로 썰어 전자레인지에 3분 익히고, 양배추·양파는 2cm로 썬다.",
+      "팬에 닭을 4분 볶다가 채소와 고구마를 넣고 닭이 완전히 익을 때까지 볶는다.",
+      "치즈를 올리고 뚜껑을 덮어 1분간 녹인다. 보관할 몫은 치즈를 올리기 전에 덜어 둔다."
+    ],
+    "batch_group": "jincheon-2025-11-10-L",
+    "mild_version": true,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "닭갈비에 흔히 넣는 떡은 목에 걸리기 쉬워 뺐습니다. 고추장 대신 간장 양념입니다.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "chicken-teriyaki",
+    "name": "닭가슴살데리야끼볶음",
+    "aliases": [],
+    "category": "단백질",
+    "difficulty": 2,
+    "active_minutes": 25,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "닭가슴살",
+        "amount": "600g"
+      },
+      {
+        "item": "양파",
+        "amount": "1/2개"
+      },
+      {
+        "item": "파프리카",
+        "amount": "1개"
+      },
+      {
+        "item": "브로콜리",
+        "amount": "1/3송이"
+      },
+      {
+        "item": "간장",
+        "amount": "3큰술"
+      },
+      {
+        "item": "올리고당",
+        "amount": "2큰술"
+      },
+      {
+        "item": "맛술",
+        "amount": "2큰술"
+      },
+      {
+        "item": "물",
+        "amount": "4큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1/2큰술"
+      }
+    ],
+    "steps_short": [
+      "닭가슴살을 작게 썰어 굽는다",
+      "채소를 넣어 볶는다",
+      "데리야끼 소스를 부어 졸인다"
+    ],
+    "steps_full": [
+      "닭가슴살은 1.5cm로 깍둑 썰고, 양파·파프리카·브로콜리도 같은 크기로 썬다.",
+      "간장, 올리고당, 맛술, 물, 다진 마늘을 섞어 소스를 만든다.",
+      "팬에 기름을 두르고 닭을 4분 굽다가 채소를 넣고 3분 볶는다.",
+      "소스를 붓고 윤기가 날 때까지 2~3분 졸인다. 닭이 속까지 익었는지 확인한다."
+    ],
+    "batch_group": "jincheon-2025-10-20-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "닭가슴살은 퍽퍽하면 삼키기 어려우니 작게 썰고 소스에 촉촉하게 졸여 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "pork-shoulder-grill",
+    "name": "돈육목살구이",
+    "aliases": [],
+    "category": "단백질",
+    "difficulty": 2,
+    "active_minutes": 20,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "돼지 목살",
+        "amount": "700g"
+      },
+      {
+        "item": "간장",
+        "amount": "2큰술"
+      },
+      {
+        "item": "배 간 것",
+        "amount": "2큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1/2큰술"
+      },
+      {
+        "item": "참기름",
+        "amount": "1작은술"
+      },
+      {
+        "item": "후추",
+        "amount": "약간(어른 몫)"
+      }
+    ],
+    "steps_short": [
+      "목살을 간장·배·마늘에 15분 재운다",
+      "팬에 앞뒤로 노릇하게 굽는다",
+      "아이 몫은 잘게 자른다"
+    ],
+    "steps_full": [
+      "목살은 1cm 두께로 준비해 간장, 배 간 것, 다진 마늘, 참기름에 15분 재운다.",
+      "달군 팬에 중불로 앞뒤 4분씩 굽고, 가위로 2cm로 잘라 속까지 익힌다.",
+      "아이 몫은 비계를 떼고 1cm로 잘게 잘라 준다.",
+      "어른 몫은 후추를 뿌린다. 남은 것은 한 끼씩 나눠 식혀서 보관한다."
+    ],
+    "batch_group": "gangdong-2025-11-07-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "돼지고기는 속까지 완전히 익혀 주세요. 질긴 비계는 떼어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "pork-bulgogi-rice-bowl",
+    "name": "돈육불고기덮밥",
+    "aliases": [],
+    "category": "일품",
+    "difficulty": 2,
+    "active_minutes": 30,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "돼지 앞다리살 불고기용",
+        "amount": "600g"
+      },
+      {
+        "item": "양파",
+        "amount": "1개"
+      },
+      {
+        "item": "당근",
+        "amount": "1/3개"
+      },
+      {
+        "item": "팽이버섯",
+        "amount": "1봉"
+      },
+      {
+        "item": "간장",
+        "amount": "4큰술"
+      },
+      {
+        "item": "올리고당",
+        "amount": "2큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1큰술"
+      },
+      {
+        "item": "감자전분 1큰술 + 물",
+        "amount": "3큰술"
+      },
+      {
+        "item": "물",
+        "amount": "1컵"
+      },
+      {
+        "item": "밥(냉동 밥)",
+        "amount": ""
+      }
+    ],
+    "steps_short": [
+      "고기를 간장 양념에 재워 볶는다",
+      "채소와 물을 넣고 끓인다",
+      "전분물로 걸쭉하게 만들어 밥에 얹는다"
+    ],
+    "steps_full": [
+      "고기는 2cm로 썰어 간장 2큰술, 다진 마늘에 10분 재운다. 양파·당근은 가늘게, 팽이는 1cm로 썬다.",
+      "팬에 고기를 볶다가 익으면 양파와 당근을 넣고 2분 더 볶는다.",
+      "물 1컵, 간장 2큰술, 올리고당, 팽이버섯을 넣고 3분 끓인다.",
+      "전분물을 조금씩 넣어 걸쭉하게 만든다. 덮밥 소스만 소분해 두었다가 밥에 얹어 먹는다."
+    ],
+    "batch_group": "wonju-2025-10-01-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "돼지고기는 속까지 완전히 익혀 주세요. 팽이버섯은 짧게 썰어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "washed-kimchi-pork-stirfry",
+    "name": "돈육김치볶음",
+    "aliases": [
+      "돼지고기김치볶음"
+    ],
+    "category": "단백질",
+    "difficulty": 2,
+    "active_minutes": 20,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "배추김치",
+        "amount": "300g"
+      },
+      {
+        "item": "돼지고기 앞다리살",
+        "amount": "400g"
+      },
+      {
+        "item": "양파",
+        "amount": "1/2개"
+      },
+      {
+        "item": "간장",
+        "amount": "1큰술"
+      },
+      {
+        "item": "올리고당",
+        "amount": "1큰술"
+      },
+      {
+        "item": "들기름",
+        "amount": "1큰술"
+      },
+      {
+        "item": "깨",
+        "amount": "약간"
+      }
+    ],
+    "steps_short": [
+      "김치를 물에 헹궈 양념을 씻고 잘게 썬다",
+      "돼지고기를 볶다가 김치·양파를 넣는다",
+      "간장·올리고당으로 맛을 내고 들기름으로 마무리한다"
+    ],
+    "steps_full": [
+      "김치는 찬물에 2~3번 헹궈 고춧가루 양념을 씻어 내고 꼭 짜서 1cm로 썬다.",
+      "돼지고기는 1.5cm로 썬다. 팬에 고기를 볶아 완전히 익힌다.",
+      "김치와 가늘게 썬 양파를 넣고 5분 볶는다.",
+      "간장과 올리고당을 넣고 2분 더 볶은 뒤 들기름과 깨로 마무리한다."
+    ],
+    "batch_group": "gangdong-2025-10-15-D",
+    "mild_version": true,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "씻은 김치로 맵지 않게 만듭니다. 그래도 매워하면 김치를 한 번 더 헹궈 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "braised-mackerel-radish",
+    "name": "고등어무조림",
+    "aliases": [],
+    "category": "단백질",
+    "difficulty": 2,
+    "active_minutes": 35,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "순살 고등어",
+        "amount": "2마리분(500g)"
+      },
+      {
+        "item": "무",
+        "amount": "400g"
+      },
+      {
+        "item": "양파",
+        "amount": "1/2개"
+      },
+      {
+        "item": "간장",
+        "amount": "4큰술"
+      },
+      {
+        "item": "올리고당",
+        "amount": "1큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1큰술"
+      },
+      {
+        "item": "생강",
+        "amount": "약간"
+      },
+      {
+        "item": "물",
+        "amount": "2컵"
+      }
+    ],
+    "steps_short": [
+      "무를 깔고 간장 양념물을 부어 10분 끓인다",
+      "고등어를 올려 15분 조린다 (고춧가루 없이)",
+      "아이 몫은 가시를 확인하며 살만 발라 준다"
+    ],
+    "steps_full": [
+      "무는 1cm 두께로 썰어 냄비 바닥에 깐다. 양파는 굵게 썬다.",
+      "물, 간장, 올리고당, 다진 마늘, 생강을 섞어 붓고 무가 반쯤 익도록 10분 끓인다.",
+      "고등어와 양파를 올리고 양념을 끼얹어 가며 중약불에서 15분 조린다.",
+      "아이 몫은 가시를 손으로 확인하며 살을 발라 무와 함께 잘게 으깨 준다."
+    ],
+    "batch_group": "gangdong-2025-10-14-D",
+    "mild_version": true,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "순살이어도 잔가시가 남아 있을 수 있어요. 꼭 손으로 확인해 주세요. 고춧가루 없이 간장 조림입니다.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "grilled-spanish-mackerel",
+    "name": "삼치구이",
+    "aliases": [],
+    "category": "단백질",
+    "difficulty": 1,
+    "active_minutes": 20,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "순살 삼치",
+        "amount": "600g"
+      },
+      {
+        "item": "밀가루",
+        "amount": "2큰술"
+      },
+      {
+        "item": "식용유",
+        "amount": "2큰술"
+      },
+      {
+        "item": "소금",
+        "amount": "약간(어른 몫)"
+      }
+    ],
+    "steps_short": [
+      "삼치 물기를 닦고 밀가루를 얇게 묻힌다",
+      "팬에 껍질 쪽부터 중불로 굽는다",
+      "가시를 확인하며 살을 발라 준다"
+    ],
+    "steps_full": [
+      "삼치는 키친타월로 물기를 닦고 밀가루를 얇게 묻힌다.",
+      "팬에 기름을 두르고 껍질 쪽부터 중불에서 5분, 뒤집어 4분 굽는다.",
+      "아이 몫은 간을 하지 않고, 어른 몫은 소금을 살짝 뿌린다.",
+      "아이 몫은 가시를 손으로 확인하며 살만 발라 준다. 구운 생선은 다시 데우면 퍽퍽해져 그날 먹는 것을 권한다."
+    ],
+    "batch_group": "jincheon-2025-10-17-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "잔가시를 꼭 확인해 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "squid-veg-stirfry",
+    "name": "오징어채소볶음",
+    "aliases": [],
+    "category": "단백질",
+    "difficulty": 2,
+    "active_minutes": 25,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "손질 오징어",
+        "amount": "2마리(500g)"
+      },
+      {
+        "item": "양배추",
+        "amount": "1/6통"
+      },
+      {
+        "item": "양파",
+        "amount": "1/2개"
+      },
+      {
+        "item": "당근",
+        "amount": "1/3개"
+      },
+      {
+        "item": "애호박",
+        "amount": "1/3개"
+      },
+      {
+        "item": "간장",
+        "amount": "3큰술"
+      },
+      {
+        "item": "올리고당",
+        "amount": "1큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1큰술"
+      },
+      {
+        "item": "참기름",
+        "amount": "1작은술"
+      }
+    ],
+    "steps_short": [
+      "오징어를 아주 잘게 썬다",
+      "채소를 먼저 볶는다",
+      "오징어와 간장 양념을 넣고 3분만 볶는다 (고추장 없이)"
+    ],
+    "steps_full": [
+      "오징어는 껍질을 벗기고 1cm 이하로 잘게 썬다(아이 몫은 더 잘게 다져도 좋다).",
+      "양배추·양파·당근·애호박은 1.5cm로 썬다.",
+      "팬에 기름을 두르고 단단한 채소부터 3분 볶는다.",
+      "오징어, 간장, 올리고당, 다진 마늘을 넣고 오징어가 하얗게 익을 때까지 3분만 볶는다(오래 볶으면 질겨진다). 참기름으로 마무리한다."
+    ],
+    "batch_group": "gangdong-2025-10-27-L",
+    "mild_version": true,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "오징어는 질겨서 목에 걸리기 쉬워요. 아주 잘게 썰어 주세요. 원래 고추장 볶음을 간장 볶음으로 바꿨습니다.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "shrimp-bokchoy-stirfry",
+    "name": "새우살청경채볶음",
+    "aliases": [],
+    "category": "단백질",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "칵테일새우",
+        "amount": "300g"
+      },
+      {
+        "item": "청경채",
+        "amount": "6포기"
+      },
+      {
+        "item": "양파",
+        "amount": "1/2개"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1/2큰술"
+      },
+      {
+        "item": "굴소스 1큰술(또는 간장",
+        "amount": "1큰술)"
+      },
+      {
+        "item": "감자전분 1작은술 + 물",
+        "amount": "2큰술"
+      }
+    ],
+    "steps_short": [
+      "새우는 잘게, 청경채는 2cm로 썬다",
+      "마늘·양파를 볶다가 새우를 익힌다",
+      "청경채와 소스를 넣고 1분 볶는다"
+    ],
+    "steps_full": [
+      "새우는 해동해 1cm로 썰고, 청경채는 2cm, 양파는 1cm로 썬다.",
+      "팬에 기름을 두르고 다진 마늘과 양파를 1분 볶는다.",
+      "새우를 넣고 완전히 익을 때까지 2분 볶는다.",
+      "청경채와 굴소스를 넣고 1분 볶은 뒤 전분물로 살짝 걸쭉하게 한다."
+    ],
+    "batch_group": "jincheon-2025-11-13-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "갑각류를 처음 먹는다면 소량부터 확인해 주세요. 새우는 완전히 익혀 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "perilla-oil-tofu",
+    "name": "들기름두부구이",
+    "aliases": [],
+    "category": "단백질",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "부침용 두부",
+        "amount": "2모(600g)"
+      },
+      {
+        "item": "들기름",
+        "amount": "2큰술"
+      },
+      {
+        "item": "소금",
+        "amount": "약간"
+      },
+      {
+        "item": "간장 1큰술 + 물",
+        "amount": "1큰술(곁들임)"
+      }
+    ],
+    "steps_short": [
+      "두부 물기를 빼고 1cm 두께로 썬다",
+      "들기름 두른 팬에 앞뒤로 노릇하게 굽는다",
+      "간장물은 어른 몫에만 곁들인다"
+    ],
+    "steps_full": [
+      "두부는 키친타월로 감싸 10분 물기를 뺀 뒤 1cm 두께로 썬다.",
+      "팬에 들기름을 두르고 중불에서 앞뒤로 3분씩 노릇하게 굽는다.",
+      "아이 몫은 그대로 한입 크기로 자르고, 어른 몫은 간장물을 곁들인다.",
+      "구운 두부는 냉장 보관하고 데울 때 팬에 살짝 데운다."
+    ],
+    "batch_group": "gangdong-2025-10-28-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "두부는 한입 크기로 잘라 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "egg-tofu-pan",
+    "name": "달걀두부구이",
+    "aliases": [],
+    "category": "단백질",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "부침용 두부",
+        "amount": "2모(600g)"
+      },
+      {
+        "item": "달걀",
+        "amount": "3개"
+      },
+      {
+        "item": "쪽파",
+        "amount": "2대(선택)"
+      },
+      {
+        "item": "소금",
+        "amount": "약간"
+      }
+    ],
+    "steps_short": [
+      "두부를 1cm 두께로 썬다",
+      "두부에 달걀물을 입힌다",
+      "팬에 앞뒤로 노릇하게 굽는다"
+    ],
+    "steps_full": [
+      "두부는 물기를 빼고 1cm 두께, 손가락 두 마디 크기로 썬다.",
+      "달걀에 다진 쪽파와 소금 한 꼬집을 넣고 푼다.",
+      "두부에 달걀물을 입혀 기름 두른 팬에서 중약불로 앞뒤 2~3분씩 굽는다.",
+      "아이 몫은 한입 크기로 잘라 준다."
+    ],
+    "batch_group": "jincheon-2025-10-13-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "달걀은 완전히 익혀 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "rolled-omelet",
+    "name": "달걀말이",
+    "aliases": [
+      "채소달걀말이"
+    ],
+    "category": "단백질",
+    "difficulty": 2,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "달걀",
+        "amount": "8개"
+      },
+      {
+        "item": "당근",
+        "amount": "1/5개"
+      },
+      {
+        "item": "양파",
+        "amount": "1/4개"
+      },
+      {
+        "item": "쪽파",
+        "amount": "2대"
+      },
+      {
+        "item": "우유",
+        "amount": "3큰술"
+      },
+      {
+        "item": "소금",
+        "amount": "2꼬집"
+      }
+    ],
+    "steps_short": [
+      "채소를 아주 잘게 다져 달걀물에 섞는다",
+      "약불에서 얇게 부어 돌돌 만다",
+      "식으면 1.5cm 두께로 썬다"
+    ],
+    "steps_full": [
+      "당근·양파·쪽파를 곱게 다져 달걀, 우유, 소금과 섞는다.",
+      "팬에 기름을 얇게 두르고 약불에서 달걀물을 1/3만 부어 반쯤 익으면 한쪽부터 돌돌 만다.",
+      "만 달걀을 한쪽으로 밀고 남은 달걀물을 두 번 나눠 부어 같은 방법으로 이어 만다.",
+      "김발이나 도마 위에서 모양을 잡아 식힌 뒤 1.5cm 두께로 썬다."
+    ],
+    "batch_group": "wonju-2025-11-18-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "달걀은 속까지 익혀 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "three-color-egg-custard",
+    "name": "삼색달걀찜",
+    "aliases": [
+      "우유달걀찜"
+    ],
+    "category": "단백질",
+    "difficulty": 1,
+    "active_minutes": 20,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "달걀",
+        "amount": "6개"
+      },
+      {
+        "item": "물 또는 우유 1과",
+        "amount": "1/2컵"
+      },
+      {
+        "item": "당근",
+        "amount": "1/5개"
+      },
+      {
+        "item": "애호박",
+        "amount": "1/5개"
+      },
+      {
+        "item": "쪽파",
+        "amount": "1대"
+      },
+      {
+        "item": "새우젓 또는 소금",
+        "amount": "약간"
+      }
+    ],
+    "steps_short": [
+      "달걀과 물(우유)을 1:1로 풀어 체에 거른다",
+      "잘게 다진 채소를 섞는다",
+      "약불에서 뚜껑을 덮고 12분 찐다"
+    ],
+    "steps_full": [
+      "달걀을 풀고 같은 양의 물(우유달걀찜이면 우유)을 섞어 체에 한 번 거른다.",
+      "당근·애호박·쪽파를 곱게 다져 넣고 소금 한 꼬집을 넣는다.",
+      "뚝배기나 내열 그릇에 붓고, 냄비에 물을 2cm 붓고 그릇을 넣어 뚜껑을 덮은 채 약불에서 12분 찐다.",
+      "가운데를 젓가락으로 찔러 맑은 물이 나오면 완성이다."
+    ],
+    "batch_group": "jincheon-2025-11-04-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "뜨거우니 충분히 식혀 주세요. 우유달걀찜은 우유를 넣어 만드는 같은 방식입니다.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "spinach-namul",
+    "name": "시금치나물",
+    "aliases": [],
+    "category": "채소",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "시금치",
+        "amount": "2단(400g)"
+      },
+      {
+        "item": "국간장",
+        "amount": "1큰술"
+      },
+      {
+        "item": "참기름",
+        "amount": "1큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1작은술"
+      },
+      {
+        "item": "깨",
+        "amount": "약간"
+      }
+    ],
+    "steps_short": [
+      "시금치를 끓는 소금물에 30초 데친다",
+      "찬물에 헹궈 꼭 짜고 2cm로 썬다",
+      "국간장·참기름·마늘로 무친다"
+    ],
+    "steps_full": [
+      "시금치는 뿌리를 다듬고 깨끗이 씻는다.",
+      "끓는 물에 소금 약간을 넣고 시금치를 30초 데쳐 찬물에 헹군다.",
+      "물기를 꼭 짜고 아이가 먹기 좋게 2cm로 썬다.",
+      "국간장 1/2큰술, 참기름, 다진 마늘, 깨로 무치고 어른 몫은 국간장을 더한다."
+    ],
+    "batch_group": "jincheon-2025-10-16-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "잎채소는 짧게 썰어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "bean-sprout-namul",
+    "name": "콩나물무침",
+    "aliases": [
+      "숙주나물"
+    ],
+    "category": "채소",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "콩나물(또는 숙주)",
+        "amount": "400g"
+      },
+      {
+        "item": "소금",
+        "amount": "1/2작은술"
+      },
+      {
+        "item": "참기름",
+        "amount": "1큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1작은술"
+      },
+      {
+        "item": "깨",
+        "amount": "약간"
+      },
+      {
+        "item": "송송 썬 쪽파",
+        "amount": "약간"
+      }
+    ],
+    "steps_short": [
+      "콩나물을 뚜껑 덮고 5분 삶는다(숙주는 1분)",
+      "건져 식히고 2~3cm로 자른다",
+      "소금·참기름·마늘로 무친다 (고춧가루 없이)"
+    ],
+    "steps_full": [
+      "냄비에 콩나물과 물 1컵, 소금 한 꼬집을 넣고 뚜껑을 덮어 5분 익힌다. 숙주는 끓는 물에 1분만 데친다.",
+      "체에 건져 넓게 펼쳐 식힌다.",
+      "아이가 먹기 좋게 2~3cm로 자른다.",
+      "소금, 참기름, 다진 마늘, 깨, 쪽파로 무친다. 고춧가루는 넣지 않는다(어른 몫에만 따로)."
+    ],
+    "batch_group": "jincheon-2025-10-10-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "콩나물·숙주는 길면 목에 걸리기 쉬워 짧게 잘라 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "carrot-sprout-salad",
+    "name": "당근숙주무침",
+    "aliases": [],
+    "category": "채소",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "숙주",
+        "amount": "300g"
+      },
+      {
+        "item": "당근",
+        "amount": "1/2개"
+      },
+      {
+        "item": "소금",
+        "amount": "1/2작은술"
+      },
+      {
+        "item": "참기름",
+        "amount": "1큰술"
+      },
+      {
+        "item": "깨",
+        "amount": "약간"
+      }
+    ],
+    "steps_short": [
+      "당근은 가늘게 채 썰어 숙주와 함께 1분 데친다",
+      "식혀서 2~3cm로 자른다",
+      "소금·참기름으로 무친다"
+    ],
+    "steps_full": [
+      "당근은 3cm 길이로 가늘게 채 썬다.",
+      "끓는 물에 당근을 30초 먼저 넣고, 숙주를 넣어 1분 더 데친다.",
+      "건져서 식히고 물기를 뺀 뒤 2~3cm로 자른다.",
+      "소금, 참기름, 깨로 무친다."
+    ],
+    "batch_group": "jincheon-2025-10-17-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "숙주는 짧게 잘라 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "zucchini-namul",
+    "name": "애호박나물",
+    "aliases": [],
+    "category": "채소",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "애호박",
+        "amount": "2개"
+      },
+      {
+        "item": "양파",
+        "amount": "1/4개"
+      },
+      {
+        "item": "새우젓 1작은술(또는 소금",
+        "amount": "약간)"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1작은술"
+      },
+      {
+        "item": "들기름",
+        "amount": "1큰술"
+      },
+      {
+        "item": "깨",
+        "amount": "약간"
+      }
+    ],
+    "steps_short": [
+      "애호박을 반달 모양으로 얇게 썬다",
+      "들기름에 양파와 볶는다",
+      "새우젓으로 약하게 간한다"
+    ],
+    "steps_full": [
+      "애호박은 반으로 갈라 0.5cm 두께 반달 모양으로 썰고, 양파는 가늘게 썬다.",
+      "팬에 들기름을 두르고 애호박, 양파, 다진 마늘을 볶는다.",
+      "애호박이 투명해지면 새우젓을 다져 넣고 1분 더 볶는다.",
+      "깨를 뿌린다. 아이 몫은 반달을 한 번 더 잘라 준다."
+    ],
+    "batch_group": "jincheon-2025-11-04-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "새우젓은 짜니 아주 조금만 넣어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "eggplant-namul",
+    "name": "가지나물",
+    "aliases": [],
+    "category": "채소",
+    "difficulty": 1,
+    "active_minutes": 15,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "가지",
+        "amount": "3개"
+      },
+      {
+        "item": "국간장",
+        "amount": "1큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1작은술"
+      },
+      {
+        "item": "참기름",
+        "amount": "1큰술"
+      },
+      {
+        "item": "다진 쪽파",
+        "amount": "약간"
+      },
+      {
+        "item": "깨",
+        "amount": "약간"
+      }
+    ],
+    "steps_short": [
+      "가지를 길게 갈라 5분 찐다(전자레인지 4분도 가능)",
+      "식혀서 잘게 찢는다",
+      "국간장·마늘·참기름으로 무친다"
+    ],
+    "steps_full": [
+      "가지는 길이로 4등분해 김이 오른 찜기에 5분 찐다(전자레인지라면 랩을 씌워 4분).",
+      "한 김 식혀 손으로 가늘게 찢고 2cm로 자른다.",
+      "물기를 살짝 짜고 국간장, 다진 마늘, 참기름, 쪽파, 깨로 무친다.",
+      "어른 몫은 국간장을 더한다."
+    ],
+    "batch_group": "jincheon-2025-10-13-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "가지 껍질이 질기면 벗겨 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "perilla-leaf-namul",
+    "name": "깻잎나물",
+    "aliases": [],
+    "category": "채소",
+    "difficulty": 1,
+    "active_minutes": 20,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "깻잎",
+        "amount": "60장"
+      },
+      {
+        "item": "양파",
+        "amount": "1/4개"
+      },
+      {
+        "item": "국간장",
+        "amount": "1큰술"
+      },
+      {
+        "item": "들기름",
+        "amount": "1큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1작은술"
+      },
+      {
+        "item": "들깨가루",
+        "amount": "1큰술"
+      },
+      {
+        "item": "물",
+        "amount": "3큰술"
+      }
+    ],
+    "steps_short": [
+      "깻잎을 1분 데쳐 물기를 짠다",
+      "1cm로 썬다",
+      "들기름에 볶다가 물·들깨가루로 부드럽게 익힌다"
+    ],
+    "steps_full": [
+      "깻잎은 끓는 물에 1분 데쳐 찬물에 헹구고 물기를 짠다.",
+      "깻잎은 1cm 폭으로 썰고, 양파는 가늘게 썬다.",
+      "팬에 들기름을 두르고 양파와 다진 마늘을 볶다가 깻잎을 넣는다.",
+      "국간장과 물을 넣고 뚜껑을 덮어 3분 익힌 뒤 들깨가루를 뿌린다."
+    ],
+    "batch_group": "wonju-2025-10-01-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "깻잎은 질겨서 꼭 잘게 썰어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "radish-namul",
+    "name": "무나물",
+    "aliases": [],
+    "category": "채소",
+    "difficulty": 1,
+    "active_minutes": 20,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "무",
+        "amount": "500g"
+      },
+      {
+        "item": "들기름",
+        "amount": "1큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1작은술"
+      },
+      {
+        "item": "소금",
+        "amount": "1/2작은술"
+      },
+      {
+        "item": "물",
+        "amount": "1/2컵"
+      },
+      {
+        "item": "깨",
+        "amount": "약간"
+      }
+    ],
+    "steps_short": [
+      "무를 가늘게 채 썬다",
+      "들기름에 볶다가 물을 붓고 뚜껑을 덮는다",
+      "무가 부드러워질 때까지 10분 익힌다"
+    ],
+    "steps_full": [
+      "무는 3cm 길이로 가늘게 채 썬다.",
+      "팬에 들기름을 두르고 무와 다진 마늘을 2분 볶는다.",
+      "물을 붓고 뚜껑을 덮어 약불에서 10분 익힌다.",
+      "무가 투명하고 부드러워지면 소금으로 약하게 간하고 깨를 뿌린다."
+    ],
+    "batch_group": "jincheon-2025-11-13-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "무는 충분히 익혀 부드럽게 해 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "seaweed-stem-stirfry",
+    "name": "미역줄기무침",
+    "aliases": [],
+    "category": "채소",
+    "difficulty": 1,
+    "active_minutes": 20,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "염장 미역줄기",
+        "amount": "300g"
+      },
+      {
+        "item": "양파",
+        "amount": "1/4개"
+      },
+      {
+        "item": "당근",
+        "amount": "1/5개"
+      },
+      {
+        "item": "들기름",
+        "amount": "1큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1작은술"
+      },
+      {
+        "item": "깨",
+        "amount": "약간"
+      }
+    ],
+    "steps_short": [
+      "미역줄기를 물에 30분 담가 짠기를 뺀다",
+      "1~2cm로 잘게 썬다",
+      "들기름에 채소와 함께 볶는다 (고춧가루 없이)"
+    ],
+    "steps_full": [
+      "미역줄기는 물에 2~3번 헹군 뒤 30분 담가 짠기를 뺀다.",
+      "끓는 물에 10초 데쳐 찬물에 헹구고, 1~2cm로 잘게 썬다.",
+      "양파·당근은 가늘게 썬다. 팬에 들기름을 두르고 모두 넣어 3분 볶는다.",
+      "다진 마늘과 깨를 넣는다. 짠기가 남아 있으니 따로 간하지 않는다."
+    ],
+    "batch_group": "gangdong-2025-10-14-D",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "미역줄기는 질기고 미끄러워 목에 걸리기 쉬워요. 아주 잘게 썰어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "broccoli-blanched",
+    "name": "브로콜리숙회",
+    "aliases": [],
+    "category": "채소",
+    "difficulty": 1,
+    "active_minutes": 10,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "브로콜리",
+        "amount": "2송이"
+      },
+      {
+        "item": "소금",
+        "amount": "약간"
+      },
+      {
+        "item": "초간장 또는 참깨드레싱(어른 몫)",
+        "amount": ""
+      }
+    ],
+    "steps_short": [
+      "브로콜리를 한입 크기로 썬다",
+      "끓는 소금물에 1분 30초 데친다",
+      "찬물에 헹궈 물기를 뺀다"
+    ],
+    "steps_full": [
+      "브로콜리는 작은 송이로 나누고 줄기는 껍질을 벗겨 얇게 썬다.",
+      "끓는 물에 소금을 약간 넣고 1분 30초 데친다(아이 몫은 30초 더 데쳐 부드럽게).",
+      "찬물에 헹궈 물기를 뺀다.",
+      "아이 몫은 그대로 또는 참기름 한 방울, 어른 몫은 초간장을 곁들인다."
+    ],
+    "batch_group": "jincheon-2025-10-20-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "송이는 아이 한입 크기로 작게 잘라 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "lettuce-salad",
+    "name": "상추무침",
+    "aliases": [],
+    "category": "채소",
+    "difficulty": 1,
+    "active_minutes": 10,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "상추",
+        "amount": "200g"
+      },
+      {
+        "item": "양파",
+        "amount": "1/4개"
+      },
+      {
+        "item": "간장",
+        "amount": "1큰술"
+      },
+      {
+        "item": "식초",
+        "amount": "1큰술"
+      },
+      {
+        "item": "올리고당",
+        "amount": "1/2큰술"
+      },
+      {
+        "item": "참기름",
+        "amount": "1큰술"
+      },
+      {
+        "item": "깨",
+        "amount": "약간"
+      }
+    ],
+    "steps_short": [
+      "상추를 씻어 2cm로 썬다",
+      "간장·식초·올리고당·참기름 소스를 만든다",
+      "먹기 직전에 버무린다 (고춧가루 없이)"
+    ],
+    "steps_full": [
+      "상추는 깨끗이 씻어 물기를 털고 2cm로 썬다. 양파는 아주 가늘게 썰어 찬물에 담가 매운맛을 뺀다.",
+      "간장, 식초, 올리고당, 참기름, 깨를 섞는다.",
+      "먹기 직전에 상추와 양파를 소스에 살살 버무린다. 고춧가루는 어른 몫에만 따로.",
+      "숨이 죽으면 맛이 떨어지니 그때그때 무친다."
+    ],
+    "batch_group": "gangdong-2025-11-07-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "생채소는 잘 씻어 주세요. 무침은 바로 먹는 것을 권합니다.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "bacon-veg-fried-rice",
+    "name": "베이컨채소볶음밥",
+    "aliases": [],
+    "category": "일품",
+    "difficulty": 1,
+    "active_minutes": 20,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "밥",
+        "amount": "5공기"
+      },
+      {
+        "item": "베이컨",
+        "amount": "6줄"
+      },
+      {
+        "item": "양파",
+        "amount": "1/2개"
+      },
+      {
+        "item": "당근",
+        "amount": "1/3개"
+      },
+      {
+        "item": "애호박",
+        "amount": "1/3개"
+      },
+      {
+        "item": "달걀",
+        "amount": "3개"
+      },
+      {
+        "item": "간장",
+        "amount": "1큰술"
+      },
+      {
+        "item": "버터",
+        "amount": "1큰술"
+      }
+    ],
+    "steps_short": [
+      "베이컨과 채소를 아주 잘게 다진다",
+      "버터에 베이컨·채소를 볶는다",
+      "밥과 스크램블한 달걀을 넣어 볶고 간장으로 맛을 낸다"
+    ],
+    "steps_full": [
+      "베이컨은 끓는 물에 살짝 데쳐 짠기와 기름을 뺀 뒤 잘게 썬다. 채소는 0.5cm로 다진다.",
+      "팬에 달걀을 스크램블해 덜어 둔다.",
+      "버터를 녹여 베이컨과 단단한 채소부터 볶다가 애호박을 넣는다.",
+      "밥을 넣어 고루 볶고 달걀과 간장을 넣어 섞는다. 남은 것은 한 끼씩 소분해 둔다."
+    ],
+    "batch_group": "gangdong-2025-10-25-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "베이컨은 짜고 가공육이라 데쳐서 적게 써 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "tuna-mayo-rice-ball",
+    "name": "참치마요주먹밥",
+    "aliases": [],
+    "category": "일품",
+    "difficulty": 1,
+    "active_minutes": 20,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "밥",
+        "amount": "5공기"
+      },
+      {
+        "item": "참치캔",
+        "amount": "2개(300g)"
+      },
+      {
+        "item": "마요네즈",
+        "amount": "3큰술"
+      },
+      {
+        "item": "김자반",
+        "amount": "1컵"
+      },
+      {
+        "item": "참기름",
+        "amount": "1큰술"
+      },
+      {
+        "item": "소금",
+        "amount": "약간"
+      }
+    ],
+    "steps_short": [
+      "참치 기름을 빼고 마요네즈와 섞는다",
+      "밥에 참기름·김자반을 섞는다",
+      "참치마요를 넣고 아이 한입 크기로 뭉친다"
+    ],
+    "steps_full": [
+      "참치는 기름을 꼭 짜고 마요네즈와 섞는다.",
+      "따뜻한 밥에 참기름, 소금 한 꼬집, 김자반을 섞는다.",
+      "밥을 조금 떼어 참치마요를 넣고 아이 한입 크기로 동그랗게 뭉친다.",
+      "남는 것은 랩으로 하나씩 싸서 보관한다."
+    ],
+    "batch_group": "gangdong-2025-11-01-L",
+    "mild_version": false,
+    "freezable": true,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "참치에 섞인 뼈 조각이 없는지 확인해 주세요. 마요네즈를 넣은 주먹밥은 실온에 오래 두지 마세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "inari-rice",
+    "name": "유부초밥",
+    "aliases": [],
+    "category": "일품",
+    "difficulty": 1,
+    "active_minutes": 20,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "조미 유부초밥 키트 2봉(약",
+        "amount": "28개)"
+      },
+      {
+        "item": "밥",
+        "amount": "5공기"
+      },
+      {
+        "item": "당근",
+        "amount": "1/4개"
+      },
+      {
+        "item": "애호박",
+        "amount": "1/4개"
+      }
+    ],
+    "steps_short": [
+      "당근·애호박을 잘게 다져 볶는다",
+      "밥에 키트 소스와 볶은 채소를 섞는다",
+      "유부에 밥을 채운다"
+    ],
+    "steps_full": [
+      "당근과 애호박은 0.5cm로 다져 기름 두른 팬에 2분 볶는다.",
+      "따뜻한 밥에 키트의 초밥 소스(아이용은 절반만)와 볶은 채소를 섞는다.",
+      "유부의 물기를 살짝 짜고 밥을 채운다.",
+      "아이 몫은 반으로 잘라 준다."
+    ],
+    "batch_group": "gangdong-2025-10-11-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "시판 유부와 소스는 달고 짠 편이라 소스를 적게 넣어 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "soy-bibim-noodles",
+    "name": "간장비빔국수",
+    "aliases": [],
+    "category": "일품",
+    "difficulty": 1,
+    "active_minutes": 20,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "소면",
+        "amount": "400g"
+      },
+      {
+        "item": "오이",
+        "amount": "1개"
+      },
+      {
+        "item": "당근",
+        "amount": "1/3개"
+      },
+      {
+        "item": "달걀",
+        "amount": "3개"
+      },
+      {
+        "item": "간장",
+        "amount": "4큰술"
+      },
+      {
+        "item": "올리고당",
+        "amount": "2큰술"
+      },
+      {
+        "item": "참기름",
+        "amount": "2큰술"
+      },
+      {
+        "item": "깨",
+        "amount": "1큰술"
+      }
+    ],
+    "steps_short": [
+      "소면을 삶아 찬물에 헹군다",
+      "오이·당근은 가늘게 채 썰고 달걀은 지단으로 부친다",
+      "간장 양념에 비빈다 (고추장 없이)"
+    ],
+    "steps_full": [
+      "끓는 물에 소면을 넣고 3분 삶아 찬물에 비벼 헹군다.",
+      "오이·당근은 3cm로 가늘게 채 썰고, 달걀은 얇게 부쳐 채 썬다.",
+      "간장, 올리고당, 참기름, 깨를 섞어 양념장을 만든다.",
+      "면과 채소를 양념장에 비빈다. 아이 몫은 면을 가위로 짧게 자른다."
+    ],
+    "batch_group": "gangdong-2025-10-18-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "면은 짧게 잘라 주세요. 국수는 불어서 보관하기 어려워 그날 먹는 것을 권합니다.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "sujebi",
+    "name": "수제비",
+    "aliases": [],
+    "category": "일품",
+    "difficulty": 2,
+    "active_minutes": 40,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "밀가루 4컵(또는 시판 수제비 반죽",
+        "amount": "800g)"
+      },
+      {
+        "item": "물",
+        "amount": "1컵(반죽용)"
+      },
+      {
+        "item": "감자",
+        "amount": "2개"
+      },
+      {
+        "item": "애호박",
+        "amount": "1/2개"
+      },
+      {
+        "item": "양파",
+        "amount": "1/2개"
+      },
+      {
+        "item": "국간장",
+        "amount": "2큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1/2큰술"
+      },
+      {
+        "item": "멸치다시마 육수",
+        "amount": "2.5L"
+      }
+    ],
+    "steps_short": [
+      "반죽해 30분 휴지한다(시판 반죽은 생략)",
+      "육수에 감자·양파를 넣고 끓인다",
+      "반죽을 얇게 떼어 넣고 애호박과 5분 끓인다"
+    ],
+    "steps_full": [
+      "밀가루에 물과 소금 한 꼬집을 넣고 치대어 비닐에 싸서 30분 휴지한다.",
+      "육수에 1cm로 썬 감자와 양파, 다진 마늘을 넣고 7분 끓인다.",
+      "반죽을 손에 물을 묻혀 아주 얇게, 아이 몫은 작게 떼어 넣는다.",
+      "애호박을 넣고 수제비가 떠오른 뒤 3분 더 끓인다. 국간장으로 약하게 간한다."
+    ],
+    "batch_group": "gangdong-2025-10-04-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "반죽이 두꺼우면 덜 익고 삼키기 어려워요. 얇고 작게 떼어 주세요. 불어서 보관이 어려워 그날 먹는 것을 권합니다.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "kalguksu",
+    "name": "칼국수",
+    "aliases": [],
+    "category": "일품",
+    "difficulty": 1,
+    "active_minutes": 30,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "칼국수 생면",
+        "amount": "800g"
+      },
+      {
+        "item": "애호박",
+        "amount": "1/2개"
+      },
+      {
+        "item": "감자",
+        "amount": "1개"
+      },
+      {
+        "item": "당근",
+        "amount": "1/4개"
+      },
+      {
+        "item": "닭가슴살 또는 바지락(선택)",
+        "amount": "200g"
+      },
+      {
+        "item": "국간장",
+        "amount": "2큰술"
+      },
+      {
+        "item": "다진 마늘",
+        "amount": "1/2큰술"
+      },
+      {
+        "item": "멸치다시마 육수",
+        "amount": "2.5L"
+      }
+    ],
+    "steps_short": [
+      "육수에 감자·당근을 넣고 끓인다",
+      "면의 밀가루를 털어 넣고 6분 끓인다",
+      "애호박을 넣고 약하게 간한다"
+    ],
+    "steps_full": [
+      "감자·당근·애호박은 가늘게 채 썬다. 닭가슴살을 넣는다면 육수에 10분 삶아 잘게 찢는다.",
+      "육수에 감자, 당근, 다진 마늘을 넣고 5분 끓인다.",
+      "칼국수면의 밀가루를 털어 넣고 저어 가며 6분 끓인다.",
+      "애호박을 넣고 2분 더 끓인 뒤 국간장으로 약하게 간한다. 아이 몫은 면을 짧게 자른다."
+    ],
+    "batch_group": "gangdong-2025-11-22-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "면은 짧게 잘라 주세요. 그날 먹는 것을 권합니다.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "seasoned-laver-flakes",
+    "name": "김자반",
+    "aliases": [
+      "김구이"
+    ],
+    "category": "채소",
+    "difficulty": 1,
+    "active_minutes": 2,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "시판 김자반 또는 저염 조미김",
+        "amount": "적당량"
+      }
+    ],
+    "steps_short": [
+      "시판 제품을 쓴다",
+      "아이 몫은 잘게 부숴 밥에 올린다"
+    ],
+    "steps_full": [
+      "시판 김자반이나 저염 조미김을 준비한다.",
+      "아이 몫은 잘게 부숴 밥에 섞거나 올려 준다."
+    ],
+    "batch_group": "gangdong-2025-10-15-D",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "조미김은 짤 수 있어 저염 제품을 권합니다. 큰 조각은 입천장에 붙을 수 있어 잘게 부숴 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  },
+  {
+    "id": "washed-kimchi",
+    "name": "배추김치",
+    "aliases": [
+      "깍두기"
+    ],
+    "category": "채소",
+    "difficulty": 1,
+    "active_minutes": 5,
+    "servings": 5,
+    "ingredients": [
+      {
+        "item": "시판 배추김치 또는 깍두기 한 끼 분량",
+        "amount": ""
+      }
+    ],
+    "steps_short": [
+      "물에 2~3번 헹궈 양념을 씻어 낸다",
+      "물기를 짜고 아이 몫은 잘게 썬다"
+    ],
+    "steps_full": [
+      "먹을 만큼 덜어 찬물에 2~3번 헹궈 고춧가루 양념을 씻어 낸다.",
+      "물기를 꼭 짜고 아이 몫은 0.5~1cm로 잘게 썬다.",
+      "어른 몫은 그대로 먹는다."
+    ],
+    "batch_group": "gangdong-2025-10-11-L",
+    "mild_version": false,
+    "freezable": false,
+    "portion_count": 5,
+    "fridge_days": null,
+    "freezer_days": null,
+    "min_age_months": null,
+    "safety_note": "씻어도 매워하면 더 헹구거나 이번 끼니는 빼 주세요. 김치는 짠 편이라 조금만 주세요.",
+    "source": "어린이급식관리지원센터 표준식단의 요리명 참고 (조리법은 새로 작성)",
+    "source_url": "https://dietary4u.mfds.go.kr/",
+    "verified": false
+  }
+]

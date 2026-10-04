@@ -1,0 +1,61 @@
+{
+  "name": "agi-mamma",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "set-password": "node scripts/set-password.mjs",
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{js,jsx}\"",
+    "prettier": "prettier --write \"src/**/*.{js,jsx}\"",
+    "check-secrets": "node scripts/check-secrets.mjs --all",
+    "prepare": "node scripts/install-hooks.mjs",
+    "month-pack": "node scripts/make-month-pack.mjs",
+    "curate": "node scripts/curate.mjs"
+  },
+  "dependencies": {
+    "@tanem/react-nprogress": "^5.0.51",
+    "bootstrap": "^5.3.3",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "18.2.0",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-router-dom": "^6.23.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/eslint-parser": "^7.23.10",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "exceljs": "^4.4.0",
+    "prettier": "3.2.5",
+    "sass": "^1.75.0",
+    "vite": "^5.2.11",
+    "vite-jsconfig-paths": "^2.0.1",
+    "vitest": "^3.2.7"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

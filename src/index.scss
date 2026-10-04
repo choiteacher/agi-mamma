@@ -1,0 +1,403 @@
+// eslint-disable-next-line
+@import 'assets/scss/style.scss';
+@import 'assets/scss/settings/custom-variables';
+
+.pcoded-navbar {
+  &.mob-open ~ .pcoded-header:before,
+  &.navbar-collapsed:hover ~ .pcoded-header:before {
+    display: none;
+  }
+}
+
+.nav-outside.mob-backdrop ~ .pcoded-main-container:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.pcoded-header .dropdown .notification .noti-body li {
+  width: 100%;
+}
+
+.header-chat .h-list-footer .input-group {
+  .btn-attach {
+    padding: 0;
+    width: 35px;
+    height: 35px;
+  }
+
+  .btn-send {
+    top: 7px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .nav-outside {
+    ~ {
+      .pcoded-header,
+      .pcoded-main-container {
+        margin-left: 0;
+      }
+    }
+
+    &.mob-fixed ~ .pcoded-main-container {
+      padding-top: 56px;
+    }
+
+    .pcoded-header {
+      .container > .collapse:not(.show) .mr-auto,
+      > .collapse:not(.show) .mr-auto {
+        display: inline-flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.box {
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.img-preview {
+  overflow: hidden;
+}
+
+.zoom-container {
+  position: relative;
+  display: flex;
+}
+
+.img-preview-section-container {
+  display: none;
+}
+.zoom-container:hover .img-preview-section-container {
+  display: block;
+  position: relative;
+  left: 50px;
+}
+.zoom-container:hover .img-preview-section-container {
+  left: 100%;
+  position: absolute;
+  background: #fff;
+  border: 1px solid $border-color;
+}
+.carousel-inner {
+  overflow: visible;
+  z-index: 1000;
+}
+.form-control[type='file'] {
+  height: auto;
+  padding-left: 0.45rem;
+}
+.table {
+  .badge {
+    margin-right: 0.25rem;
+  }
+}
+.mb-3.row {
+  > .col,
+  .col.d-flex {
+    @media (max-width: 791px) {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      &:nth-child(2) {
+        flex-direction: column;
+        text-align: left;
+        > span {
+          justify-content: flex-start !important;
+          .form-control {
+            max-width: 150px;
+          }
+        }
+        .btn {
+          margin-top: 8px;
+          max-width: fit-content;
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.row.justify-content-between > .col > .d-flex.align-items-center strong {
+  margin: 0 5px;
+}
+
+@media (max-width: 575px) {
+  .row.justify-content-between > *[class*='col-'],
+  .row.justify-content-between > .col {
+    flex: 100%;
+    .pagination {
+      justify-content: flex-start !important;
+    }
+    &:first-child {
+      margin-bottom: 8px;
+    }
+    > .d-flex.align-items-center {
+      input {
+        width: 40px !important;
+      }
+    }
+  }
+  .photoshop-picker-sm {
+    display: none !important;
+  }
+}
+td {
+  img.wid-40 {
+    max-width: 40px;
+  }
+}
+.new-cust-card {
+  @media (max-width: 1024px) {
+    .d-inline-block {
+      width: calc(100% - 55px);
+    }
+    .align-middle .status {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+.table th,
+.table td {
+  vertical-align: middle;
+}
+@media only screen and (max-width: 1200px) {
+  .user-card .user-about-block {
+    margin-top: -10px;
+  }
+}
+
+.alert {
+  .float-end {
+    margin-left: 8px;
+    float: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .modal-open .modal {
+    padding-left: 0 !important;
+  }
+}
+.filter-bar .navbar {
+  @media (max-width: 690px) {
+    padding: 0.5rem 1rem 1rem;
+    #dropdown-basic {
+      padding-left: 10px;
+    }
+    .f-view {
+      padding-left: 15px;
+      margin-top: 8px;
+    }
+  }
+}
+
+// ==============================|| 아기돼지 삼형제 ||============================== //
+
+// 로고 이미지 대신 서비스명을 글자로 표시
+.pcoded-header .b-brand .b-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.app-footer {
+  padding: 16px 0 8px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+// 한글 단어가 줄 끝에서 중간에 끊기지 않게 한다.
+body {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+// 헤더의 "잠그기" 버튼 (데스크톱: 오른쪽 메뉴, 모바일: 상단 바 오른쪽)
+.gate-lock-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  background: transparent;
+  color: #fff;
+  font-size: 0.85rem;
+  line-height: 1;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
+
+.pcoded-header .m-header .gate-lock-mobile {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// ==============================|| 요리 일정 화면 ||============================== //
+
+.set-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+
+.set-dishes .form-check-input {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.session-card .card-header {
+  padding: 10px 16px;
+}
+
+.session-card .card-body {
+  padding: 12px 16px;
+}
+
+.meal-row {
+  padding: 2px 0;
+}
+
+.meal-slot {
+  display: inline-block;
+  min-width: 2.6em;
+  color: #888;
+  font-size: 0.85em;
+}
+
+// 월간 캘린더: 7칸 격자, 휴대폰에서도 가로 넘침 없이
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 2px;
+}
+
+.cal-head {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+  padding: 2px 0;
+}
+
+.cal-cell {
+  min-height: 64px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 2px;
+  overflow: hidden;
+}
+
+.cal-out {
+  background: #fafafa;
+  color: #ccc;
+}
+
+.cal-today {
+  border-color: #4099ff;
+  box-shadow: inset 0 0 0 1px #4099ff;
+}
+
+.cal-day {
+  font-size: 0.75rem;
+}
+
+.cal-session {
+  font-size: 0.7rem;
+  line-height: 1.2;
+  border-radius: 3px;
+  padding: 1px 2px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.cal-planned {
+  background: #e7f1ff;
+}
+.cal-cooking {
+  background: #fff4d6;
+}
+.cal-done {
+  background: #ddf5e3;
+}
+.cal-rest,
+.cal-skipped {
+  background: #f1f1f1;
+  color: #888;
+}
+
+@media (max-width: 575px) {
+  .cal-cell {
+    min-height: 56px;
+  }
+  .cal-session {
+    font-size: 0.62rem;
+  }
+}
+
+// ==============================|| 레시피 이름 / 말풍선 / 팝업 ||============================== //
+
+.recipe-name {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    color: #4099ff;
+  }
+}
+
+.recipe-info {
+  margin-left: 4px;
+  padding: 0 6px;
+  border: 0;
+  border-radius: 10px;
+  background: #eef4ff;
+  color: #4099ff;
+  font-size: 0.85em;
+  line-height: 1.6;
+}
+
+.recipe-popover {
+  max-width: 300px;
+}
+
+.recipe-short li {
+  margin-bottom: 2px;
+}
+
+.video-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  background: #f1f3f6;
+  color: #666;
+  text-align: center;
+  padding: 12px;
+}

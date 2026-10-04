@@ -1,0 +1,1260 @@
+{
+  "note": "어린이급식관리지원센터 월간 표준식단(작년 같은 달)의 하루 끼니 구성을 요리 이름만 옮긴 것. 세트 단위로만 사용한다.",
+  "servings": 5,
+  "sets": [
+    {
+      "id": "gangdong-2025-10-11-L",
+      "ref_month": "2025-10",
+      "month": 10,
+      "slot": "점심",
+      "source": "서울 강동구 어린이급식관리지원센터",
+      "protein": "두부·달걀",
+      "dishes": [
+        {
+          "name": "유부초밥",
+          "role": "dish",
+          "recipe_id": "inari-rice",
+          "note": null
+        },
+        {
+          "name": "팽이장국",
+          "role": "dish",
+          "recipe_id": "enoki-clear-soup",
+          "note": null
+        },
+        {
+          "name": "깍두기",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 1,
+      "hard_count": 0,
+      "active_minutes": 35,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "gangdong-2025-10-15-D",
+      "ref_month": "2025-10",
+      "month": 10,
+      "slot": "저녁",
+      "source": "서울 강동구 어린이급식관리지원센터",
+      "protein": "돼지고기",
+      "dishes": [
+        {
+          "name": "수수밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "맑은청경채국",
+          "role": "dish",
+          "recipe_id": "clear-bokchoy-soup",
+          "note": null
+        },
+        {
+          "name": "돈육김치볶음",
+          "role": "dish",
+          "recipe_id": "washed-kimchi-pork-stirfry",
+          "note": "안 매운 버전"
+        },
+        {
+          "name": "김자반",
+          "role": "dish",
+          "recipe_id": "seasoned-laver-flakes",
+          "note": null
+        },
+        {
+          "name": "깍두기",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 37,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "wonju-2025-10-13-L",
+      "ref_month": "2025-10",
+      "month": 10,
+      "slot": "점심",
+      "source": "강원 원주시 어린이급식관리지원센터",
+      "protein": "닭고기",
+      "dishes": [
+        {
+          "name": "백미밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "콩나물국",
+          "role": "dish",
+          "recipe_id": "bean-sprout-soup",
+          "note": null
+        },
+        {
+          "name": "단호박닭갈비",
+          "role": "dish",
+          "recipe_id": "pumpkin-chicken-galbi",
+          "note": "안 매운 버전"
+        },
+        {
+          "name": "김구이",
+          "role": "dish",
+          "recipe_id": "seasoned-laver-flakes",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 47,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "gangdong-2025-10-28-L",
+      "ref_month": "2025-10",
+      "month": 10,
+      "slot": "점심",
+      "source": "서울 강동구 어린이급식관리지원센터",
+      "protein": "소고기",
+      "dishes": [
+        {
+          "name": "차조밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "쇠고기얼갈이탕",
+          "role": "dish",
+          "recipe_id": "beef-cabbage-soup",
+          "note": null
+        },
+        {
+          "name": "들기름두부구이",
+          "role": "dish",
+          "recipe_id": "perilla-oil-tofu",
+          "note": null
+        },
+        {
+          "name": "김자반",
+          "role": "dish",
+          "recipe_id": "seasoned-laver-flakes",
+          "note": null
+        },
+        {
+          "name": "깍두기",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 1,
+      "hard_count": 0,
+      "active_minutes": 47,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "gangdong-2025-10-04-L",
+      "ref_month": "2025-10",
+      "month": 10,
+      "slot": "점심",
+      "source": "서울 강동구 어린이급식관리지원센터",
+      "protein": "채소",
+      "dishes": [
+        {
+          "name": "수제비",
+          "role": "dish",
+          "recipe_id": "sujebi",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        },
+        {
+          "name": "단감",
+          "role": "base",
+          "recipe_id": null,
+          "note": "아이 한입 크기로 잘라 주세요."
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 40,
+      "freezable": false,
+      "all_freezable": false
+    },
+    {
+      "id": "gangdong-2025-10-25-L",
+      "ref_month": "2025-10",
+      "month": 10,
+      "slot": "점심",
+      "source": "서울 강동구 어린이급식관리지원센터",
+      "protein": "돼지고기",
+      "dishes": [
+        {
+          "name": "베이컨채소볶음밥",
+          "role": "dish",
+          "recipe_id": "bacon-veg-fried-rice",
+          "note": null
+        },
+        {
+          "name": "미역국",
+          "role": "dish",
+          "recipe_id": "seaweed-soup",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 1,
+      "hard_count": 0,
+      "active_minutes": 45,
+      "freezable": true,
+      "all_freezable": true
+    },
+    {
+      "id": "jincheon-2025-10-10-L",
+      "ref_month": "2025-10",
+      "month": 10,
+      "slot": "점심",
+      "source": "충북 진천군 어린이급식관리지원센터",
+      "protein": "소고기",
+      "dishes": [
+        {
+          "name": "차조밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "팽이두부된장국",
+          "role": "dish",
+          "recipe_id": "enoki-tofu-doenjang-soup",
+          "note": null
+        },
+        {
+          "name": "언양식쇠불고기",
+          "role": "dish",
+          "recipe_id": "unyang-bulgogi",
+          "note": null
+        },
+        {
+          "name": "콩나물무침",
+          "role": "dish",
+          "recipe_id": "bean-sprout-namul",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 60,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "gangdong-2025-10-14-D",
+      "ref_month": "2025-10",
+      "month": 10,
+      "slot": "저녁",
+      "source": "서울 강동구 어린이급식관리지원센터",
+      "protein": "생선",
+      "dishes": [
+        {
+          "name": "기장밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "근대된장국",
+          "role": "dish",
+          "recipe_id": "chard-doenjang-soup",
+          "note": null
+        },
+        {
+          "name": "고등어무조림",
+          "role": "dish",
+          "recipe_id": "braised-mackerel-radish",
+          "note": "안 매운 버전"
+        },
+        {
+          "name": "미역줄기무침",
+          "role": "dish",
+          "recipe_id": "seaweed-stem-stirfry",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 75,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "jincheon-2025-10-13-L",
+      "ref_month": "2025-10",
+      "month": 10,
+      "slot": "점심",
+      "source": "충북 진천군 어린이급식관리지원센터",
+      "protein": "두부·달걀",
+      "dishes": [
+        {
+          "name": "백미밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "물만두국",
+          "role": "dish",
+          "recipe_id": "dumpling-soup",
+          "note": null
+        },
+        {
+          "name": "달걀두부구이",
+          "role": "dish",
+          "recipe_id": "egg-tofu-pan",
+          "note": null
+        },
+        {
+          "name": "가지나물",
+          "role": "dish",
+          "recipe_id": "eggplant-namul",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 1,
+      "hard_count": 0,
+      "active_minutes": 45,
+      "freezable": false,
+      "all_freezable": false
+    },
+    {
+      "id": "jincheon-2025-10-16-L",
+      "ref_month": "2025-10",
+      "month": 10,
+      "slot": "점심",
+      "source": "충북 진천군 어린이급식관리지원센터",
+      "protein": "닭고기",
+      "dishes": [
+        {
+          "name": "백미밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "미역된장국",
+          "role": "dish",
+          "recipe_id": "seaweed-doenjang-soup",
+          "note": null
+        },
+        {
+          "name": "안동찜닭",
+          "role": "dish",
+          "recipe_id": "mild-andong-jjimdak",
+          "note": "안 매운 버전"
+        },
+        {
+          "name": "시금치나물",
+          "role": "dish",
+          "recipe_id": "spinach-namul",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 80,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "gangdong-2025-10-18-L",
+      "ref_month": "2025-10",
+      "month": 10,
+      "slot": "점심",
+      "source": "서울 강동구 어린이급식관리지원센터",
+      "protein": "채소",
+      "dishes": [
+        {
+          "name": "간장비빔국수",
+          "role": "dish",
+          "recipe_id": "soy-bibim-noodles",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        },
+        {
+          "name": "사과",
+          "role": "base",
+          "recipe_id": null,
+          "note": "아이 한입 크기로 잘라 주세요."
+        }
+      ],
+      "difficulty_max": 1,
+      "hard_count": 0,
+      "active_minutes": 20,
+      "freezable": false,
+      "all_freezable": false
+    },
+    {
+      "id": "gangdong-2025-10-27-L",
+      "ref_month": "2025-10",
+      "month": 10,
+      "slot": "점심",
+      "source": "서울 강동구 어린이급식관리지원센터",
+      "protein": "해산물",
+      "dishes": [
+        {
+          "name": "수수밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "들깨무챗국",
+          "role": "dish",
+          "recipe_id": "perilla-radish-soup",
+          "note": null
+        },
+        {
+          "name": "오징어채소볶음",
+          "role": "dish",
+          "recipe_id": "squid-veg-stirfry",
+          "note": "안 매운 버전"
+        },
+        {
+          "name": "시금치나물",
+          "role": "dish",
+          "recipe_id": "spinach-namul",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 65,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "jincheon-2025-10-17-L",
+      "ref_month": "2025-10",
+      "month": 10,
+      "slot": "점심",
+      "source": "충북 진천군 어린이급식관리지원센터",
+      "protein": "소고기",
+      "dishes": [
+        {
+          "name": "기장밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "쇠고기무국",
+          "role": "dish",
+          "recipe_id": "beef-radish-soup",
+          "note": null
+        },
+        {
+          "name": "삼치구이",
+          "role": "dish",
+          "recipe_id": "grilled-spanish-mackerel",
+          "note": null
+        },
+        {
+          "name": "당근숙주무침",
+          "role": "dish",
+          "recipe_id": "carrot-sprout-salad",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 1,
+      "hard_count": 0,
+      "active_minutes": 65,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "wonju-2025-10-01-L",
+      "ref_month": "2025-10",
+      "month": 10,
+      "slot": "점심",
+      "source": "강원 원주시 어린이급식관리지원센터",
+      "protein": "돼지고기",
+      "dishes": [
+        {
+          "name": "돈육불고기덮밥",
+          "role": "dish",
+          "recipe_id": "pork-bulgogi-rice-bowl",
+          "note": null
+        },
+        {
+          "name": "미소장국",
+          "role": "dish",
+          "recipe_id": "miso-soup",
+          "note": null
+        },
+        {
+          "name": "깻잎나물",
+          "role": "dish",
+          "recipe_id": "perilla-leaf-namul",
+          "note": null
+        },
+        {
+          "name": "깍두기",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 65,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "jincheon-2025-10-20-L",
+      "ref_month": "2025-10",
+      "month": 10,
+      "slot": "점심",
+      "source": "충북 진천군 어린이급식관리지원센터",
+      "protein": "닭고기",
+      "dishes": [
+        {
+          "name": "차조밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "새우살애호박국",
+          "role": "dish",
+          "recipe_id": "shrimp-zucchini-soup",
+          "note": null
+        },
+        {
+          "name": "닭가슴살데리야끼볶음",
+          "role": "dish",
+          "recipe_id": "chicken-teriyaki",
+          "note": null
+        },
+        {
+          "name": "브로콜리숙회",
+          "role": "dish",
+          "recipe_id": "broccoli-blanched",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 50,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "gangdong-2025-11-08-L",
+      "ref_month": "2025-11",
+      "month": 11,
+      "slot": "점심",
+      "source": "서울 강동구 어린이급식관리지원센터",
+      "protein": "채소",
+      "dishes": [
+        {
+          "name": "수제비",
+          "role": "dish",
+          "recipe_id": "sujebi",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 40,
+      "freezable": false,
+      "all_freezable": false
+    },
+    {
+      "id": "gangdong-2025-11-01-L",
+      "ref_month": "2025-11",
+      "month": 11,
+      "slot": "점심",
+      "source": "서울 강동구 어린이급식관리지원센터",
+      "protein": "생선",
+      "dishes": [
+        {
+          "name": "참치마요주먹밥",
+          "role": "dish",
+          "recipe_id": "tuna-mayo-rice-ball",
+          "note": null
+        },
+        {
+          "name": "맑은유부국",
+          "role": "dish",
+          "recipe_id": "tofu-pouch-clear-soup",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 1,
+      "hard_count": 0,
+      "active_minutes": 35,
+      "freezable": true,
+      "all_freezable": true
+    },
+    {
+      "id": "jincheon-2025-11-04-L",
+      "ref_month": "2025-11",
+      "month": 11,
+      "slot": "점심",
+      "source": "충북 진천군 어린이급식관리지원센터",
+      "protein": "두부·달걀",
+      "dishes": [
+        {
+          "name": "차조밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "연두부맑은국",
+          "role": "dish",
+          "recipe_id": "soft-tofu-clear-soup",
+          "note": null
+        },
+        {
+          "name": "우유달걀찜",
+          "role": "dish",
+          "recipe_id": "three-color-egg-custard",
+          "note": null
+        },
+        {
+          "name": "애호박나물",
+          "role": "dish",
+          "recipe_id": "zucchini-namul",
+          "note": null
+        },
+        {
+          "name": "깍두기",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 1,
+      "hard_count": 0,
+      "active_minutes": 50,
+      "freezable": false,
+      "all_freezable": false
+    },
+    {
+      "id": "wonju-2025-11-12-L",
+      "ref_month": "2025-11",
+      "month": 11,
+      "slot": "점심",
+      "source": "강원 원주시 어린이급식관리지원센터",
+      "protein": "닭고기",
+      "dishes": [
+        {
+          "name": "백미밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "북엇국",
+          "role": "dish",
+          "recipe_id": "pollock-soup",
+          "note": null
+        },
+        {
+          "name": "간장닭볶음탕",
+          "role": "dish",
+          "recipe_id": "mild-braised-chicken",
+          "note": "안 매운 버전"
+        },
+        {
+          "name": "숙주나물",
+          "role": "dish",
+          "recipe_id": "bean-sprout-namul",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 80,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "wonju-2025-11-18-L",
+      "ref_month": "2025-11",
+      "month": 11,
+      "slot": "점심",
+      "source": "강원 원주시 어린이급식관리지원센터",
+      "protein": "소고기",
+      "dishes": [
+        {
+          "name": "수수밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "쇠고기뭇국",
+          "role": "dish",
+          "recipe_id": "beef-radish-soup",
+          "note": null
+        },
+        {
+          "name": "채소달걀말이",
+          "role": "dish",
+          "recipe_id": "rolled-omelet",
+          "note": null
+        },
+        {
+          "name": "김자반",
+          "role": "dish",
+          "recipe_id": "seasoned-laver-flakes",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 47,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "gangdong-2025-11-12-D",
+      "ref_month": "2025-11",
+      "month": 11,
+      "slot": "저녁",
+      "source": "서울 강동구 어린이급식관리지원센터",
+      "protein": "해산물",
+      "dishes": [
+        {
+          "name": "기장밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "들깨무챗국",
+          "role": "dish",
+          "recipe_id": "perilla-radish-soup",
+          "note": null
+        },
+        {
+          "name": "오징어채소볶음",
+          "role": "dish",
+          "recipe_id": "squid-veg-stirfry",
+          "note": "안 매운 버전"
+        },
+        {
+          "name": "김자반",
+          "role": "dish",
+          "recipe_id": "seasoned-laver-flakes",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 52,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "jincheon-2025-11-24-L",
+      "ref_month": "2025-11",
+      "month": 11,
+      "slot": "점심",
+      "source": "충북 진천군 어린이급식관리지원센터",
+      "protein": "돼지고기",
+      "dishes": [
+        {
+          "name": "백미밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "청경채맑은국",
+          "role": "dish",
+          "recipe_id": "clear-bokchoy-soup",
+          "note": null
+        },
+        {
+          "name": "돼지고기김치볶음",
+          "role": "dish",
+          "recipe_id": "washed-kimchi-pork-stirfry",
+          "note": "안 매운 버전"
+        },
+        {
+          "name": "콩나물무침",
+          "role": "dish",
+          "recipe_id": "bean-sprout-namul",
+          "note": null
+        },
+        {
+          "name": "깍두기",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 50,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "jincheon-2025-11-10-L",
+      "ref_month": "2025-11",
+      "month": 11,
+      "slot": "점심",
+      "source": "충북 진천군 어린이급식관리지원센터",
+      "protein": "닭고기",
+      "dishes": [
+        {
+          "name": "백미밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "미역국",
+          "role": "dish",
+          "recipe_id": "seaweed-soup",
+          "note": null
+        },
+        {
+          "name": "치즈닭갈비",
+          "role": "dish",
+          "recipe_id": "cheese-chicken-galbi",
+          "note": "안 매운 버전"
+        },
+        {
+          "name": "김자반",
+          "role": "dish",
+          "recipe_id": "seasoned-laver-flakes",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 57,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "wonju-2025-11-24-L",
+      "ref_month": "2025-11",
+      "month": 11,
+      "slot": "점심",
+      "source": "강원 원주시 어린이급식관리지원센터",
+      "protein": "소고기",
+      "dishes": [
+        {
+          "name": "백미밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "시래기된장국",
+          "role": "dish",
+          "recipe_id": "siraegi-doenjang-soup",
+          "note": null
+        },
+        {
+          "name": "쇠고기표고버섯볶음",
+          "role": "dish",
+          "recipe_id": "beef-shiitake-stirfry",
+          "note": null
+        },
+        {
+          "name": "김구이",
+          "role": "dish",
+          "recipe_id": "seasoned-laver-flakes",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 47,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "gangdong-2025-11-25-D",
+      "ref_month": "2025-11",
+      "month": 11,
+      "slot": "저녁",
+      "source": "서울 강동구 어린이급식관리지원센터",
+      "protein": "생선",
+      "dishes": [
+        {
+          "name": "기장밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "참치김치찌개",
+          "role": "dish",
+          "recipe_id": "kimchi-tuna-stew",
+          "note": "안 매운 버전"
+        },
+        {
+          "name": "달걀말이",
+          "role": "dish",
+          "recipe_id": "rolled-omelet",
+          "note": null
+        },
+        {
+          "name": "김구이",
+          "role": "dish",
+          "recipe_id": "seasoned-laver-flakes",
+          "note": null
+        },
+        {
+          "name": "깍두기",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 42,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "gangdong-2025-11-04-D",
+      "ref_month": "2025-11",
+      "month": 11,
+      "slot": "저녁",
+      "source": "서울 강동구 어린이급식관리지원센터",
+      "protein": "두부·달걀",
+      "dishes": [
+        {
+          "name": "기장밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "순살감자탕",
+          "role": "dish",
+          "recipe_id": "mild-pork-potato-soup",
+          "note": "안 매운 버전"
+        },
+        {
+          "name": "삼색달걀찜",
+          "role": "dish",
+          "recipe_id": "three-color-egg-custard",
+          "note": null
+        },
+        {
+          "name": "브로콜리숙회",
+          "role": "dish",
+          "recipe_id": "broccoli-blanched",
+          "note": null
+        },
+        {
+          "name": "깍두기",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 70,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "gangdong-2025-11-22-L",
+      "ref_month": "2025-11",
+      "month": 11,
+      "slot": "점심",
+      "source": "서울 강동구 어린이급식관리지원센터",
+      "protein": "채소",
+      "dishes": [
+        {
+          "name": "칼국수",
+          "role": "dish",
+          "recipe_id": "kalguksu",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        },
+        {
+          "name": "사과",
+          "role": "base",
+          "recipe_id": null,
+          "note": "아이 한입 크기로 잘라 주세요."
+        }
+      ],
+      "difficulty_max": 1,
+      "hard_count": 0,
+      "active_minutes": 30,
+      "freezable": false,
+      "all_freezable": false
+    },
+    {
+      "id": "gangdong-2025-11-18-L",
+      "ref_month": "2025-11",
+      "month": 11,
+      "slot": "점심",
+      "source": "서울 강동구 어린이급식관리지원센터",
+      "protein": "소고기",
+      "dishes": [
+        {
+          "name": "기장밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "쇠고기뭇국",
+          "role": "dish",
+          "recipe_id": "beef-radish-soup",
+          "note": null
+        },
+        {
+          "name": "메추리알장조림",
+          "role": "dish",
+          "recipe_id": "braised-quail-eggs",
+          "note": null
+        },
+        {
+          "name": "김구이",
+          "role": "dish",
+          "recipe_id": "seasoned-laver-flakes",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 1,
+      "hard_count": 0,
+      "active_minutes": 62,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "jincheon-2025-11-13-L",
+      "ref_month": "2025-11",
+      "month": 11,
+      "slot": "점심",
+      "source": "충북 진천군 어린이급식관리지원센터",
+      "protein": "해산물",
+      "dishes": [
+        {
+          "name": "백미밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "버섯된장국",
+          "role": "dish",
+          "recipe_id": "mushroom-doenjang-soup",
+          "note": null
+        },
+        {
+          "name": "새우살청경채볶음",
+          "role": "dish",
+          "recipe_id": "shrimp-bokchoy-stirfry",
+          "note": null
+        },
+        {
+          "name": "무나물",
+          "role": "dish",
+          "recipe_id": "radish-namul",
+          "note": null
+        },
+        {
+          "name": "배추김치",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 1,
+      "hard_count": 0,
+      "active_minutes": 50,
+      "freezable": true,
+      "all_freezable": false
+    },
+    {
+      "id": "gangdong-2025-11-07-L",
+      "ref_month": "2025-11",
+      "month": 11,
+      "slot": "점심",
+      "source": "서울 강동구 어린이급식관리지원센터",
+      "protein": "돼지고기",
+      "dishes": [
+        {
+          "name": "쌀밥",
+          "role": "base",
+          "recipe_id": null,
+          "note": "소분해 냉동해 둔 밥을 데워 주세요."
+        },
+        {
+          "name": "순두부백탕",
+          "role": "dish",
+          "recipe_id": "soft-tofu-clear-soup",
+          "note": null
+        },
+        {
+          "name": "돈육목살구이",
+          "role": "dish",
+          "recipe_id": "pork-shoulder-grill",
+          "note": null
+        },
+        {
+          "name": "상추무침",
+          "role": "dish",
+          "recipe_id": "lettuce-salad",
+          "note": null
+        },
+        {
+          "name": "깍두기",
+          "role": "kimchi",
+          "recipe_id": "washed-kimchi",
+          "note": "물에 헹궈 씻어서"
+        }
+      ],
+      "difficulty_max": 2,
+      "hard_count": 0,
+      "active_minutes": 45,
+      "freezable": true,
+      "all_freezable": false
+    }
+  ]
+}

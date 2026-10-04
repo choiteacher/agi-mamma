@@ -1,0 +1,3 @@
+#!/bin/sh
+# 커밋 전 비밀값 검사. Windows의 Git도 이 파일을 sh로 실행한다.
+node scripts/check-secrets.mjs

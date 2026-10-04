@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>영상 고르기 (로컬 전용)</title>
+    <style>
+      :root {
+        --bg: #f5f6f8;
+        --card: #fff;
+        --text: #222;
+        --muted: #666;
+        --accent: #2f7de1;
+        --picked: #e7f5ea;
+        --border: #dde1e6;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #15171a;
+          --card: #1f2226;
+          --text: #e9eaec;
+          --muted: #9aa0a6;
+          --accent: #6aa6f8;
+          --picked: #1f3a28;
+          --border: #33373d;
+        }
+      }
+      body {
+        margin: 0;
+        padding: 16px;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+        word-break: keep-all;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      .note {
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .recipe {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 12px;
+        margin: 12px 0;
+      }
+      .recipe h2 {
+        font-size: 17px;
+        margin: 0 0 8px;
+      }
+      .cands {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 10px;
+      }
+      .cand {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 8px;
+      }
+      .cand.picked {
+        background: var(--picked);
+        border-color: #3a9b57;
+      }
+      .cand img {
+        width: 100%;
+        border-radius: 6px;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+      }
+      .cand .title {
+        font-weight: 600;
+        margin: 6px 0 2px;
+      }
+      .cand .meta {
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .cand ul {
+        padding-left: 18px;
+        font-size: 13px;
+        margin: 6px 0;
+      }
+      .caution {
+        color: #c0392b;
+      }
+      button {
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: 1px solid var(--accent);
+        background: var(--accent);
+        color: #fff;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      button.secondary {
+        background: transparent;
+        color: var(--accent);
+      }
+      a {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>영상 고르기 (이 PC에서만 열리는 관리 화면)</h1>
+    <p class="note">
+      레시피마다 후보 3개 중 1개를 고르세요. 고르면 src/data/recipe-media.json 과 channel-prefs.json 에 바로 저장됩니다. 다 고른 뒤 직접 git commit / push
+      하세요. 요약은 AI가 만든 것이라 확인이 필요합니다.
+    </p>
+    <div id="status" class="note"></div>
+    <div id="list"></div>
+    <script>
+      // 유튜브 제목 등 외부 텍스트는 textContent 로만 넣는다(HTML로 해석하지 않음)
+      const el = (tag, props = {}, children = []) => {
+        const n = document.createElement(tag);
+        for (const [k, v] of Object.entries(props)) {
+          if (k === 'text') n.textContent = v;
+          else if (k === 'className') n.className = v;
+          else if (k.startsWith('on')) n.addEventListener(k.slice(2), v);
+          else n.setAttribute(k, v);
+        }
+        for (const c of children) if (c) n.appendChild(c);
+        return n;
+      };
+      const fmt = (sec) => (sec == null ? '?' : `${Math.floor(sec / 60)}분 ${sec % 60}초`);
+      const list = (title, items, cls) =>
+        items && items.length ? el('div', {}, [el('div', { className: 'meta', text: title }), el('ul', { className: cls || '' }, items.map((t) => el('li', { text: t })))]) : null;
+
+      async function pick(recipeId, videoId) {
+        const res = await fetch('/__curate/api/pick', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'x-curate': '1' },
+          body: JSON.stringify({ recipeId, videoId })
+        });
+        const body = await res.json();
+        document.getElementById('status').textContent = res.ok ? '저장했습니다.' : `저장 실패: ${body.error}`;
+        load();
+      }
+
+      async function load() {
+        const { media, recipes } = await (await fetch('/__curate/api/data')).json();
+        const root = document.getElementById('list');
+        root.replaceChildren();
+        const names = new Map(recipes.map((r) => [r.id, r.name]));
+        const ids = Object.keys(media);
+        if (!ids.length) {
+          root.appendChild(el('p', { text: '아직 후보가 없습니다. 먼저 npm run month-pack 을 실행하세요.' }));
+          return;
+        }
+        const pickedCount = ids.filter((id) => media[id].picked).length;
+        document.getElementById('status').textContent += ` 고른 레시피 ${pickedCount} / ${ids.length}`;
+        for (const id of ids) {
+          const m = media[id];
+          const cands = (m.candidates || []).map((c) => {
+            const isPicked = m.picked === c.videoId;
+            const thumb = c.thumbnail && c.thumbnail.startsWith('https://i.ytimg.com/') ? el('img', { src: c.thumbnail, alt: '', loading: 'lazy' }) : null;
+            return el('div', { className: 'cand' + (isPicked ? ' picked' : '') }, [
+              thumb,
+              el('div', { className: 'title', text: c.title }),
+              el('div', { className: 'meta', text: `${c.channel} · ${fmt(c.durationSec)} · 조회 ${Number(c.viewCount || 0).toLocaleString()} · 점수 ${c.score}${c.embeddable ? '' : ' · 임베드 불가'}` }),
+              list('재료', c.summary && c.summary.ingredients),
+              list('순서', c.summary && c.summary.steps),
+              list('34개월 주의', c.summary && c.summary.cautions, 'caution'),
+              list('영상에서 확인 불가', c.summary && c.summary.unverifiable),
+              el('div', {}, [
+                el('a', { href: `https://www.youtube.com/watch?v=${encodeURIComponent(c.videoId)}`, target: '_blank', rel: 'noopener noreferrer', text: '유튜브에서 보기' })
+              ]),
+              el('div', { style: 'margin-top:6px' }, [
+                isPicked
+                  ? el('button', { className: 'secondary', text: '선택 해제', onclick: () => pick(id, null) })
+                  : el('button', { text: '이 영상 선택', onclick: () => pick(id, c.videoId) })
+              ])
+            ]);
+          });
+          root.appendChild(
+            el('section', { className: 'recipe' }, [
+              el('h2', { text: `${names.get(id) || id}${m.picked ? ' ✓' : ''}` }),
+              el('div', { className: 'note', text: `검색어: ${m.query || ''}` }),
+              el('div', { className: 'cands' }, cands)
+            ])
+          );
+        }
+      }
+      load();
+    </script>
+  </body>
+</html>
