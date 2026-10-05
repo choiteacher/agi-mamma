@@ -109,8 +109,8 @@
   <body>
     <h1>영상 고르기 (이 PC에서만 열리는 관리 화면)</h1>
     <p class="note">
-      레시피마다 후보 3개 중 1개를 고르세요. 고르면 src/data/recipe-media.json 과 channel-prefs.json 에 바로 저장됩니다. 다 고른 뒤 직접 git commit / push
-      하세요. 요약은 AI가 만든 것이라 확인이 필요합니다.
+      레시피마다 후보 3개 중 1개를 고르세요. 고르면 src/data/recipe-media.json 과 channel-prefs.json 에 바로 저장됩니다. 다 고른 뒤 직접 git
+      commit / push 하세요. 요약은 AI가 만든 것이라 확인이 필요합니다.
     </p>
     <div id="status" class="note"></div>
     <div id="list"></div>
@@ -129,7 +129,16 @@
       };
       const fmt = (sec) => (sec == null ? '?' : `${Math.floor(sec / 60)}분 ${sec % 60}초`);
       const list = (title, items, cls) =>
-        items && items.length ? el('div', {}, [el('div', { className: 'meta', text: title }), el('ul', { className: cls || '' }, items.map((t) => el('li', { text: t })))]) : null;
+        items && items.length
+          ? el('div', {}, [
+              el('div', { className: 'meta', text: title }),
+              el(
+                'ul',
+                { className: cls || '' },
+                items.map((t) => el('li', { text: t }))
+              )
+            ])
+          : null;
 
       async function pick(recipeId, videoId) {
         const res = await fetch('/__curate/api/pick', {
@@ -158,17 +167,28 @@
           const m = media[id];
           const cands = (m.candidates || []).map((c) => {
             const isPicked = m.picked === c.videoId;
-            const thumb = c.thumbnail && c.thumbnail.startsWith('https://i.ytimg.com/') ? el('img', { src: c.thumbnail, alt: '', loading: 'lazy' }) : null;
+            const thumb =
+              c.thumbnail && c.thumbnail.startsWith('https://i.ytimg.com/')
+                ? el('img', { src: c.thumbnail, alt: '', loading: 'lazy' })
+                : null;
             return el('div', { className: 'cand' + (isPicked ? ' picked' : '') }, [
               thumb,
               el('div', { className: 'title', text: c.title }),
-              el('div', { className: 'meta', text: `${c.channel} · ${fmt(c.durationSec)} · 조회 ${Number(c.viewCount || 0).toLocaleString()} · 점수 ${c.score}${c.embeddable ? '' : ' · 임베드 불가'}` }),
+              el('div', {
+                className: 'meta',
+                text: `${c.channel} · ${fmt(c.durationSec)} · 조회 ${Number(c.viewCount || 0).toLocaleString()} · 점수 ${c.score}${c.embeddable ? '' : ' · 임베드 불가'}`
+              }),
               list('재료', c.summary && c.summary.ingredients),
               list('순서', c.summary && c.summary.steps),
               list('34개월 주의', c.summary && c.summary.cautions, 'caution'),
               list('영상에서 확인 불가', c.summary && c.summary.unverifiable),
               el('div', {}, [
-                el('a', { href: `https://www.youtube.com/watch?v=${encodeURIComponent(c.videoId)}`, target: '_blank', rel: 'noopener noreferrer', text: '유튜브에서 보기' })
+                el('a', {
+                  href: `https://www.youtube.com/watch?v=${encodeURIComponent(c.videoId)}`,
+                  target: '_blank',
+                  rel: 'noopener noreferrer',
+                  text: '유튜브에서 보기'
+                })
               ]),
               el('div', { style: 'margin-top:6px' }, [
                 isPicked

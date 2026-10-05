@@ -44,7 +44,9 @@
             "비빔국수에 넣은 참기름의 정확한 용량 (영상에서 살짝 넣었다고만 언급)"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "xasqFAGj9VI",
@@ -87,7 +89,9 @@
             "참기름과 통깨, 소면, 채소의 정확한 계량치(영상 자막 미표기)"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "2Wfsbw0ZdBg",
@@ -125,7 +129,9 @@
             "맛간장, 참기름, 깨소금, 물의 정확한 계량치"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [],
+        "descSource": null
       }
     ],
     "picked": "umHq78j6LLI",
@@ -178,7 +184,18 @@
             "유부초밥 세트에 동봉된 가루재료(후리가케)의 상세 성분"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [
+          "풀무원 꼬마 유부초밥 2팩(총 28장 유부피)",
+          "쌀밥 3공기",
+          "다진소고기 150g",
+          "양조간장 1큰술",
+          "백오이 1/2개",
+          "당근 1/3~1/4개 정도",
+          "김밥 단무지 2줄",
+          "식용유와 소금 약간씩"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "lGhBgZQxdHE",
@@ -214,7 +231,14 @@
             "밥과 유부의 정확한 중량(g) 및 개수"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [
+          "만능소고기야채볶음",
+          "따뜻한 밥",
+          "꼬마유부초밥용 유부",
+          "간배 + 레몬즙"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "NialWzcygi8",
@@ -253,7 +277,9 @@
             "소금 등 별도 조미료 첨가 여부"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [],
+        "descSource": null
       }
     ],
     "picked": "Z_fNvuG8dcE",
@@ -305,7 +331,9 @@
             "총 가열 시간"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "RszqewPYjX4",
@@ -342,7 +370,9 @@
             "팽이장국 조리법 및 국물 요리 재료는 영상에서 확인 불가 (팽이버섯 밑동 재생 재배 영상임)"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "SxHMGBUb18E",
@@ -382,7 +412,14 @@
             "구체적인 불 세기 및 조리 시간"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [
+          "된장 양은 염도에 따라 가감",
+          "코인육수 없을 경우",
+          "멸치로 육수 내거나 다시팩 등으로 대체",
+          "부족한 간은 참치액, 국간장, 된장 등으로 간 추가"
+        ],
+        "descSource": "rule"
       }
     ],
     "picked": null,
@@ -402,7 +439,10 @@
         "durationSec": 483,
         "viewCount": 590985,
         "embeddable": false,
-        "score": 18.54
+        "score": 18.54,
+        "descIngredients": [],
+        "descSource": null,
+        "descNeedsAi": true
       },
       {
         "videoId": "69rio4NnNi0",
@@ -413,7 +453,9 @@
         "durationSec": 525,
         "viewCount": 2832,
         "embeddable": true,
-        "score": 16.9
+        "score": 16.9,
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "3Gk9GvNbZlc",
@@ -424,7 +466,9 @@
         "durationSec": 61,
         "viewCount": 2104206,
         "embeddable": true,
-        "score": 10.65
+        "score": 10.65,
+        "descIngredients": [],
+        "descSource": null
       }
     ],
     "picked": null,
@@ -444,7 +488,18 @@
         "durationSec": 166,
         "viewCount": 279890,
         "embeddable": true,
-        "score": 8.89
+        "score": 8.89,
+        "descIngredients": [
+          "두부 한 모",
+          "쪽파(대파)",
+          "들기름",
+          "진간장 3스푼",
+          "고춧가루 반스푼",
+          "다진마늘 반스푼",
+          "올리고당 반스푼",
+          "통깨"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "9vx1b9w4K3c",
@@ -455,7 +510,9 @@
         "durationSec": 20,
         "viewCount": 21910,
         "embeddable": true,
-        "score": -1.32
+        "score": -1.32,
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "MCHqBguH6do",
@@ -466,7 +523,12 @@
         "durationSec": 42,
         "viewCount": 9032,
         "embeddable": true,
-        "score": -2.09
+        "score": -2.09,
+        "descIngredients": [
+          "두부",
+          "들기름"
+        ],
+        "descSource": "rule"
       }
     ],
     "picked": "3Q2t9Ka2toE",
@@ -486,7 +548,15 @@
         "durationSec": 213,
         "viewCount": 2057586,
         "embeddable": false,
-        "score": 19.63
+        "score": 19.63,
+        "descIngredients": [
+          "김 6장",
+          "설탕",
+          "액젓",
+          "깨 소금",
+          "들기름"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "HT3JFXWZabI",
@@ -497,7 +567,9 @@
         "durationSec": 223,
         "viewCount": 8413,
         "embeddable": true,
-        "score": 17.85
+        "score": 17.85,
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "3onyTP_8sdo",
@@ -508,7 +580,9 @@
         "durationSec": 308,
         "viewCount": 150,
         "embeddable": true,
-        "score": 14.36
+        "score": 14.36,
+        "descIngredients": [],
+        "descSource": null
       }
     ],
     "picked": "eebmQgtHRkc",
@@ -557,7 +631,9 @@
             "완성된 베이컨배추볶음 외 식판에 담긴 밥, 국, 다른 반찬들의 구체적인 조리법 및 재료"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "1wZNTM0eSFQ",
@@ -598,7 +674,9 @@
             "볶을 때 사용한 식용유의 구체적인 종류"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "aWWXwjPBbKA",
@@ -640,7 +718,13 @@
             "정확한 가열 불 세기 및 조리 시간"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [
+          "베이컨, 당근, 양파, 파프리카, 브로콜리",
+          "[조리시간]",
+          "분"
+        ],
+        "descSource": "rule"
       }
     ],
     "picked": null,
@@ -695,7 +779,9 @@
             "고기를 볶을 때 참기름 등의 유지류를 둘렀는지 여부"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "Oru-_4yUpp4",
@@ -734,7 +820,11 @@
             "소금이나 간장 등 추가 간 여부"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [
+          "누룽지 반그릇(성인 1인분=60g)"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "ovtSZqEPZQI",
@@ -773,7 +863,16 @@
             "다짐육의 구체적인 육류 종류(소고기, 돼지고기 등)"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [
+          "미역 10g",
+          "소고기다짐육 150g",
+          "물 500ml",
+          "참기름 약간",
+          "다진마늘 1t",
+          "아기 간장 1t (저염식)"
+        ],
+        "descSource": "rule"
       }
     ],
     "picked": "N1h3tHaOzwA",
@@ -793,7 +892,9 @@
         "durationSec": 60,
         "viewCount": 676936,
         "embeddable": true,
-        "score": 9.66
+        "score": 9.66,
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "U88Qac2doAY",
@@ -804,7 +905,9 @@
         "durationSec": 27,
         "viewCount": 6872,
         "embeddable": true,
-        "score": -2.33
+        "score": -2.33,
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "vcZnTkXOxX8",
@@ -815,7 +918,9 @@
         "durationSec": 56,
         "viewCount": 5482,
         "embeddable": true,
-        "score": -2.52
+        "score": -2.52,
+        "descIngredients": [],
+        "descSource": null
       }
     ],
     "picked": "vcZnTkXOxX8",
@@ -835,7 +940,10 @@
         "durationSec": 364,
         "viewCount": 4305970,
         "embeddable": true,
-        "score": 23.27
+        "score": 23.27,
+        "descIngredients": [],
+        "descSource": null,
+        "descNeedsAi": true
       },
       {
         "videoId": "Fu5fHdCFn3s",
@@ -846,7 +954,16 @@
         "durationSec": 24,
         "viewCount": 125115,
         "embeddable": true,
-        "score": 0.19
+        "score": 0.19,
+        "descIngredients": [
+          "두부 반모 (180g정도)",
+          "쌀가루 30g",
+          "당근 30g",
+          "브로콜리 30g",
+          "단호박 30g",
+          "(비트,고구마등 다른 채소를 사용해도 됩니다)"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "M5bmBVxMnLI",
@@ -857,7 +974,9 @@
         "durationSec": 38,
         "viewCount": 19012,
         "embeddable": true,
-        "score": -1.44
+        "score": -1.44,
+        "descIngredients": [],
+        "descSource": null
       }
     ],
     "picked": null,
@@ -877,7 +996,11 @@
         "durationSec": 280,
         "viewCount": 2982781,
         "embeddable": true,
-        "score": 22.95
+        "score": 22.95,
+        "descIngredients": [
+          "가지 3개, 쪽파 7줄, 고추 4개, 물 700ml"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "VT61SG6HdEw",
@@ -888,7 +1011,20 @@
         "durationSec": 226,
         "viewCount": 2033024,
         "embeddable": true,
-        "score": 22.62
+        "score": 22.62,
+        "descIngredients": [
+          "가지(중크기) 2개",
+          "양파 1/4개",
+          "청양고추 2개",
+          "홍고추 반 개",
+          "들기름 2Tbsp",
+          "통깨 1Tbsp",
+          "간마늘 1/2Tbsp",
+          "진/양조간장 2Tbsp",
+          "흰설탕 1/2Tbsp",
+          "⚠️이 영상은 ‘딸을위한레시피’에서 제작하였으며,"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "B9jRhgkYjGU",
@@ -899,7 +1035,9 @@
         "durationSec": 34,
         "viewCount": 225146,
         "embeddable": true,
-        "score": 0.7
+        "score": 0.7,
+        "descIngredients": [],
+        "descSource": null
       }
     ],
     "picked": "6aZjI0hgEN0",
@@ -919,7 +1057,18 @@
         "durationSec": 652,
         "viewCount": 4850122,
         "embeddable": true,
-        "score": 23.37
+        "score": 23.37,
+        "descIngredients": [
+          "무우반개",
+          "대파2대",
+          "마늘2T",
+          "국간장3T",
+          "참기름1T",
+          "천일염 1~2T",
+          "후추0.5T",
+          "물 2L"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "zVL1tHiCIck",
@@ -930,7 +1079,22 @@
         "durationSec": 230,
         "viewCount": 274365,
         "embeddable": false,
-        "score": 17.88
+        "score": 17.88,
+        "descIngredients": [
+          "소고기 국거리 400g",
+          "물 2.5리터",
+          "다시마 20g",
+          "무 500g",
+          "국간장 2 큰술",
+          "대파(속대만) 2대",
+          "다진 마늘 1 큰술",
+          "멸치액젓 1 큰술",
+          "소금 1 작은술",
+          "소금물 : 물 1리터, 굵은소금 1 큰술",
+          "큰술=테이블스푼(계량수저)=Tbsp",
+          "작은술=티스푼(계량수저)=tsp"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "a1obzltlGZs",
@@ -941,7 +1105,9 @@
         "durationSec": 60,
         "viewCount": 5138402,
         "embeddable": true,
-        "score": 11.42
+        "score": 11.42,
+        "descIngredients": [],
+        "descSource": null
       }
     ],
     "picked": "ZMdYi7wG6JA",
@@ -961,7 +1127,9 @@
         "durationSec": 571,
         "viewCount": 4356,
         "embeddable": true,
-        "score": 17.28
+        "score": 17.28,
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "1ruCOmBGatM",
@@ -972,7 +1140,9 @@
         "durationSec": 217,
         "viewCount": 192,
         "embeddable": true,
-        "score": 14.57
+        "score": 14.57,
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "lVGWffl7JWg",
@@ -983,7 +1153,9 @@
         "durationSec": 95,
         "viewCount": 93369,
         "embeddable": true,
-        "score": 7.94
+        "score": 7.94,
+        "descIngredients": [],
+        "descSource": null
       }
     ],
     "picked": "1ruCOmBGatM",
@@ -1003,7 +1175,20 @@
         "durationSec": 226,
         "viewCount": 1990134,
         "embeddable": true,
-        "score": 22.6
+        "score": 22.6,
+        "descIngredients": [
+          "콩나물 500g",
+          "삶을때 이것 ½큰술(Tbsp)",
+          "맛소금 ⅓작은술(tsp)",
+          "일반소금으로 간맞추기",
+          "다진마늘 1작은술(tsp)",
+          "갈은 깨 1큰술(Tbsp)",
+          "쪽파 2가닥 송송 썰은 것",
+          "참기름 1큰술(Tbsp)",
+          "+매콤하게 드시려면 고춧가루 ½큰술(Tbsp)",
+          "⚠️이 영상은 ‘딸을위한레시피’에서 제작하였으며,"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "IxYi9PJAKRs",
@@ -1014,7 +1199,11 @@
         "durationSec": 292,
         "viewCount": 1233905,
         "embeddable": true,
-        "score": 22.18
+        "score": 22.18,
+        "descIngredients": [
+          "⚠️이 영상은 ‘딸을위한레시피’에서 제작하였으며,"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "sDAbVXD_Qdg",
@@ -1025,7 +1214,9 @@
         "durationSec": 38,
         "viewCount": 6487269,
         "embeddable": true,
-        "score": 3.62
+        "score": 3.62,
+        "descIngredients": [],
+        "descSource": null
       }
     ],
     "picked": null,
@@ -1071,7 +1262,16 @@
             "소금이나 간장 등 추가 간 양념 사용 여부(영상에서는 육수 외 별도 간 미사용)"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [
+          "쌀가루 15g",
+          "밀가루 15g",
+          "감자 20g",
+          "애호박 10g",
+          "달걀물 2큰술",
+          "멸치육수 200ml"
+        ],
+        "descSource": "gemini"
       },
       {
         "videoId": "lq4dCfiHKd8",
@@ -1117,7 +1317,9 @@
             "다시팩의 세부 원재료 구성"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "bVi-KEfB1mk",
@@ -1166,7 +1368,10 @@
             "액젓/참치액, 다진 마늘, 애호박, 양파, 대파, 후추의 정확한 계량 (영상에서 확인 불가)"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [],
+        "descSource": null,
+        "descNeedsAi": true
       }
     ],
     "picked": "0KAnZ2IcPDU",
@@ -1186,7 +1391,9 @@
         "durationSec": 61,
         "viewCount": 1217629,
         "embeddable": true,
-        "score": 10.17
+        "score": 10.17,
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "DXdF74cUYm0",
@@ -1197,7 +1404,9 @@
         "durationSec": 63,
         "viewCount": 3863,
         "embeddable": true,
-        "score": 5.17
+        "score": 5.17,
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "cKFdhFk8mdM",
@@ -1208,7 +1417,9 @@
         "durationSec": 169,
         "viewCount": 13830,
         "embeddable": false,
-        "score": 3.28
+        "score": 3.28,
+        "descIngredients": [],
+        "descSource": null
       }
     ],
     "picked": null,
@@ -1228,7 +1439,25 @@
         "durationSec": 256,
         "viewCount": 9090100,
         "embeddable": false,
-        "score": 20.92
+        "score": 20.92,
+        "descIngredients": [
+          "돼지고기 목살 600g",
+          "양조간장(또는 진간장) 3스푼(30g)",
+          "설탕 1.5스푼(22g)",
+          "후추가루 1/2작은스푼",
+          "고추장 4스푼(100g)",
+          "고춧가루 3스푼(21g)",
+          "물엿 2스푼(30g)",
+          "다진 마늘 2스푼(44g)",
+          "맛술(미림) 5스푼(50g)",
+          "들기름 1스푼(4g)",
+          "신김치(묵은지) 200g",
+          "양파 1/2개",
+          "대파",
+          "청양고추 2개",
+          "통깨"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "md8FcC5AKxM",
@@ -1239,7 +1468,28 @@
         "durationSec": 188,
         "viewCount": 52977,
         "embeddable": true,
-        "score": 19.45
+        "score": 19.45,
+        "descIngredients": [
+          "돼지고기 앞다리살 600g",
+          "익은김치 400g",
+          "양파 반 개",
+          "대파 1대",
+          "홍고추 1개",
+          "청양고추 1개",
+          "들기름 2Tbsp",
+          "┗▶고기밑간",
+          "진/양조간장 2Tbsp",
+          "백설탕 1Tbsp",
+          "미림 1Tbsp",
+          "후춧가루",
+          "고춧가루 5Tbsp",
+          "고추장 3Tbsp",
+          "물엿 2Tbsp",
+          "간마늘 1.5Tbsp",
+          "간생강 ½Tbsp",
+          "맛술 2Tbsp"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "pRFmSiSk12w",
@@ -1250,7 +1500,9 @@
         "durationSec": 418,
         "viewCount": 16769,
         "embeddable": true,
-        "score": 18.45
+        "score": 18.45,
+        "descIngredients": [],
+        "descSource": null
       }
     ],
     "picked": null,
@@ -1270,7 +1522,20 @@
         "durationSec": 235,
         "viewCount": 26486,
         "embeddable": true,
-        "score": 18.85
+        "score": 18.85,
+        "descIngredients": [
+          "칵테일 새우 2마리",
+          "애호박 30g",
+          "양파 30g",
+          "두부 30g",
+          "달걀 1/2개",
+          "육수내기",
+          "물 500ml",
+          "건새우 10g",
+          "멸치 5마리",
+          "다시마 3cm×3cm 1장"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "DbOlyrJx9Jo",
@@ -1281,7 +1546,9 @@
         "durationSec": 64,
         "viewCount": 43030,
         "embeddable": true,
-        "score": 7.27
+        "score": 7.27,
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "LKtE0F4AF3g",
@@ -1292,7 +1559,14 @@
         "durationSec": 13,
         "viewCount": 366704,
         "embeddable": true,
-        "score": 1.13
+        "score": 1.13,
+        "descIngredients": [
+          "물 대신 쌀뜨물도 👌",
+          "새우젓은 입맛과 염도에 따라 가감",
+          "살짝 넉넉하게 넣어야 맛있어요😊",
+          "일단 처음에 1스푼 넣어보고 마지막에 간보고 추가하는거 추천!"
+        ],
+        "descSource": "rule"
       }
     ],
     "picked": null,
@@ -1312,7 +1586,12 @@
         "durationSec": 484,
         "viewCount": 439092,
         "embeddable": true,
-        "score": 21.29
+        "score": 21.29,
+        "descIngredients": [
+          "닭다리살(2조각), 달걀(2개), 소금, 후추, 버터, 양배추, 밥",
+          "청주(3큰술), 맛술(3큰술), 간장(3큰술), 설탕(2큰술)"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "SPRsBNqOmxs",
@@ -1323,7 +1602,15 @@
         "durationSec": 236,
         "viewCount": 16918,
         "embeddable": true,
-        "score": 18.46
+        "score": 18.46,
+        "descIngredients": [
+          "닭가슴살 한덩어리",
+          "냉장고털이야채 (양파",
+          "당근",
+          "양배추",
+          "표고버섯)"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "PuXOXckQw38",
@@ -1334,7 +1621,10 @@
         "durationSec": 138,
         "viewCount": 143184,
         "embeddable": true,
-        "score": 8.31
+        "score": 8.31,
+        "descIngredients": [],
+        "descSource": null,
+        "descNeedsAi": true
       }
     ],
     "picked": null,
@@ -1354,7 +1644,9 @@
         "durationSec": 61,
         "viewCount": 157616,
         "embeddable": true,
-        "score": 8.4
+        "score": 8.4,
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "kpuzCumvFAU",
@@ -1365,7 +1657,13 @@
         "durationSec": 43,
         "viewCount": 3637252,
         "embeddable": true,
-        "score": 3.12
+        "score": 3.12,
+        "descIngredients": [
+          "브로콜리(1개 기준)",
+          "물",
+          "밀가루"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "oUxlTCGqOUg",
@@ -1376,7 +1674,9 @@
         "durationSec": 22,
         "viewCount": 2661579,
         "embeddable": true,
-        "score": 2.85
+        "score": 2.85,
+        "descIngredients": [],
+        "descSource": null
       }
     ],
     "picked": null,
@@ -1430,7 +1730,18 @@
             "팽이버섯과 다진 파의 정확한 중량"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [
+          "📌아기된장 1t",
+          "📌차돌박이 1줌",
+          "📌애호박 1/5개",
+          "📌양파 1/6개",
+          "📌팽이버섯 적당히",
+          "📌두부 1/4모",
+          "📌다진마늘 1t",
+          "시청해주셔서 감사합니다🧡"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "NWRSH_0p4pQ",
@@ -1470,7 +1781,9 @@
             "감자, 애호박, 양파, 두부, 대파의 정확한 중량(g)"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "eqxPKUMMVMs",
@@ -1508,7 +1821,9 @@
             "대파, 팽이버섯, 유부의 정확한 무게(g)나 개수"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [],
+        "descSource": null
       }
     ],
     "picked": null,
@@ -1569,7 +1884,15 @@
             "질문에서 언급된 '언양식쇠불고기(바싹불고기 형태)'와 달리 영상은 채소와 국물이 자작한 일반 볶음식 소불고기 레시피입니다."
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [
+          "소불고기 600g",
+          "양파 120g",
+          "홍당무 30g",
+          "표고버섯 120g",
+          "대파 1대(굵은건 반만 쓰셔도 돼요)"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "GVCvF4aSWUI",
@@ -1612,7 +1935,9 @@
             "소고기의 세부 부위명"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "zLe1eQCSSbs",
@@ -1654,7 +1979,17 @@
             "소고기 핏물 빼는 정확한 시간(자막에는 '30분 정도' 추천으로만 언급)"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [
+          "소고기(불고기용150g)",
+          "팽이버섯",
+          "당근",
+          "양파",
+          "쪽파",
+          "배+아기간장+아기주스",
+          "참기름 약간"
+        ],
+        "descSource": "rule"
       }
     ],
     "picked": null,
@@ -1711,7 +2046,9 @@
             "고춧가루의 정확한 계량 수치"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "I3w8zAFa_G4",
@@ -1755,7 +2092,20 @@
             "콩나물을 삶을 때 넣은 정확한 물의 양은 영상에서 확인 불가"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [
+          "콩나물 500g",
+          "삶을때 이것 ½큰술(Tbsp)",
+          "맛소금 ⅓작은술(tsp)",
+          "일반소금으로 간맞추기",
+          "다진마늘 1작은술(tsp)",
+          "갈은 깨 1큰술(Tbsp)",
+          "쪽파 2가닥 송송 썰은 것",
+          "참기름 1큰술(Tbsp)",
+          "+매콤하게 드시려면 고춧가루 ½큰술(Tbsp)",
+          "⚠️이 영상은 ‘딸을위한레시피’에서 제작하였으며,"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "dvl_lyeTicc",
@@ -1802,7 +2152,9 @@
             "유아식을 위한 나트륨 조절 가이드"
           ]
         },
-        "summarizedWith": "gemini-3.8-flash"
+        "summarizedWith": "gemini-3.8-flash",
+        "descIngredients": [],
+        "descSource": null
       }
     ],
     "picked": "qT07czBXHe8",
@@ -1822,7 +2174,9 @@
         "durationSec": 301,
         "viewCount": 4449,
         "embeddable": true,
-        "score": 17.3
+        "score": 17.3,
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "s7bddRKNJGc",
@@ -1833,7 +2187,9 @@
         "durationSec": 166,
         "viewCount": 3890807,
         "embeddable": false,
-        "score": 8.18
+        "score": 8.18,
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "WfYSWKxGv2M",
@@ -1844,7 +2200,9 @@
         "durationSec": 65,
         "viewCount": 7150,
         "embeddable": true,
-        "score": 5.71
+        "score": 5.71,
+        "descIngredients": [],
+        "descSource": null
       }
     ],
     "picked": "zB6cULjVMIo",
@@ -1864,7 +2222,9 @@
         "durationSec": 85,
         "viewCount": 237,
         "embeddable": true,
-        "score": 2.75
+        "score": 2.75,
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "pSeE18m773k",
@@ -1875,7 +2235,13 @@
         "durationSec": 50,
         "viewCount": 102901,
         "embeddable": true,
-        "score": 0.02
+        "score": 0.02,
+        "descIngredients": [
+          "닭다리살 200g, 채수 200ml,",
+          "감자, 당근 등 야채, 대파",
+          "물3, 간장2, 알룰로스1, 다진마늘1/2, 후추"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "G-qu6poMmvM",
@@ -1886,7 +2252,9 @@
         "durationSec": 27,
         "viewCount": 47037,
         "embeddable": true,
-        "score": -0.66
+        "score": -0.66,
+        "descIngredients": [],
+        "descSource": null
       }
     ],
     "picked": null,
@@ -1906,7 +2274,20 @@
         "durationSec": 24,
         "viewCount": 411465,
         "embeddable": true,
-        "score": 1.23
+        "score": 1.23,
+        "descIngredients": [
+          "닭정육 600g",
+          "칼국수면 450g(2~3인분)",
+          "감자 2개(아기주먹사이즈)",
+          "애호박 1/3개",
+          "대파 1대",
+          "양파 1/2개",
+          "다진마늘 크게 1스푼",
+          "꽃게맛간장 1스푼(밥숟가락)",
+          "소금 1/2스푼",
+          "후추 취향껏"
+        ],
+        "descSource": "rule"
       },
       {
         "videoId": "nJFKpEvUiNk",
@@ -1917,7 +2298,9 @@
         "durationSec": 22,
         "viewCount": 169051,
         "embeddable": true,
-        "score": 0.46
+        "score": 0.46,
+        "descIngredients": [],
+        "descSource": null
       },
       {
         "videoId": "HMMY_0tjkPE",
@@ -1928,11 +2311,413 @@
         "durationSec": 17,
         "viewCount": 129019,
         "embeddable": true,
-        "score": 0.22
+        "score": 0.22,
+        "descIngredients": [
+          "소면30g",
+          "애호박40g",
+          "당근20g",
+          "아기간장",
+          "아기참기름",
+          "깨(생략가능)"
+        ],
+        "descSource": "rule"
       }
     ],
     "picked": "v1pYVDRjffk",
     "pickedAt": "2026-10-04T22:11:47.943Z",
+    "pickedBy": "auto"
+  },
+  "perilla-radish-soup": {
+    "query": "들깨무챗국 유아식 만들기",
+    "searchedAt": "2026-10-05T02:54:30.764Z",
+    "candidates": [
+      {
+        "videoId": "w9PHrswh9jg",
+        "title": "갈비탕 국물같은 '소고기뭇국' 레시피!",
+        "channel": "추추의 한끼식사",
+        "channelId": "UCA_HPCVwiZZNKqQpVJWEhxA",
+        "thumbnail": "https://i.ytimg.com/vi/w9PHrswh9jg/mqdefault.jpg",
+        "durationSec": 65,
+        "viewCount": 6426591,
+        "embeddable": true,
+        "score": 11.62,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "GsWs9Pomxlk",
+        "title": "들깨무국 ㅣ 무로 만드는 간단한 국물요리ㅣ고소하고 시원해요",
+        "channel": "성숙한 부엌",
+        "channelId": "UCO7zAwBWMHSKIrdTci5zMdw",
+        "thumbnail": "https://i.ytimg.com/vi/GsWs9Pomxlk/mqdefault.jpg",
+        "durationSec": 61,
+        "viewCount": 86341,
+        "embeddable": true,
+        "score": 7.87,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "dyz9hawTNoo",
+        "title": "유아식아기국 무들깨국 초간단레시피 Radish Soup with perilla seeds Recipe",
+        "channel": "희야라이프 HEEYALIFE",
+        "channelId": "UCo93iUieSOvUi9Tu11xPmlw",
+        "thumbnail": "https://i.ytimg.com/vi/dyz9hawTNoo/mqdefault.jpg",
+        "durationSec": 90,
+        "viewCount": 6910,
+        "embeddable": true,
+        "score": 5.68,
+        "descIngredients": [],
+        "descSource": null,
+        "descNeedsAi": true
+      }
+    ],
+    "picked": null
+  },
+  "squid-veg-stirfry": {
+    "query": "오징어채소볶음 유아식 만들기",
+    "searchedAt": "2026-10-05T02:54:31.212Z",
+    "candidates": [
+      {
+        "videoId": "XD_jK_SJz_Q",
+        "title": "💥국물흥건한 ✔오징어볶음은 싫다고해서 이렇게 볶아줬더니 너무 맛있다고 물개박수 쳐줬어요💯",
+        "channel": "양장금주부",
+        "channelId": "UCKm-cusLT76t3t4s9OgCqcA",
+        "thumbnail": "https://i.ytimg.com/vi/XD_jK_SJz_Q/mqdefault.jpg",
+        "durationSec": 214,
+        "viewCount": 100910,
+        "embeddable": true,
+        "score": 20.01,
+        "descIngredients": [
+          "오징어2마리350g",
+          "양파1/2개(130g)",
+          "당근60g",
+          "대파1뿌리(50g)",
+          "청양고추3개",
+          "식용유2큰술",
+          "진간장3큰술",
+          "고추장1큰술",
+          "고추가루2큰술",
+          "마늘 납짝하게 1큰술",
+          "자일로스설탕 납짝하게 1큰술",
+          "조청2큰술",
+          "들기름1큰술",
+          "맛술2큰술",
+          "후추약간",
+          "통깨듬뿍",
+          "계량컵200ml",
+          "밥수저(큰술)",
+          "커피수저(티스푼)"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "fbndZ2yft3g",
+        "title": "맛집보다 더 맛있는 오징어 볶음 레시피 #초간단 #레시피#요리비결",
+        "channel": "신나는셰프 김선영",
+        "channelId": "UC7kL_BjLwKUawdsKlRgNv-w",
+        "thumbnail": "https://i.ytimg.com/vi/fbndZ2yft3g/mqdefault.jpg",
+        "durationSec": 168,
+        "viewCount": 2550024,
+        "embeddable": true,
+        "score": 10.81,
+        "descIngredients": [
+          "👉 삼각 모양이 살아있는",
+          "손질 오징어 2마리(400g)",
+          "양파 ½개",
+          "당근 ⅓개",
+          "대파 1대",
+          "청양고추 2개",
+          "통깨 1작은술",
+          "참기름 2작은술",
+          "고춧가루 4큰술",
+          "고추장 2큰술",
+          "알룰로스 2큰술",
+          "양조간장 2큰술",
+          "원당 2큰술",
+          "맛술 2큰술",
+          "다진 마늘 1큰술",
+          "카레가루 2작은술 (잡내 제거 + 풍미 업)"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "DpaOMX4lCWQ",
+        "title": "오징어 이렇게 볶으면 양념이 짝짝 붙어요!",
+        "channel": "신내린셰프",
+        "channelId": "UC5WiWhX8n1N-r0HS_ocSiOA",
+        "thumbnail": "https://i.ytimg.com/vi/DpaOMX4lCWQ/mqdefault.jpg",
+        "durationSec": 67,
+        "viewCount": 496351,
+        "embeddable": true,
+        "score": 9.39,
+        "descIngredients": [],
+        "descSource": null,
+        "descNeedsAi": true
+      }
+    ],
+    "picked": null
+  },
+  "spinach-namul": {
+    "query": "시금치나물 유아식 만들기",
+    "searchedAt": "2026-10-05T02:54:31.631Z",
+    "candidates": [
+      {
+        "videoId": "-KpH7UTZxIA",
+        "title": "#시금치나물 #유아식반찬 #밑반찬",
+        "channel": "챔별 Ho-LoL-LoG",
+        "channelId": "UCpJlnoc1Nm0NRAKqlqdv1aw",
+        "thumbnail": "https://i.ytimg.com/vi/-KpH7UTZxIA/mqdefault.jpg",
+        "durationSec": 60,
+        "viewCount": 116806,
+        "embeddable": true,
+        "score": 8.13,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "e6P5RO_ThnA",
+        "title": "재료 딱 3가지, 선재스님 시금치무침 🥬저장 필수🥬   #시금치무침 #선재스님 #흑백요리사2 #시금치 #한식 #명절음식 #비빔밥 #시금치나물 #kfood #bibimbab",
+        "channel": "마놉 레시피",
+        "channelId": "UCeRbLgEEhytKLrvddwY7F7A",
+        "thumbnail": "https://i.ytimg.com/vi/e6P5RO_ThnA/mqdefault.jpg",
+        "durationSec": 26,
+        "viewCount": 1113445,
+        "embeddable": true,
+        "score": 2.09,
+        "descIngredients": [
+          "딱 3가지",
+          "선재스님 시금치무침 🥬저장 필수🥬",
+          "시금치 1단, 국간장 1/2큰술, 참기름 2큰술, 깨 1큰술, 소금",
+          "🍳조리"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "uidDL-qpFZo",
+        "title": "2개월 든든한 엄마표 냉동반찬 3가지: 매끼 다른 나물주세요! #유아식 #유아식레시피 #유아반찬 #나물반찬 #냉동반찬",
+        "channel": "강미즈",
+        "channelId": "UCPMdoqVQdvJPtcR1TtFnQ5w",
+        "thumbnail": "https://i.ytimg.com/vi/uidDL-qpFZo/mqdefault.jpg",
+        "durationSec": 28,
+        "viewCount": 115953,
+        "embeddable": true,
+        "score": 0.13,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": "-KpH7UTZxIA",
+    "pickedAt": "2026-10-05T02:54:31.631Z",
+    "pickedBy": "auto"
+  },
+  "mushroom-doenjang-soup": {
+    "query": "버섯된장국 유아식 만들기",
+    "searchedAt": "2026-10-05T02:54:33.138Z",
+    "candidates": [
+      {
+        "videoId": "e1ZoZ8iUujs",
+        "title": "[유아식 레시피] 냉장고 털어서 만든 버섯된장국&돼지부추볶음",
+        "channel": "쓰리스타데디",
+        "channelId": "UC381IUPl-SeSyQD5Ngy2C4A",
+        "thumbnail": "https://i.ytimg.com/vi/e1ZoZ8iUujs/mqdefault.jpg",
+        "durationSec": 284,
+        "viewCount": 211,
+        "embeddable": true,
+        "score": 14.65,
+        "descIngredients": [
+          "양송이 2개",
+          "새송이 30g",
+          "감자 30g",
+          "양파 10g",
+          "표고버섯3개",
+          "애호박 20g",
+          "된장2g(집 된장 사용)",
+          "육수(다시마 2장",
+          "육수용 멸치 2마리",
+          "물 500cc)",
+          "부추30g",
+          "양파 20g",
+          "돼지고기(안심) 60g"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "eG8DMZyLIoM",
+        "title": "[시금치 버섯 된장국]유아식 레시피🍀야들야들 시금치~변비,빈혈 예방에 좋아요!✔️",
+        "channel": "Raon Kitchen 라온키친",
+        "channelId": "UCFi8yV8Tyct5fsV_CHzLQ8Q",
+        "thumbnail": "https://i.ytimg.com/vi/eG8DMZyLIoM/mqdefault.jpg",
+        "durationSec": 173,
+        "viewCount": 3447,
+        "embeddable": true,
+        "score": 5.08,
+        "descIngredients": [
+          "시금치(150g)",
+          "양파(50g)",
+          "표고버섯(20g)",
+          "감자(60g)",
+          "파",
+          "된장",
+          "간장",
+          "다진마늘"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "-poKvmpN668",
+        "title": "(유아식) 👶 생채소도, 버섯도 스스로 먹게 만드는ㅣ버섯된장  #쌈된장 #맛된장 #유아된장",
+        "channel": "퍼니키친 funyKitchen 😍",
+        "channelId": "UCYVc3mtch8q6Ffv_5ZglqzQ",
+        "thumbnail": "https://i.ytimg.com/vi/-poKvmpN668/mqdefault.jpg",
+        "durationSec": 156,
+        "viewCount": 642,
+        "embeddable": true,
+        "score": 3.62,
+        "descIngredients": [
+          "새송이",
+          "표고",
+          "양송이",
+          "양조간장",
+          "맛술",
+          "비정제설탕"
+        ],
+        "descSource": "rule"
+      }
+    ],
+    "picked": "e1ZoZ8iUujs",
+    "pickedAt": "2026-10-05T02:54:33.139Z",
+    "pickedBy": "auto"
+  },
+  "shrimp-bokchoy-stirfry": {
+    "query": "새우살청경채볶음 유아식 만들기",
+    "searchedAt": "2026-10-05T02:54:33.523Z",
+    "candidates": [
+      {
+        "videoId": "ub5OMRzd3j4",
+        "title": "이연복 10분도 안 걸리는 청경채 볶음! 맛과 식감 모두를 살리는 레시피!",
+        "channel": "이연복의 복주머니",
+        "channelId": "UCaAka9CN4naD3FzHX6AvpqA",
+        "thumbnail": "https://i.ytimg.com/vi/ub5OMRzd3j4/mqdefault.jpg",
+        "durationSec": 481,
+        "viewCount": 3230460,
+        "embeddable": true,
+        "score": 23.02,
+        "descIngredients": [
+          "청경채, 버섯, 마늘, 기름, 굴소스, 소금, 전분",
+          "≪레시피≫"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "D5v9QNUHJFk",
+        "title": "이렇게 맛있는 청경채 새우볶음은 처음 먹어봅니다",
+        "channel": "김대석 셰프TV",
+        "channelId": "UC1g9JaEVLOFGhH8hpaK--Jg",
+        "thumbnail": "https://i.ytimg.com/vi/D5v9QNUHJFk/mqdefault.jpg",
+        "durationSec": 316,
+        "viewCount": 385343,
+        "embeddable": false,
+        "score": 18.17,
+        "descIngredients": [
+          "감자전분 1/2스푼 + 물 2스푼",
+          "참기름 1/2스푼",
+          "후추 2꼬집",
+          "통깨 1/2스푼",
+          "📒 김대석 셰프의 집밥 레시피2 📒",
+          "👉 전국 서점, 온라인 절찬 판매중"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "EVp1IuhFVt8",
+        "title": "청경채와 새우는 간단하게 볶아드세요! 황금비율 알려드릴께요^^",
+        "channel": "원디쉬",
+        "channelId": "UCkdVGsEExlHOyNgDI1gYIow",
+        "thumbnail": "https://i.ytimg.com/vi/EVp1IuhFVt8/mqdefault.jpg",
+        "durationSec": 122,
+        "viewCount": 20946,
+        "embeddable": true,
+        "score": 6.64,
+        "descIngredients": [
+          "새우 12마리",
+          "청경채 3다발",
+          "양파1/2",
+          "홍고추1/2",
+          "간장 1",
+          "굴소스 1",
+          "다진마늘1"
+        ],
+        "descSource": "rule"
+      }
+    ],
+    "picked": null
+  },
+  "radish-namul": {
+    "query": "무나물 유아식 만들기",
+    "searchedAt": "2026-10-05T02:54:33.978Z",
+    "candidates": [
+      {
+        "videoId": "snjfXl-qvOo",
+        "title": "무나물 정말 쉽게 알려드려요✅ ㅇㅇ넣으면 쓰지않아요! 부서지지 않게 자르는 방법을 소개합니다. 쓰다고 설탕넣지 마세요~",
+        "channel": "딸을 위한 레시피 Recipes for daughters",
+        "channelId": "UC37fRkl_iIjDAr9pf0FFzGA",
+        "thumbnail": "https://i.ytimg.com/vi/snjfXl-qvOo/mqdefault.jpg",
+        "durationSec": 322,
+        "viewCount": 888026,
+        "embeddable": true,
+        "score": 21.9,
+        "descIngredients": [
+          "무 1개",
+          "┗▶무 절일 때",
+          "꽃소금 ½Tbsp",
+          "맛술 3Tbsp",
+          "들기름 2Tbsp",
+          "참치액 1Tbsp",
+          "간마늘 ½Tbsp",
+          "들기름 ½Tbsp",
+          "갈은깨 1Tbsp",
+          "⚠️이 영상은 ‘딸을위한레시피’에서 제작하였으며,"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "i0MjuAzyRCI",
+        "title": "무나물 다빼고 '이걸' 꼭 넣어주세요! 부서지지 않고 감칠맛이 확 살아요~ 평생 써먹는 무나물 맛있게 만드는 법",
+        "channel": "요리하는 장보고 Jangbogo",
+        "channelId": "UCU_EzAYLLZJOeAnlPqWQqvA",
+        "thumbnail": "https://i.ytimg.com/vi/i0MjuAzyRCI/mqdefault.jpg",
+        "durationSec": 209,
+        "viewCount": 512586,
+        "embeddable": true,
+        "score": 21.42,
+        "descIngredients": [
+          "무 2/3개 (1.2kg)",
+          "양파 1개",
+          "대파 1/2개 (초록색부분)",
+          "소금 1/2큰술",
+          "들기름 3큰술",
+          "통깨"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "PEFi2QL5b28",
+        "title": "무나물 부서지지 않고 맛있게 만들기#무나물#무나물들깨볶음",
+        "channel": "김진옥요리가좋다",
+        "channelId": "UCiRZbVu6oO8M5O0LeXDbNkw",
+        "thumbnail": "https://i.ytimg.com/vi/PEFi2QL5b28/mqdefault.jpg",
+        "durationSec": 66,
+        "viewCount": 635062,
+        "embeddable": true,
+        "score": 9.61,
+        "descIngredients": [],
+        "descSource": null,
+        "descNeedsAi": true
+      }
+    ],
+    "picked": "snjfXl-qvOo",
+    "pickedAt": "2026-10-05T02:54:33.979Z",
     "pickedBy": "auto"
   }
 }

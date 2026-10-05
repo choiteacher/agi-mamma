@@ -1,16 +1,18 @@
 // 앞으로 30일 일정에 나올 레시피의 유튜브 영상 후보 만들기 (내 PC에서 가끔 수동 실행)
 //
-//   npm run month-pack -- [--dry-run] [--limit N] [--rotate-keys] [--reset-keys] [--no-summary] [--auto-pick]
+//   npm run month-pack -- [--dry-run] [--limit N] [--no-gemini] [--rotate-keys] [--reset-keys] [--auto-pick]
 //
-//   --no-summary: Gemini 요약 없이 영상 후보만 저장. 나중에 이 옵션 없이 다시 실행하면 빠진 요약만 채운다(검색은 다시 안 함).
-//   --auto-pick: 아직 안 고른 레시피는 점수 1위 후보를 임시로 고른다(pickedBy: "auto"). npm run curate 로 바꿀 수 있다.
+// 1) 기본 일정(아무 기록 없는 상태)을 계산해 앞으로 30일 안에 나오는 레시피를 고른다.
+// 2) 영상 후보가 없는 레시피: YouTube Data API로 "<요리명> 유아식 만들기" 검색 → 실제 videoId, 임베드 가능 여부, 길이, 조회수,
+//    설명란 → 규칙 점수 상위 3개
+// 3) 각 후보의 설명란("더보기")에서 재료 목록을 뽑는다. 영상 자체는 AI로 분석하지 않는다.
+//    - 먼저 규칙으로 뽑는다(Gemini 호출 없음).
+//    - 규칙으로 못 뽑았는데 설명란에 "재료"라는 말이 있으면, 사이트에 실제로 나오는 영상(임시 선택 1개)에 한해서만
+//      Gemini(텍스트만)로 정리한다. --no-gemini 면 이 단계도 건너뛴다.
+//    - 설명란 원문은 저장하지 않고 뽑은 재료 줄만 저장한다.
+// 4) src/data/recipe-media.json 에 레시피마다 저장. --auto-pick 이면 사이트에 보여 줄 영상을 임시로 고른다(pickedBy: "auto").
 //
-// 1) 기본 일정(아무 기록 없는 상태)을 계산해 앞으로 30일 안에 나오는 레시피 중 영상이 없는 것을 고른다.
-// 2) YouTube Data API로 "<요리명> 유아식 만들기" 검색 → 실제 videoId, 임베드 가능 여부, 길이, 조회수 → 규칙 점수 상위 3개
-// 3) Gemini로 각 후보 요약(재료, 순서, 34개월 주의점, 확인 불가 항목)
-// 4) src/data/recipe-media.json 에 레시피마다 저장(후보 3개, picked는 null). 고르기는 npm run curate
-//
-// - 레시피 하나를 끝낼 때마다 저장하므로, 중간에 멈춰도 같은 명령을 다시 실행하면 끝낸 레시피는 건너뛴다.
+// - 레시피 하나를 끝낼 때마다 저장하므로, 중간에 멈춰도 같은 명령을 다시 실행하면 끝낸 것은 건너뛴다.
 // - 키는 저장소 밖 비밀키 파일에서만 읽고, 어떤 출력·파일에도 남기지 않는다(로그에는 key #번호만).
 import fs from 'node:fs';
 import path from 'node:path';
@@ -18,8 +20,9 @@ import { fileURLToPath } from 'node:url';
 
 import { loadSecrets } from './lib/secrets.mjs';
 import { AllKeysUnavailableError, KeyPool, loadGeminiKeys } from './lib/keyPool.mjs';
-import { YouTubeError, searchCandidates } from './lib/youtube.mjs';
-import { DEFAULT_MODEL, summarizeRequest } from './lib/gemini.mjs';
+import { YouTubeError, fetchDescriptions, searchCandidates } from './lib/youtube.mjs';
+import { DEFAULT_MODEL, ingredientRequest } from './lib/gemini.mjs';
+import { extractIngredients, worthAskingGemini } from './lib/descIngredients.mjs';
 import { buildPlan } from '../src/lib/planner.js';
 import { addDays, todayYmd } from '../src/lib/dates.js';
 import { channelBias, chooseVideo, latestRatings, titleMatches } from '../src/lib/videoChoice.js';
@@ -35,7 +38,7 @@ const has = (f) => args.includes(f);
 const opt = (f) => (args.includes(f) ? args[args.indexOf(f) + 1] : undefined);
 const DRY = has('--dry-run');
 const LIMIT = Number(opt('--limit')) || Infinity;
-const NO_SUMMARY = has('--no-summary');
+const NO_GEMINI = has('--no-gemini');
 const AUTO_PICK = has('--auto-pick');
 
 const readJson = (p, fallback) => {
@@ -63,6 +66,21 @@ export { titleMatches };
 
 export const searchQuery = (recipe) => `${recipe.name.replace(/\s+/g, ' ')} 유아식 만들기`;
 
+// 설명란 재료를 아직 확인하지 않은 후보 (확인했는데 재료가 없으면 descIngredients: [] 로 남는다)
+export const needsDescription = (c) => !Array.isArray(c.descIngredients);
+
+// 후보에 설명란 재료를 채운다(규칙). Gemini 로 넘길 만한 설명란이면 true 를 돌려준다.
+export function fillFromDescription(c, description) {
+  const items = extractIngredients(description);
+  c.descIngredients = items;
+  c.descSource = items.length ? 'rule' : null;
+  // 규칙으로 못 뽑았지만 재료 이야기가 있는 설명란: 나중에 Gemini 로 정리할 대상으로 표시
+  const ask = !items.length && worthAskingGemini(description);
+  if (ask) c.descNeedsAi = true;
+  else delete c.descNeedsAi;
+  return ask;
+}
+
 async function main() {
   const sets = readJson(path.join(ROOT, 'src', 'data', 'menu-sets.seed.json'), { sets: [] }).sets;
   const recipes = readJson(path.join(ROOT, 'src', 'data', 'recipes.seed.json'), []);
@@ -76,8 +94,17 @@ async function main() {
 
   const upcoming = upcomingRecipeIds({ sets, recipes, today: todayYmd() });
   const hasCandidates = (id) => Boolean(media[id] && media[id].candidates && media[id].candidates.length);
-  const needsSummary = (id) => hasCandidates(id) && media[id].candidates.some((c) => !c.summary);
-  const targets = upcoming.filter((id) => !hasCandidates(id) || (!NO_SUMMARY && needsSummary(id)));
+  // 사이트에 보이는 영상이 Gemini 정리를 기다리는지 (Gemini 를 쓸 수 있을 때만 대상)
+  const shownNeedsAi = (id) => {
+    const m = media[id];
+    const c = m && m.picked && m.candidates.find((x) => x.videoId === m.picked);
+    return Boolean(c && c.descNeedsAi);
+  };
+  // 앞으로 30일 레시피 + 이미 후보가 있는 레시피(재료를 아직 안 뽑은 것)
+  const known = Object.keys(media).filter((id) => recipesById.has(id) && !upcoming.includes(id));
+  const targets = [...upcoming, ...known].filter(
+    (id) => !hasCandidates(id) || media[id].candidates.some(needsDescription) || (!NO_GEMINI && shownNeedsAi(id))
+  );
 
   // 임시 선택: 사이트와 같은 규칙(chooseVideo) - 제목에 요리 이름이 든 후보 중 👎 아닌 것, 채널 선호 반영.
   // 사람이 고른 것(pickedBy 없음)은 건드리지 않고, 임시 선택(pickedBy: "auto")은 실행할 때마다 다시 계산한다.
@@ -95,7 +122,7 @@ async function main() {
   };
 
   console.log(
-    `앞으로 30일 레시피 ${upcoming.length}개 중 영상 후보 또는 요약이 필요한 것: ${targets.length}개${Number.isFinite(LIMIT) ? ` (이번에 최대 ${LIMIT}개)` : ''}`
+    `앞으로 30일 레시피 ${upcoming.length}개 중 영상 후보 또는 설명란 재료가 필요한 것: ${targets.length}개${Number.isFinite(LIMIT) ? ` (이번에 최대 ${LIMIT}개)` : ''}`
   );
   if (upcoming.map(autoPick).some(Boolean)) save();
   if (!targets.length) return;
@@ -106,89 +133,91 @@ async function main() {
     process.exit(1);
   }
   let pool = null;
-  if (NO_SUMMARY) {
-    console.log('--no-summary: Gemini 요약 없이 영상 후보만 저장합니다.');
-  } else {
+  if (!NO_GEMINI) {
     const keys = loadGeminiKeys(secrets);
-    if (!keys.length) {
-      console.error('GEMINI_API_KEY_1 (또는 GEMINI_API_KEY) 가 비밀키 파일에 없습니다.');
-      process.exit(1);
+    if (keys.length) {
+      pool = new KeyPool({ keys, statePath: STATE_PATH, rotate: has('--rotate-keys'), resetState: has('--reset-keys') });
+      console.log(
+        `Gemini(설명란 정리용, 규칙으로 못 뽑을 때만): ${DEFAULT_MODEL} · 키 ${keys.length}개 (${pool.describe()}) · 키 전환 ${has('--rotate-keys') ? '켜짐' : '꺼짐(기본)'}`
+      );
+    } else {
+      console.log('Gemini 키가 없어 설명란 재료는 규칙으로만 뽑습니다.');
     }
-    pool = new KeyPool({ keys, statePath: STATE_PATH, rotate: has('--rotate-keys'), resetState: has('--reset-keys') });
-    console.log(
-      `Gemini 모델: ${DEFAULT_MODEL} · 키 ${keys.length}개 (${pool.describe()}) · 키 전환 ${has('--rotate-keys') ? '켜짐' : '꺼짐(기본)'}`
-    );
   }
   if (DRY) console.log('--dry-run: 저장하지 않고 결과만 출력합니다.');
 
   let done = 0;
+  let geminiCalls = 0;
+  let geminiOff = !pool;
   try {
     for (const id of targets.slice(0, LIMIT)) {
       const recipe = recipesById.get(id);
-      const query = searchQuery(recipe);
-      // 이미 받은 후보가 있으면 다시 검색하지 않고 빠진 요약만 채운다
-      if (hasCandidates(id)) {
-        for (const c of media[id].candidates) {
-          if (c.summary) continue;
-          c.summary = await pool.call(summarizeRequest(`https://www.youtube.com/watch?v=${c.videoId}`, recipe.name));
-          c.summarizedWith = DEFAULT_MODEL;
-          save();
+      let descriptions;
+      if (!hasCandidates(id)) {
+        const query = searchQuery(recipe);
+        let candidates;
+        try {
+          candidates = await searchCandidates(query, secrets.YOUTUBE_API_KEY, { channelPrefs: prefs });
+        } catch (e) {
+          if (e instanceof YouTubeError && e.status === 400) {
+            console.error(`\nYouTube API가 요청을 거부했습니다 (${e.message}). YOUTUBE_API_KEY 가 올바른지 확인하세요.`);
+            process.exitCode = 1;
+            break;
+          }
+          if (e instanceof YouTubeError && (e.status === 403 || e.status === 429)) {
+            console.error(`\nYouTube API 한도 또는 권한 문제로 멈춥니다 (${e.message}). 한도는 태평양 시간 자정에 초기화됩니다.`);
+            break;
+          }
+          throw e;
         }
-        done += 1;
-        console.log(`[${done}] ${recipe.name}: 빠진 요약 채움`);
-        continue;
-      }
-      let candidates;
-      try {
-        candidates = await searchCandidates(query, secrets.YOUTUBE_API_KEY, { channelPrefs: prefs });
-      } catch (e) {
-        if (e instanceof YouTubeError && e.status === 400) {
-          console.error(`
-YouTube API가 요청을 거부했습니다 (${e.message}). YOUTUBE_API_KEY 가 아직 실제 키가 아니거나 잘못되었을 수 있습니다.`);
-          process.exitCode = 1;
-          break;
-        }
-        if (e instanceof YouTubeError && (e.status === 403 || e.status === 429)) {
-          console.error(`\nYouTube API 한도 또는 권한 문제로 멈춥니다 (${e.message}). 한도는 태평양 시간 자정에 초기화됩니다.`);
-          break;
-        }
-        throw e;
-      }
-      const entry = { query, searchedAt: new Date().toISOString(), candidates, picked: null };
-      // 요약 전에 후보부터 저장해 두면, 요약 중 한도에 걸려도 YouTube 검색 쿼터를 다시 쓰지 않는다
-      if (!DRY) media[id] = entry;
-      if (!NO_SUMMARY) {
-        for (const c of candidates) {
-          save();
-          const url = `https://www.youtube.com/watch?v=${c.videoId}`;
-          c.summary = await pool.call(summarizeRequest(url, recipe.name));
-          c.summarizedWith = DEFAULT_MODEL;
-        }
-      }
-      done += 1;
-      console.log(
-        `[${done}] ${recipe.name}: 후보 ${candidates.length}개 ${candidates.map((c) => `"${c.title.slice(0, 30)}"(${c.channel}, 점수 ${c.score})`).join(' / ')}`
-      );
-      if (DRY) {
-        console.log(JSON.stringify(entry, null, 2).slice(0, 1500));
+        descriptions = new Map(candidates.map((c) => [c.videoId, c.description]));
+        for (const c of candidates) delete c.description;
+        media[id] = { query, searchedAt: new Date().toISOString(), candidates, picked: null };
       } else {
-        autoPick(id);
-        save();
+        const ids = media[id].candidates.filter((c) => needsDescription(c) || c.descNeedsAi).map((c) => c.videoId);
+        descriptions = await fetchDescriptions(ids, secrets.YOUTUBE_API_KEY);
       }
-    }
-  } catch (e) {
-    if (e instanceof AllKeysUnavailableError) {
-      save();
-      console.error(`\n${e.message}`);
-      console.error(
-        `처리한 ${done}개는 저장했습니다. 한도가 풀린 뒤(태평양 시간 자정 이후, 또는 24시간 뒤) 같은 명령을 다시 실행하면 끝난 레시피는 건너뜁니다.`
+
+      // 규칙으로 재료 뽑기
+      const askGemini = new Map();
+      for (const c of media[id].candidates) {
+        if (!descriptions.has(c.videoId)) continue;
+        if (needsDescription(c)) fillFromDescription(c, descriptions.get(c.videoId));
+        if (c.descNeedsAi) askGemini.set(c.videoId, descriptions.get(c.videoId));
+      }
+      autoPick(id);
+
+      // Gemini 는 사이트에 실제로 나오는 영상 1개에만
+      const shown = media[id].picked;
+      if (!geminiOff && shown && askGemini.has(shown)) {
+        try {
+          const items = await pool.call(ingredientRequest(recipe.name, askGemini.get(shown)));
+          geminiCalls += 1;
+          const c = media[id].candidates.find((x) => x.videoId === shown);
+          if (items && items.length) {
+            c.descIngredients = items;
+            c.descSource = 'gemini';
+          }
+          delete c.descNeedsAi; // 재료가 없다고 답해도 다시 묻지 않는다
+        } catch (e) {
+          if (!(e instanceof AllKeysUnavailableError)) throw e;
+          console.error(`\n${e.message} 남은 레시피는 규칙으로만 뽑습니다.`);
+          geminiOff = true;
+        }
+      }
+
+      done += 1;
+      const summary = media[id].candidates.map(
+        (c) => `${c.channel.slice(0, 12)}: 재료 ${c.descIngredients.length}개${c.descSource === 'gemini' ? '(AI 정리)' : ''}`
       );
-      process.exitCode = 2;
-      return;
+      console.log(`[${done}] ${recipe.name}: ${summary.join(' / ')}`);
+      if (DRY) console.log(JSON.stringify(media[id], null, 2).slice(0, 1500));
+      save();
     }
-    throw e;
+  } finally {
+    save();
   }
-  console.log(`\n완료 ${done}개.${DRY ? '' : ' 이제 npm run curate 로 레시피마다 영상 1개를 고르세요.'}`);
+  console.log(`\n완료 ${done}개 · Gemini 호출 ${geminiCalls}회.${DRY ? '' : ' 커밋·push 하면 사이트에 반영됩니다.'}`);
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {

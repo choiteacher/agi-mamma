@@ -80,10 +80,23 @@ export async function searchCandidates(query, key, { channelPrefs = {}, fetchImp
         thumbnail: v.snippet.thumbnails?.medium?.url || v.snippet.thumbnails?.default?.url || null,
         durationSec: parseDuration(v.contentDetails?.duration),
         viewCount: Number(v.statistics?.viewCount || 0),
-        embeddable: v.status.embeddable !== false
+        embeddable: v.status.embeddable !== false,
+        // 설명란 원문은 재료를 뽑는 데만 쓰고 저장하지 않는다(make-month-pack 이 지운다)
+        description: v.snippet.description || ''
       };
       return { ...c, score: scoreVideo(c, channelPrefs) };
     })
     .sort((a, b) => b.score - a.score || a.videoId.localeCompare(b.videoId))
     .slice(0, top);
+}
+
+// 이미 받아 둔 후보의 설명란 다시 받기 (videos.list 1회 = 1단위, 최대 50개씩)
+export async function fetchDescriptions(ids, key, { fetchImpl = fetch } = {}) {
+  const out = new Map();
+  for (let i = 0; i < ids.length; i += 50) {
+    const chunk = ids.slice(i, i + 50);
+    const body = await get('videos', { part: 'snippet', id: chunk.join(','), maxResults: String(chunk.length) }, key, fetchImpl);
+    for (const v of body.items || []) out.set(v.id, v.snippet.description || '');
+  }
+  return out;
 }

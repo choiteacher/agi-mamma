@@ -69,13 +69,19 @@ NEIS 급식식단정보에는 유치원이 없어(전국 17개 교육청 확인)
 비밀키 파일에 `YOUTUBE_API_KEY`와 `GEMINI_API_KEY_1`(~3)이 있어야 합니다.
 
 ```powershell
-npm run month-pack                              # 앞으로 30일 레시피의 영상 후보 3개 + Gemini 요약
-npm run month-pack -- --no-summary --auto-pick  # 요약 없이 후보만, 제목에 요리명이 든 1위 후보를 임시 선택
+npm run month-pack -- --auto-pick               # 영상 후보 3개 + 설명란 재료, 사이트에 보일 영상 임시 선택
+npm run month-pack -- --auto-pick --no-gemini   # Gemini 를 전혀 쓰지 않음(설명란 재료는 규칙으로만)
 npm run curate                                  # 로컬 화면에서 레시피마다 영상 1개 고르기
 ```
 
-- 옵션: `--dry-run`(저장 안 함), `--limit N`, `--rotate-keys`(Gemini 키 전환, 기본 꺼짐), `--reset-keys`
-- 한도에 걸려 멈추면 같은 명령을 다시 실행하세요. 끝난 레시피는 건너뛰고, 빠진 요약만 채웁니다.
+- **영상은 AI로 분석하지 않습니다.** 영상 "더보기"(설명란)에 유튜버가 적어 둔 재료만 가져와 레시피 팝업에 보여 줍니다.
+  - 먼저 규칙으로 뽑습니다(Gemini 호출 없음).
+  - 규칙으로 못 뽑았는데 설명란에 "재료" 이야기가 있으면, 사이트에 실제로 나오는 영상 1개만 Gemini(글만)로 정리합니다.
+  - 설명란 원문은 저장하지 않습니다.
+- Gemini 모델 기본값은 `gemini-3.7-flash`입니다. 더 아끼려면 `$env:GEMINI_MODEL = 'gemini-3.5-flash-lite'`로 바꿔 실행하세요.
+- 옵션: `--dry-run`(저장 안 함), `--limit N`, `--rotate-keys`(Gemini 키 전환, 기본 꺼짐), `--reset-keys`, `--no-gemini`
+- 한도에 걸려 멈추면 같은 명령을 다시 실행하세요. 끝난 레시피는 건너뜁니다.
+- 예전 방식(AI 영상 분석)으로 만든 요약은 설명란 재료가 없는 영상에만 그대로 보여 줍니다.
 - 임시 선택(`pickedBy: "auto"`)은 curate에서 직접 고르면 바뀝니다. 고른 뒤 커밋·push하면 사이트에 반영됩니다.
 
 ### 사이트에서 영상 평가하기 (👍/👎)

@@ -206,8 +206,37 @@ const SummaryList = ({ title, items, className = '' }) =>
     </>
   ) : null;
 
+// 아이는 매운 것을 못 먹는다. 영상 재료 중 매운 양념은 표시해 둔다(김치는 따로 씻어 먹이므로 제외).
+const SPICY = /(고춧가루|고추장|청양|고추기름|칠리|핫소스|(?<!피)고추(?!냉이))/;
+
+// 영상 "더보기"(설명란)에 유튜버가 적어 둔 재료. 영상 기준 양이라 아래 5인분 레시피와 다를 수 있다.
+const VideoIngredients = ({ video }) => {
+  if (!video || !video.descIngredients || !video.descIngredients.length) return null;
+  return (
+    <div className="mb-3 p-2 border rounded">
+      <h6 className="mb-1">영상 속 재료 (영상 더보기란 참고)</h6>
+      <ul className="small mb-1">
+        {video.descIngredients.map((x, i) => (
+          <li key={i}>
+            {x}
+            {SPICY.test(x) && (
+              <Badge bg="danger" className="ms-1">
+                매움 · 아이 몫은 빼기
+              </Badge>
+            )}
+          </li>
+        ))}
+      </ul>
+      <div className="small text-muted">
+        영상 기준 양이라 아래 성인 5인분 레시피와 다를 수 있어요.{video.descSource === 'gemini' ? ' (설명란 글을 AI가 정리)' : ''}
+      </div>
+    </div>
+  );
+};
+
+// 예전 방식(AI 영상 분석)으로 만든 요약. 새로 만들지는 않고, 설명란 재료가 없는 영상에만 남은 것을 보여 준다.
 const VideoSummary = ({ video }) => {
-  if (!video || !video.summary) return null;
+  if (!video || !video.summary || (video.descIngredients && video.descIngredients.length)) return null;
   const s = video.summary;
   return (
     <div className="mb-3 p-2 border rounded">
@@ -244,6 +273,7 @@ function RecipeModal({ recipeId, onClose }) {
                 <VideoPane video={video} recipeId={recipe.id} hasCandidates={!!media[recipe.id]?.candidates?.length} />
               </Col>
               <Col lg={6}>
+                <VideoIngredients video={video} />
                 <VideoSummary video={video} />
                 <div className="small text-muted mb-2">
                   성인 약 {recipe.servings}인분 · 손이 가는 시간 약 {recipe.active_minutes}분 · 냉동 {recipe.freezable ? '가능' : '어려움'}{' '}
