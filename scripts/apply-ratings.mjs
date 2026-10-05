@@ -10,12 +10,13 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { channelBias, chooseVideo, latestRatings } from '../src/lib/videoChoice.js';
+import { channelBias, chooseVideo, latestRatings, videoNames } from '../src/lib/videoChoice.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RATINGS_PATH = path.join(ROOT, 'src', 'data', 'video-ratings.json');
 const MEDIA_PATH = path.join(ROOT, 'src', 'data', 'recipe-media.json');
 const RECIPES_PATH = path.join(ROOT, 'src', 'data', 'recipes.seed.json');
+const NAMES_PATH = path.join(ROOT, 'src', 'data', 'video-names.json');
 
 const readJson = (p, fallback) => {
   try {
@@ -26,20 +27,21 @@ const readJson = (p, fallback) => {
 };
 
 // 순수 함수: 기존 평가 + 들어온 평가 → 합친 평가, 다시 고른 media, 요약
-export function applyRatings({ existing, incoming, media, recipes }) {
+export function applyRatings({ existing, incoming, media, recipes, aliasMap = {} }) {
   const before = latestRatings(existing);
   const map = latestRatings(existing, incoming);
   let changed = 0;
   for (const [id, r] of map) if (before.get(id) !== r) changed += 1;
   const bias = channelBias(map);
   const names = new Map(recipes.map((r) => [r.id, r.name]));
+  const titleNames = new Map(recipes.map((r) => [r.id, videoNames(r, aliasMap)]));
   const nextMedia = { ...media };
   const repicked = [];
   for (const [id, m] of Object.entries(media)) {
     if (!m.candidates || !m.candidates.length || !names.has(id)) continue;
     const humanPick = m.picked && m.pickedBy !== 'auto' && map.get(m.picked)?.rating !== -1;
     if (humanPick) continue;
-    const best = chooseVideo({ ...m, picked: null }, names.get(id), map, bias);
+    const best = chooseVideo({ ...m, picked: null }, titleNames.get(id), map, bias);
     const picked = best ? best.videoId : null;
     if (picked === m.picked) continue;
     nextMedia[id] = { ...m, picked, pickedAt: picked ? new Date().toISOString() : null, pickedBy: picked ? 'auto' : null };
@@ -68,7 +70,8 @@ function main() {
     existing: readJson(RATINGS_PATH, []),
     incoming,
     media: readJson(MEDIA_PATH, {}),
-    recipes: readJson(RECIPES_PATH, [])
+    recipes: readJson(RECIPES_PATH, []),
+    aliasMap: readJson(NAMES_PATH, {})
   });
   fs.writeFileSync(RATINGS_PATH, JSON.stringify(out.ratings, null, 2) + '\n');
   fs.writeFileSync(MEDIA_PATH, JSON.stringify(out.media, null, 2) + '\n');

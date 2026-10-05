@@ -71,6 +71,7 @@ NEIS 급식식단정보에는 유치원이 없어(전국 17개 교육청 확인)
 ```powershell
 npm run month-pack -- --auto-pick               # 영상 후보 3개 + 설명란 재료, 사이트에 보일 영상 임시 선택
 npm run month-pack -- --auto-pick --no-gemini   # Gemini 를 전혀 쓰지 않음(설명란 재료는 규칙으로만)
+npm run month-pack -- --all --auto-pick         # 앞으로 30일만이 아니라 모든 레시피
 npm run curate                                  # 로컬 화면에서 레시피마다 영상 1개 고르기
 ```
 
@@ -78,6 +79,9 @@ npm run curate                                  # 로컬 화면에서 레시피�
   - 먼저 규칙으로 뽑습니다(Gemini 호출 없음).
   - 규칙으로 못 뽑았는데 설명란에 "재료" 이야기가 있으면, 사이트에 실제로 나오는 영상 1개만 Gemini(글만)로 정리합니다.
   - 설명란 원문은 저장하지 않습니다.
+- 사이트에 띄우는 영상은 제목에 요리 이름이 든 것만 고릅니다. 유튜브에서 흔히 다르게 부르는 이름(예: 언양식쇠불고기 → 소불고기)은
+  `src/data/video-names.json`에 적어 두면 그 이름으로도 찾고 맞춥니다. 안 매운 버전 요리에는 안 매운 이름만 넣으세요.
+- 제목이 맞는 영상이 없으면 "유아식" 없이, 그다음 다른 이름으로 한 번씩 더 검색합니다(검색은 하루 100회 한도).
 - Gemini 모델 기본값은 `gemini-3.7-flash`입니다. 더 아끼려면 `$env:GEMINI_MODEL = 'gemini-3.5-flash-lite'`로 바꿔 실행하세요.
 - 옵션: `--dry-run`(저장 안 함), `--limit N`, `--rotate-keys`(Gemini 키 전환, 기본 꺼짐), `--reset-keys`, `--no-gemini`
 - 한도에 걸려 멈추면 같은 명령을 다시 실행하세요. 끝난 레시피는 건너뜁니다.

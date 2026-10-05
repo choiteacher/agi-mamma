@@ -5,8 +5,9 @@ import { Badge, Button, Col, Modal, Overlay, Popover, Row } from 'react-bootstra
 
 // project import
 import media from '../../data/recipe-media.json';
+import aliasMap from '../../data/video-names.json';
 import { recipesById, useAppData } from '../../state/AppDataContext';
-import { chooseVideo } from '../../lib/videoChoice';
+import { chooseVideo, videoNames } from '../../lib/videoChoice';
 
 // ==============================|| RECIPE UI ||============================== //
 // - 데스크톱: 요리명에 1초 이상 마우스를 올리면 간략 조리법 말풍선, 벗어나면 닫힘
@@ -252,7 +253,7 @@ const VideoSummary = ({ video }) => {
 function RecipeModal({ recipeId, onClose }) {
   const recipe = recipeId ? recipesById.get(recipeId) : null;
   const { ratingMap } = useAppData();
-  const video = recipe ? chooseVideo(media[recipe.id], recipe.name, ratingMap) : null;
+  const video = recipe ? chooseVideo(media[recipe.id], videoNames(recipe, aliasMap), ratingMap) : null;
   return (
     <Modal show={!!recipe} onHide={onClose} size="xl" fullscreen="md-down" centered scrollable>
       {recipe && (

@@ -56,3 +56,15 @@ describe('평가 공유와 모으기', () => {
     expect(out.media.soup).toMatchObject({ picked: 'b', pickedBy: 'auto' });
   });
 });
+
+describe('다른 이름으로 영상 찾기', () => {
+  it('레시피 이름이 제목에 없어도 다른 이름(별칭)이 있으면 고른다', () => {
+    const e = { candidates: [{ videoId: 'v', title: '소고기 표고 볶음 만들기', score: 1, channelId: 'c' }] };
+    expect(chooseVideo(e, '쇠고기표고버섯볶음')).toBeNull();
+    expect(chooseVideo(e, ['쇠고기표고버섯볶음', '소고기표고볶음']).videoId).toBe('v');
+  });
+  it('야채/채소, 돈육/돼지고기는 같은 말로 본다', () => {
+    const e = { candidates: [{ videoId: 'v', title: '베이컨 야채 볶음밥', score: 1, channelId: 'c' }] };
+    expect(chooseVideo(e, '베이컨채소볶음밥').videoId).toBe('v');
+  });
+});

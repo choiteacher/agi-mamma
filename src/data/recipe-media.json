@@ -424,7 +424,9 @@
     ],
     "picked": null,
     "pickedAt": null,
-    "pickedBy": null
+    "pickedBy": null,
+    "secondSearchedAt": "2026-10-05T03:07:15.884Z",
+    "aliasSearchedAt": "2026-10-05T03:09:46.125Z"
   },
   "beef-cabbage-soup": {
     "query": "쇠고기얼갈이탕 유아식 만들기",
@@ -473,7 +475,9 @@
     ],
     "picked": null,
     "pickedAt": null,
-    "pickedBy": null
+    "pickedBy": null,
+    "secondSearchedAt": "2026-10-05T03:07:20.984Z",
+    "aliasSearchedAt": "2026-10-05T03:09:53.146Z"
   },
   "perilla-oil-tofu": {
     "query": "들기름두부구이 유아식 만들기",
@@ -727,9 +731,10 @@
         "descSource": "rule"
       }
     ],
-    "picked": null,
-    "pickedAt": null,
-    "pickedBy": null
+    "picked": "aWWXwjPBbKA",
+    "pickedAt": "2026-10-05T03:09:44.550Z",
+    "pickedBy": "auto",
+    "secondSearchedAt": "2026-10-05T03:07:17.104Z"
   },
   "seaweed-soup": {
     "query": "미역국 유아식 만들기",
@@ -875,8 +880,8 @@
         "descSource": "rule"
       }
     ],
-    "picked": "N1h3tHaOzwA",
-    "pickedAt": "2026-10-04T22:11:41.188Z",
+    "picked": "Oru-_4yUpp4",
+    "pickedAt": "2026-10-05T03:07:15.183Z",
     "pickedBy": "auto"
   },
   "dumpling-soup": {
@@ -977,11 +982,26 @@
         "score": -1.44,
         "descIngredients": [],
         "descSource": null
+      },
+      {
+        "videoId": "UtCysLf5pSQ",
+        "title": "두부계란부침 만들기, 고소하고 반찬으로 좋아요!",
+        "channel": "최주부 Choi JuBu",
+        "channelId": "UCxGzGirbl7JZlTTrO7jJCLA",
+        "thumbnail": "https://i.ytimg.com/vi/UtCysLf5pSQ/mqdefault.jpg",
+        "durationSec": 280,
+        "viewCount": 228557,
+        "embeddable": true,
+        "score": 20.72,
+        "descIngredients": [],
+        "descSource": null
       }
     ],
-    "picked": null,
-    "pickedAt": null,
-    "pickedBy": null
+    "picked": "UtCysLf5pSQ",
+    "pickedAt": "2026-10-05T03:09:49.720Z",
+    "pickedBy": "auto",
+    "secondSearchedAt": "2026-10-05T03:07:20.508Z",
+    "aliasSearchedAt": "2026-10-05T03:09:49.720Z"
   },
   "eggplant-namul": {
     "query": "가지나물 유아식 만들기",
@@ -1219,9 +1239,10 @@
         "descSource": null
       }
     ],
-    "picked": null,
-    "pickedAt": null,
-    "pickedBy": null
+    "picked": "IxYi9PJAKRs",
+    "pickedAt": "2026-10-05T03:09:44.550Z",
+    "pickedBy": "auto",
+    "secondSearchedAt": "2026-10-05T03:07:22.636Z"
   },
   "sujebi": {
     "query": "수제비 유아식 만들기",
@@ -1424,7 +1445,8 @@
     ],
     "picked": null,
     "pickedAt": null,
-    "pickedBy": null
+    "pickedBy": null,
+    "secondSearchedAt": "2026-10-05T03:07:21.378Z"
   },
   "washed-kimchi-pork-stirfry": {
     "query": "돈육김치볶음 유아식 만들기",
@@ -1505,9 +1527,10 @@
         "descSource": null
       }
     ],
-    "picked": null,
-    "pickedAt": null,
-    "pickedBy": null
+    "picked": "pRFmSiSk12w",
+    "pickedAt": "2026-10-05T03:09:44.550Z",
+    "pickedBy": "auto",
+    "secondSearchedAt": "2026-10-05T03:07:21.772Z"
   },
   "shrimp-zucchini-soup": {
     "query": "새우살애호박국 유아식 만들기",
@@ -1569,9 +1592,10 @@
         "descSource": "rule"
       }
     ],
-    "picked": null,
-    "pickedAt": null,
-    "pickedBy": null
+    "picked": "tOQgC3aVtXQ",
+    "pickedAt": "2026-10-05T03:09:44.550Z",
+    "pickedBy": "auto",
+    "secondSearchedAt": "2026-10-05T03:07:17.539Z"
   },
   "chicken-teriyaki": {
     "query": "닭가슴살데리야끼볶음 유아식 만들기",
@@ -1627,9 +1651,10 @@
         "descNeedsAi": true
       }
     ],
-    "picked": null,
-    "pickedAt": null,
-    "pickedBy": null
+    "picked": "PuXOXckQw38",
+    "pickedAt": "2026-10-05T03:09:44.550Z",
+    "pickedBy": "auto",
+    "secondSearchedAt": "2026-10-05T03:07:18.048Z"
   },
   "broccoli-blanched": {
     "query": "브로콜리숙회 유아식 만들기",
@@ -1681,7 +1706,9 @@
     ],
     "picked": null,
     "pickedAt": null,
-    "pickedBy": null
+    "pickedBy": null,
+    "secondSearchedAt": "2026-10-05T03:07:18.438Z",
+    "aliasSearchedAt": "2026-10-05T03:09:47.727Z"
   },
   "enoki-tofu-doenjang-soup": {
     "query": "팽이두부된장국 유아식 만들기",
@@ -1824,11 +1851,65 @@
         "summarizedWith": "gemini-3.8-flash",
         "descIngredients": [],
         "descSource": null
+      },
+      {
+        "videoId": "7OebLJliXHI",
+        "title": "1,000으로 만든 팽이버섯 된장국 기가 막힙니다",
+        "channel": "요리왕비룡 셰프TV ",
+        "channelId": "UCcNUpInQt1tI3JC_oTPQ20w",
+        "thumbnail": "https://i.ytimg.com/vi/7OebLJliXHI/mqdefault.jpg",
+        "durationSec": 488,
+        "viewCount": 71528,
+        "embeddable": true,
+        "score": 19.71,
+        "descIngredients": [
+          "팽이버섯1봉",
+          "무1토막",
+          "육수팩(멸치다시)",
+          "두부250g",
+          "청양고추2개",
+          "재래식된장2T",
+          "고추장0.5T",
+          "다진마늘0.5T",
+          "소금0.5T",
+          "참치액0.5T"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "DpmHoziChlM",
+        "title": "깔끔한 맛! 팽이버섯된장국 맛있게 끓이는법, 된장국 쉽고 만들기",
+        "channel": "고향누나 자연식단",
+        "channelId": "UCksWPAVIhSox3q8QNHLiSzA",
+        "thumbnail": "https://i.ytimg.com/vi/DpmHoziChlM/mqdefault.jpg",
+        "durationSec": 223,
+        "viewCount": 36868,
+        "embeddable": true,
+        "score": 19.13,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "qAaIQJk2V3U",
+        "title": "팽이버섯 된장국, 담백하고 부담없이 간단한 아침국으로 좋아요.",
+        "channel": "Soon Cook TV",
+        "channelId": "UCM3XxFFuVy-aQ3YMgAsLO8A",
+        "thumbnail": "https://i.ytimg.com/vi/qAaIQJk2V3U/mqdefault.jpg",
+        "durationSec": 197,
+        "viewCount": 17491,
+        "embeddable": true,
+        "score": 18.49,
+        "descIngredients": [
+          "레시피"
+        ],
+        "descSource": "rule"
       }
     ],
-    "picked": null,
-    "pickedAt": null,
-    "pickedBy": null
+    "picked": "7OebLJliXHI",
+    "pickedAt": "2026-10-05T03:09:46.908Z",
+    "pickedBy": "auto",
+    "secondSearchedAt": "2026-10-05T03:07:16.277Z",
+    "aliasSearchedAt": "2026-10-05T03:09:46.907Z"
   },
   "unyang-bulgogi": {
     "query": "언양식쇠불고기 유아식 만들기",
@@ -1992,9 +2073,10 @@
         "descSource": "rule"
       }
     ],
-    "picked": null,
-    "pickedAt": null,
-    "pickedBy": null
+    "picked": "0tFQaJ3XeVw",
+    "pickedAt": "2026-10-05T03:09:44.550Z",
+    "pickedBy": "auto",
+    "secondSearchedAt": "2026-10-05T03:07:16.697Z"
   },
   "bean-sprout-namul": {
     "query": "콩나물무침 유아식 만들기",
@@ -2157,8 +2239,8 @@
         "descSource": null
       }
     ],
-    "picked": "qT07czBXHe8",
-    "pickedAt": "2026-10-04T22:11:46.749Z",
+    "picked": "I3w8zAFa_G4",
+    "pickedAt": "2026-10-05T03:07:15.184Z",
     "pickedBy": "auto"
   },
   "bean-sprout-soup": {
@@ -2259,7 +2341,9 @@
     ],
     "picked": null,
     "pickedAt": null,
-    "pickedBy": null
+    "pickedBy": null,
+    "secondSearchedAt": "2026-10-05T03:07:19.922Z",
+    "aliasSearchedAt": "2026-10-05T03:09:49.204Z"
   },
   "kalguksu": {
     "query": "칼국수 유아식 만들기",
@@ -2372,7 +2456,10 @@
         "descNeedsAi": true
       }
     ],
-    "picked": null
+    "picked": "GsWs9Pomxlk",
+    "secondSearchedAt": "2026-10-05T03:07:18.898Z",
+    "pickedAt": "2026-10-05T03:09:44.551Z",
+    "pickedBy": "auto"
   },
   "squid-veg-stirfry": {
     "query": "오징어채소볶음 유아식 만들기",
@@ -2454,9 +2541,26 @@
         "descIngredients": [],
         "descSource": null,
         "descNeedsAi": true
+      },
+      {
+        "videoId": "YW2QmpSlUIk",
+        "title": "오징어간장볶음,오징어볶음  |오징어꽃 아이들을 위한 오징어볶음 만들기 함께 요리해요 | 영자씨의 부엌",
+        "channel": "영자씨의 부엌Young-Ja's Kitchen",
+        "channelId": "UC2gasvQVxOdRht9ykwhxwjw",
+        "thumbnail": "https://i.ytimg.com/vi/YW2QmpSlUIk/mqdefault.jpg",
+        "durationSec": 584,
+        "viewCount": 201276,
+        "embeddable": true,
+        "score": 20.61,
+        "descIngredients": [],
+        "descSource": null
       }
     ],
-    "picked": null
+    "picked": "YW2QmpSlUIk",
+    "secondSearchedAt": "2026-10-05T03:07:19.439Z",
+    "aliasSearchedAt": "2026-10-05T03:09:48.675Z",
+    "pickedAt": "2026-10-05T03:09:48.675Z",
+    "pickedBy": "auto"
   },
   "spinach-namul": {
     "query": "시금치나물 유아식 만들기",
@@ -2507,8 +2611,8 @@
         "descSource": null
       }
     ],
-    "picked": "-KpH7UTZxIA",
-    "pickedAt": "2026-10-05T02:54:31.631Z",
+    "picked": "e6P5RO_ThnA",
+    "pickedAt": "2026-10-05T03:07:15.184Z",
     "pickedBy": "auto"
   },
   "mushroom-doenjang-soup": {
@@ -2651,7 +2755,10 @@
         "descSource": "rule"
       }
     ],
-    "picked": null
+    "picked": "D5v9QNUHJFk",
+    "secondSearchedAt": "2026-10-05T03:07:22.218Z",
+    "pickedAt": "2026-10-05T03:09:44.551Z",
+    "pickedBy": "auto"
   },
   "radish-namul": {
     "query": "무나물 유아식 만들기",
@@ -2718,6 +2825,1446 @@
     ],
     "picked": "snjfXl-qvOo",
     "pickedAt": "2026-10-05T02:54:33.979Z",
+    "pickedBy": "auto"
+  },
+  "seaweed-doenjang-soup": {
+    "query": "미역된장국 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:23.068Z",
+    "candidates": [
+      {
+        "videoId": "24gd8f8SrvM",
+        "title": "유아식 된장미역국",
+        "channel": "시니맘",
+        "channelId": "UCBU4hwPmuFhgSfw_BnA2m6A",
+        "thumbnail": "https://i.ytimg.com/vi/24gd8f8SrvM/mqdefault.jpg",
+        "durationSec": 77,
+        "viewCount": 879,
+        "embeddable": true,
+        "score": 3.89,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "N1h3tHaOzwA",
+        "title": "아기가 환장하는 미역국레시피👶🏻",
+        "channel": "우유커플 Milk_couple",
+        "channelId": "UCVgmjMddxHEF5VE3MUY_P0g",
+        "thumbnail": "https://i.ytimg.com/vi/N1h3tHaOzwA/mqdefault.jpg",
+        "durationSec": 49,
+        "viewCount": 204449,
+        "embeddable": true,
+        "score": 0.62,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "sh1Qf3pJ52E",
+        "title": "아침에 간단하게! 미역된장국",
+        "channel": "오메추 : 오늘의 메뉴를 추천합니다.",
+        "channelId": "UCrSokje0qVLme9cJDsbB3sg",
+        "thumbnail": "https://i.ytimg.com/vi/sh1Qf3pJ52E/mqdefault.jpg",
+        "durationSec": 22,
+        "viewCount": 203140,
+        "embeddable": true,
+        "score": 0.62,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": "sh1Qf3pJ52E",
+    "pickedAt": "2026-10-05T03:07:23.069Z",
+    "pickedBy": "auto"
+  },
+  "pollock-soup": {
+    "query": "북엇국 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:23.424Z",
+    "candidates": [
+      {
+        "videoId": "PVbJ-2h7Ql0",
+        "title": "3대째 내려온 북어국 맛있게 끓이는 법 뽀얗게 북어국 시원하게 끓이는법",
+        "channel": "최주부 Choi JuBu",
+        "channelId": "UCxGzGirbl7JZlTTrO7jJCLA",
+        "thumbnail": "https://i.ytimg.com/vi/PVbJ-2h7Ql0/mqdefault.jpg",
+        "durationSec": 249,
+        "viewCount": 496293,
+        "embeddable": true,
+        "score": 21.39,
+        "descIngredients": [],
+        "descSource": null,
+        "descNeedsAi": true
+      },
+      {
+        "videoId": "gow5f4lzky8",
+        "title": "황태국을 더 뽀얗고 부드럽게 끓이는 법",
+        "channel": "비타민 밥상",
+        "channelId": "UC_59mJORVWl6jsO5AaulWpA",
+        "thumbnail": "https://i.ytimg.com/vi/gow5f4lzky8/mqdefault.jpg",
+        "durationSec": 63,
+        "viewCount": 3535019,
+        "embeddable": true,
+        "score": 11.1,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "z-YdZrB2HbA",
+        "title": "뽀얗게 끓이는 '황태국'레시피 알려드릴게요! #북어국",
+        "channel": "추추의 한끼식사",
+        "channelId": "UCA_HPCVwiZZNKqQpVJWEhxA",
+        "thumbnail": "https://i.ytimg.com/vi/z-YdZrB2HbA/mqdefault.jpg",
+        "durationSec": 67,
+        "viewCount": 3454197,
+        "embeddable": true,
+        "score": 11.08,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": "PVbJ-2h7Ql0",
+    "secondSearchedAt": "2026-10-05T03:07:23.827Z",
+    "pickedAt": "2026-10-05T03:09:44.551Z",
+    "pickedBy": "auto"
+  },
+  "mild-pork-potato-soup": {
+    "query": "순살감자탕 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:24.202Z",
+    "candidates": [
+      {
+        "videoId": "PJFjc4Ew9ZI",
+        "title": "온가족 함께 먹는! 안매운 감자탕!",
+        "channel": "아롱레시피",
+        "channelId": "UCUv_oBM4Ialn8Rwg8zDTXYA",
+        "thumbnail": "https://i.ytimg.com/vi/PJFjc4Ew9ZI/mqdefault.jpg",
+        "durationSec": 61,
+        "viewCount": 199433,
+        "embeddable": true,
+        "score": 8.6,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "10DZr2ALfHk",
+        "title": "진짜 감자탕집 차릴뻔했던 레시피!깊은맛에 핵심!!이렇게만 해보세요!! #감자탕#순살감자탕#시래기감자탕#초간단감자탕#간단요리#초간단감자탕#간단감자탕#마마조#집밥 #koreanfood",
+        "channel": "마마조",
+        "channelId": "UCc4AgW0DhZqSmFf3lZvclzw",
+        "thumbnail": "https://i.ytimg.com/vi/10DZr2ALfHk/mqdefault.jpg",
+        "durationSec": 59,
+        "viewCount": 1008644,
+        "embeddable": true,
+        "score": 2.01,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "W4tEh1k2UPw",
+        "title": "뼈없이 순살로 만드는 순살 감자탕!! 이대로만 만들면 이제 감자탕집 갈일없어요!#순살감자탕#감자탕#초간단감자탕#간단감자탕#간단요리#간단레시피",
+        "channel": "마마조",
+        "channelId": "UCc4AgW0DhZqSmFf3lZvclzw",
+        "thumbnail": "https://i.ytimg.com/vi/W4tEh1k2UPw/mqdefault.jpg",
+        "durationSec": 53,
+        "viewCount": 281734,
+        "embeddable": true,
+        "score": 0.9,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": "10DZr2ALfHk",
+    "pickedAt": "2026-10-05T03:07:24.202Z",
+    "pickedBy": "auto"
+  },
+  "kimchi-tuna-stew": {
+    "query": "참치김치찌개 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:24.595Z",
+    "candidates": [
+      {
+        "videoId": "e--h7ax_6pQ",
+        "title": "참치김치찌개 끓이기 전에 '이거' 같이 안 해 먹으면 손해!",
+        "channel": "백종원 PAIK JONG WON",
+        "channelId": "UCyn-K7rZLXjGl7VXGweIlcA",
+        "thumbnail": "https://i.ytimg.com/vi/e--h7ax_6pQ/mqdefault.jpg",
+        "durationSec": 470,
+        "viewCount": 2451490,
+        "embeddable": true,
+        "score": 22.78,
+        "descIngredients": [
+          "정수 물 약 2컵(400ml)",
+          "신김치 약 1컵(150g)",
+          "양파 약 1/2개(100g)",
+          "두부 1/2팩(90g)",
+          "참치캔 1/2캔(50g)",
+          "대파 약 1/3대(30g)",
+          "국간장 2큰술(20g)",
+          "간 마늘 1큰술(20g)",
+          "굵은 고춧가루 2큰술(16g)",
+          "청양고추 1개(10g)",
+          "황설탕 1/4큰술(3g)",
+          "진간장 약 1큰술(12g)",
+          "양파 약간(8g)",
+          "청양고추 약 1개(7g)",
+          "대파 약간(7g)",
+          "간 마늘 약 1/5큰술(4g)",
+          "참기름 약 1/3큰술(2g)",
+          "굵은 고춧가루 약간(1g)",
+          "황설탕 약간(1g)"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "GCx12Ut721k",
+        "title": "시원하게 끓인 참치김치찌개 ! 이것 넣고 볶아주면 풍미가 살아납니다~",
+        "channel": "쿡피아 Cookpia",
+        "channelId": "UCyn7aoxdLNDZG2ZXXLoVCNQ",
+        "thumbnail": "https://i.ytimg.com/vi/GCx12Ut721k/mqdefault.jpg",
+        "durationSec": 645,
+        "viewCount": 451823,
+        "embeddable": true,
+        "score": 21.31,
+        "descIngredients": [
+          "사조 통살참치 2개(200g), 배추김치 600g,",
+          "두부 1/2모, 쌀뜨물 1리터,",
+          "양파 1/2개, 대파 1/2대, 청양고추1개",
+          "사조 참치액 2큰술, 다진 마늘 1큰술,",
+          "고추장 1큰술, 고춧가루 2큰술,",
+          "설탕 1큰술(기호에 따라)",
+          "컵=200cc",
+          "00 - 오프닝",
+          "38 - 재료소개 및 김칫소 빼내고 자르기",
+          "22 - 양파 채썰어 사조 참치액 넣고 김치와 무치기",
+          "39 - 냄비에 넣고 1분 정도 볶기"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "vfojlcdGrC4",
+        "title": "똑같은 재료로 만들었는데도 맛이 차이나는 이유? 바로 조리방법에 있어요! [참치 김치찌개]",
+        "channel": "딸을 위한 레시피 Recipes for daughters",
+        "channelId": "UC37fRkl_iIjDAr9pf0FFzGA",
+        "thumbnail": "https://i.ytimg.com/vi/vfojlcdGrC4/mqdefault.jpg",
+        "durationSec": 233,
+        "viewCount": 229126,
+        "embeddable": true,
+        "score": 20.72,
+        "descIngredients": [
+          "신김치(익은김치) 1/4포기",
+          "대파 1/3대",
+          "청양고추 1개",
+          "두부 반 모",
+          "통조림 참치 1캔(350g)",
+          "김칫국물 반컵(100ml)",
+          "참치액 ½Tbsp",
+          "고춧가루 ½Tbsp",
+          "김치 볶을때) 식용유 ½Tbsp + 참치기름 + 간마늘 ½Tbsp",
+          "해물 육수) 해물다시팩 1개 + 물 800ml",
+          "⚠️이 영상은 ‘딸을위한레시피’에서 제작하였으며,"
+        ],
+        "descSource": "rule"
+      }
+    ],
+    "picked": "e--h7ax_6pQ",
+    "pickedAt": "2026-10-05T03:07:24.596Z",
+    "pickedBy": "auto"
+  },
+  "soft-tofu-clear-soup": {
+    "query": "순두부백탕 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:25.026Z",
+    "candidates": [
+      {
+        "videoId": "SgbK5INDgA8",
+        "title": "바쁜아침 최고요리! 5분 완성✔️ 정말 맛있는 몽글몽글 순두부계란탕",
+        "channel": "딸을 위한 레시피 Recipes for daughters",
+        "channelId": "UC37fRkl_iIjDAr9pf0FFzGA",
+        "thumbnail": "https://i.ytimg.com/vi/SgbK5INDgA8/mqdefault.jpg",
+        "durationSec": 215,
+        "viewCount": 3252992,
+        "embeddable": true,
+        "score": 23.02,
+        "descIngredients": [
+          "물 600ml",
+          "계란 4알",
+          "쪽파 2줄",
+          "참치액 1큰술(Tbsp)",
+          "국간장 ½큰술(Tbsp)",
+          "다진마늘 ½큰술(Tbsp)",
+          "소금 두꼬집(염도 맞춰조절하세요)",
+          "참기름",
+          "･Artist : 오늘의 일기(Oneul)"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "TnBlc1ZSykg",
+        "title": "순두부 한팩 남으면 해보세요 내가 정착한 저속노화 순두부백탕 레시피|너무 쉬워서 매일먹어요",
+        "channel": "황금밥그릇 - 간단하고 건강한 요리",
+        "channelId": "UC6ZFnmz7BkT8CsJZIuPwbZA",
+        "thumbnail": "https://i.ytimg.com/vi/TnBlc1ZSykg/mqdefault.jpg",
+        "durationSec": 37,
+        "viewCount": 570973,
+        "embeddable": true,
+        "score": 1.51,
+        "descIngredients": [
+          "순두부 1팩",
+          "양파 ½개",
+          "대파 1단",
+          "청양고추 1개",
+          "다진 마늘 1큰술",
+          "계란 2개",
+          "물 6컵 (종이컵 기준)",
+          "코인육수 2개",
+          "참치액 2큰술"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "OprfOZvnt0E",
+        "title": "뚝딱 순두부덮밥 #유아식 #babymealideas #유아식레시피 #유아반찬",
+        "channel": "강미즈",
+        "channelId": "UCPMdoqVQdvJPtcR1TtFnQ5w",
+        "thumbnail": "https://i.ytimg.com/vi/OprfOZvnt0E/mqdefault.jpg",
+        "durationSec": 32,
+        "viewCount": 87633,
+        "embeddable": true,
+        "score": -0.11,
+        "descIngredients": [
+          "▫️만능소고기야채볶음 1통 (70g)",
+          "▫️순두부 1/4",
+          "▫️멸치다시육수 60ml",
+          "▫️감자전분가루 반스푼",
+          "▫️참기름 반스푼"
+        ],
+        "descSource": "rule"
+      }
+    ],
+    "picked": "TnBlc1ZSykg",
+    "pickedAt": "2026-10-05T03:07:25.027Z",
+    "pickedBy": "auto"
+  },
+  "chard-doenjang-soup": {
+    "query": "근대된장국 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:25.404Z",
+    "candidates": [
+      {
+        "videoId": "htJEcQMZGvk",
+        "title": "구수한~ 매력이 있는 '아욱된장국' 알려드릴게요!",
+        "channel": "추추의 한끼식사",
+        "channelId": "UCA_HPCVwiZZNKqQpVJWEhxA",
+        "thumbnail": "https://i.ytimg.com/vi/htJEcQMZGvk/mqdefault.jpg",
+        "durationSec": 73,
+        "viewCount": 3674921,
+        "embeddable": true,
+        "score": 11.13,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "R7RCnaO6t2k",
+        "title": "국물맛에 밥 세공기 순삭입니다 (얼갈이 된장국)",
+        "channel": "토깽이 아줌마의 살림일기",
+        "channelId": "UCv3mfz9gg35cBOT2yNc1P_Q",
+        "thumbnail": "https://i.ytimg.com/vi/R7RCnaO6t2k/mqdefault.jpg",
+        "durationSec": 60,
+        "viewCount": 2647757,
+        "embeddable": true,
+        "score": 10.85,
+        "descIngredients": [
+          "얼갈이 한 단",
+          "청양고추 두어개",
+          "다시마 육수 1.5~ 2리터 (개인 기호에 따라 가감)",
+          "된장 약 60g 정도",
+          "고춧가루 1T",
+          "들기름 2~T",
+          "🌶️ 국 간 맞추기",
+          "마늘1T",
+          "다진파 2~3T",
+          "참치액젓 1T (개인기호에 따라 가감)",
+          "소금 또는 국간장으로도 가능"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "KgflQUPdIEY",
+        "title": "[MammaYou] 완료기 이유식 | 근대된장국",
+        "channel": "MammaYou",
+        "channelId": "UCqCg08hFbMJ7tfbz72nxwDg",
+        "thumbnail": "https://i.ytimg.com/vi/KgflQUPdIEY/mqdefault.jpg",
+        "durationSec": 87,
+        "viewCount": 877,
+        "embeddable": true,
+        "score": 3.89,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": "KgflQUPdIEY",
+    "pickedAt": "2026-10-05T03:07:25.404Z",
+    "pickedBy": "auto"
+  },
+  "siraegi-doenjang-soup": {
+    "query": "시래기된장국 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:25.825Z",
+    "candidates": [
+      {
+        "videoId": "R7RCnaO6t2k",
+        "title": "국물맛에 밥 세공기 순삭입니다 (얼갈이 된장국)",
+        "channel": "토깽이 아줌마의 살림일기",
+        "channelId": "UCv3mfz9gg35cBOT2yNc1P_Q",
+        "thumbnail": "https://i.ytimg.com/vi/R7RCnaO6t2k/mqdefault.jpg",
+        "durationSec": 60,
+        "viewCount": 2647757,
+        "embeddable": true,
+        "score": 10.85,
+        "descIngredients": [
+          "얼갈이 한 단",
+          "청양고추 두어개",
+          "다시마 육수 1.5~ 2리터 (개인 기호에 따라 가감)",
+          "된장 약 60g 정도",
+          "고춧가루 1T",
+          "들기름 2~T",
+          "🌶️ 국 간 맞추기",
+          "마늘1T",
+          "다진파 2~3T",
+          "참치액젓 1T (개인기호에 따라 가감)",
+          "소금 또는 국간장으로도 가능"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "Wga5wI3cq9Q",
+        "title": "시래기 된장국 절대 된장만 넣지 마세요!",
+        "channel": "하루비타민",
+        "channelId": "UC9oU-TI8xZp0mf7vxJayblw",
+        "thumbnail": "https://i.ytimg.com/vi/Wga5wI3cq9Q/mqdefault.jpg",
+        "durationSec": 24,
+        "viewCount": 1492695,
+        "embeddable": true,
+        "score": 2.35,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "OcDEYXxrT2E",
+        "title": "10분완성 시래기된장국키트, 댓글에 레시피 있어요#5인가족 #자취요리 #식단공유 #cooking #레시피 #식비절약 #집밥 #주부 #일주일식단 #된장국 #시래기된장국",
+        "channel": "유다데일리",
+        "channelId": "UCxACO3WhVdTEHtzHXK6mWOA",
+        "thumbnail": "https://i.ytimg.com/vi/OcDEYXxrT2E/mqdefault.jpg",
+        "durationSec": 17,
+        "viewCount": 1201645,
+        "embeddable": true,
+        "score": 2.16,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": "Wga5wI3cq9Q",
+    "pickedAt": "2026-10-05T03:07:25.825Z",
+    "pickedBy": "auto"
+  },
+  "miso-soup": {
+    "query": "미소장국 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:26.198Z",
+    "candidates": [
+      {
+        "videoId": "X1QDCHNSXvc",
+        "title": "[유아반찬] 미소된장국 만들기",
+        "channel": "여늬튜브_구독좋아요",
+        "channelId": "UCDUqX1U9XXOd6Eh4VWdOuVQ",
+        "thumbnail": "https://i.ytimg.com/vi/X1QDCHNSXvc/mqdefault.jpg",
+        "durationSec": 89,
+        "viewCount": 752,
+        "embeddable": true,
+        "score": 3.75,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "wVSN1cOA_yM",
+        "title": "⭐️150만뷰⭐️컵라면보다 쉬운 된장국큐브",
+        "channel": "간단한끼 요오리",
+        "channelId": "UCOU8XYXbXE6oyboOZLV_w5g",
+        "thumbnail": "https://i.ytimg.com/vi/wVSN1cOA_yM/mqdefault.jpg",
+        "durationSec": 35,
+        "viewCount": 1745558,
+        "embeddable": true,
+        "score": 2.48,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "liu_BmunDW4",
+        "title": "5분이면 되는 미소된장국",
+        "channel": "한스터 han’s kitchen",
+        "channelId": "UCiBknyzz_m9xLuCo-xRZZWw",
+        "thumbnail": "https://i.ytimg.com/vi/liu_BmunDW4/mqdefault.jpg",
+        "durationSec": 12,
+        "viewCount": 251518,
+        "embeddable": true,
+        "score": 0.8,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": "X1QDCHNSXvc",
+    "secondSearchedAt": "2026-10-05T03:07:26.604Z",
+    "pickedAt": "2026-10-05T03:09:44.551Z",
+    "pickedBy": "auto"
+  },
+  "tofu-pouch-clear-soup": {
+    "query": "맑은유부국 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:26.934Z",
+    "candidates": [
+      {
+        "videoId": "w9PHrswh9jg",
+        "title": "갈비탕 국물같은 '소고기뭇국' 레시피!",
+        "channel": "추추의 한끼식사",
+        "channelId": "UCA_HPCVwiZZNKqQpVJWEhxA",
+        "thumbnail": "https://i.ytimg.com/vi/w9PHrswh9jg/mqdefault.jpg",
+        "durationSec": 65,
+        "viewCount": 6426810,
+        "embeddable": true,
+        "score": 11.62,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "a1obzltlGZs",
+        "title": "김나영 알고보니 소고기 무국 고수",
+        "channel": "김나영의 nofilterTV(노필터티비)",
+        "channelId": "UC0wNauoCVIfU_xtWwrczFiA",
+        "thumbnail": "https://i.ytimg.com/vi/a1obzltlGZs/mqdefault.jpg",
+        "durationSec": 60,
+        "viewCount": 5138729,
+        "embeddable": true,
+        "score": 11.42,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "Pna28ZI7cTw",
+        "title": "[#집밥백선생] 맑고 깔끔한 국물의 비결을 알려드립니다. 백종원의 '유부 된장국' | EP18",
+        "channel": "tvN Joy",
+        "channelId": "UC78PMQprrZTbU0IlMDsYZPw",
+        "thumbnail": "https://i.ytimg.com/vi/Pna28ZI7cTw/mqdefault.jpg",
+        "durationSec": 102,
+        "viewCount": 109327,
+        "embeddable": true,
+        "score": 8.08,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": null,
+    "secondSearchedAt": "2026-10-05T03:07:27.314Z"
+  },
+  "beef-shiitake-stirfry": {
+    "query": "쇠고기표고버섯볶음 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:27.723Z",
+    "candidates": [
+      {
+        "videoId": "0tFQaJ3XeVw",
+        "title": "누구나 대성공✔️ 이렇게 썰고 볶아야 부드럽고 입에 살살 녹는 대박집 소불고기!! 누린내없이 맛있어요🥇",
+        "channel": "딸을 위한 레시피 Recipes for daughters",
+        "channelId": "UC37fRkl_iIjDAr9pf0FFzGA",
+        "thumbnail": "https://i.ytimg.com/vi/0tFQaJ3XeVw/mqdefault.jpg",
+        "durationSec": 419,
+        "viewCount": 1160492,
+        "embeddable": true,
+        "score": 22.13,
+        "descIngredients": [
+          "소불고기 600g",
+          "양파 120g",
+          "홍당무 30g",
+          "표고버섯 120g",
+          "대파 1대(굵은건 반만 쓰셔도 돼요)"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "u7Q4vRpmXYs",
+        "title": "이게 고기야 버섯이야?? 표고버섯보면 지나치지말고 '이 볶음' 만들어보세요. 눈과 입이 호강하는 요리랍니다❤️ [표고버섯볶음]",
+        "channel": "딸을 위한 레시피 Recipes for daughters",
+        "channelId": "UC37fRkl_iIjDAr9pf0FFzGA",
+        "thumbnail": "https://i.ytimg.com/vi/u7Q4vRpmXYs/mqdefault.jpg",
+        "durationSec": 283,
+        "viewCount": 675957,
+        "embeddable": true,
+        "score": 21.66,
+        "descIngredients": [
+          "표고버섯 200g",
+          "꽈리고추 7개",
+          "홍고추 반 개",
+          "참기름 ½Tbsp",
+          "갈은 깨 ½Tbsp",
+          "양조간장 1Tbsp",
+          "백설탕 ½Tbsp",
+          "맛술 1Tbsp",
+          "간마늘 1tsp"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "yid7dQmzhxo",
+        "title": "[소고기버섯볶음]소갈비찜보다 빠르죠!소불고기보다 간단하죠!맛은 확실하죠!",
+        "channel": "양장금주부",
+        "channelId": "UCKm-cusLT76t3t4s9OgCqcA",
+        "thumbnail": "https://i.ytimg.com/vi/yid7dQmzhxo/mqdefault.jpg",
+        "durationSec": 204,
+        "viewCount": 81325,
+        "embeddable": true,
+        "score": 19.82,
+        "descIngredients": [
+          "얇게썰은 우둔살반근(300g)",
+          "팽이버섯1/2통(60g)",
+          "표고버섯4개(80g)",
+          "양파1/2개(60g)",
+          "부추30g",
+          "당근15g",
+          "청양고추2개",
+          "식용유2큰술",
+          "진간장3큰술",
+          "설탕1큰술반",
+          "맛술(미림)2큰술",
+          "마늘1큰술",
+          "대파흰부분20g",
+          "들기름1큰술",
+          "후추약간",
+          "계량컵200ml",
+          "밥수저(큰술)",
+          "커피수저(티스푼)"
+        ],
+        "descSource": "rule"
+      }
+    ],
+    "picked": "yid7dQmzhxo",
+    "secondSearchedAt": "2026-10-05T03:07:28.132Z",
+    "pickedAt": "2026-10-05T03:09:44.551Z",
+    "pickedBy": "auto"
+  },
+  "braised-quail-eggs": {
+    "query": "메추리알장조림 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:28.509Z",
+    "candidates": [
+      {
+        "videoId": "QnEcgQdpit8",
+        "title": "[아이반찬] 간단반찬 메추리알 장조림 / Korean style quail eggs cooked in soy sauce",
+        "channel": "키메키친 Kime_kitchen",
+        "channelId": "UC32jpQ4h2xZ_EOukJY0UWJA",
+        "thumbnail": "https://i.ytimg.com/vi/QnEcgQdpit8/mqdefault.jpg",
+        "durationSec": 152,
+        "viewCount": 237027,
+        "embeddable": true,
+        "score": 8.75,
+        "descIngredients": [
+          "메추리알 300g",
+          "물 500ml"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "GbduuuVil7Q",
+        "title": "#아기반찬 #메추리알장조림 #저염반찬 #반찬쇼츠",
+        "channel": "챔별 Ho-LoL-LoG",
+        "channelId": "UCpJlnoc1Nm0NRAKqlqdv1aw",
+        "thumbnail": "https://i.ytimg.com/vi/GbduuuVil7Q/mqdefault.jpg",
+        "durationSec": 60,
+        "viewCount": 154182,
+        "embeddable": true,
+        "score": 8.38,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "sL3c5h1DjaI",
+        "title": "급식대가의 비밀이 담긴 메추리알장조림 레시피",
+        "channel": "스타쿡",
+        "channelId": "UCdEeiO2lSCCAgiDOwdaLgrQ",
+        "thumbnail": "https://i.ytimg.com/vi/sL3c5h1DjaI/mqdefault.jpg",
+        "durationSec": 25,
+        "viewCount": 9495205,
+        "embeddable": true,
+        "score": 3.96,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": "QnEcgQdpit8",
+    "pickedAt": "2026-10-05T03:07:28.510Z",
+    "pickedBy": "auto"
+  },
+  "mild-braised-chicken": {
+    "query": "간장닭볶음탕 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:29.028Z",
+    "candidates": [
+      {
+        "videoId": "hckokXOWZFo",
+        "title": "어린이날 인기메뉴 넘버원! 간장닭조림",
+        "channel": "영자씨의 부엌Young-Ja's Kitchen",
+        "channelId": "UC2gasvQVxOdRht9ykwhxwjw",
+        "thumbnail": "https://i.ytimg.com/vi/hckokXOWZFo/mqdefault.jpg",
+        "durationSec": 226,
+        "viewCount": 37388,
+        "embeddable": true,
+        "score": 19.15,
+        "descIngredients": [],
+        "descSource": null,
+        "descNeedsAi": true
+      },
+      {
+        "videoId": "eMYboIA9wGo",
+        "title": "[아이반찬] 간장닭조림 밥 한그릇 뚝딱!",
+        "channel": "키메키친 Kime_kitchen",
+        "channelId": "UC32jpQ4h2xZ_EOukJY0UWJA",
+        "thumbnail": "https://i.ytimg.com/vi/eMYboIA9wGo/mqdefault.jpg",
+        "durationSec": 221,
+        "viewCount": 27005,
+        "embeddable": true,
+        "score": 18.86,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "w8_t9Nllj2M",
+        "title": "간장 닭볶음탕 레시피, 진짜 맛있다!!",
+        "channel": "집밥 이선생",
+        "channelId": "UCYJ43K4KOObN4Ye31JjyvZg",
+        "thumbnail": "https://i.ytimg.com/vi/w8_t9Nllj2M/mqdefault.jpg",
+        "durationSec": 28,
+        "viewCount": 168930,
+        "embeddable": true,
+        "score": 0.46,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": "w8_t9Nllj2M",
+    "pickedAt": "2026-10-05T03:07:29.028Z",
+    "pickedBy": "auto"
+  },
+  "mild-andong-jjimdak": {
+    "query": "안동찜닭 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:29.441Z",
+    "candidates": [
+      {
+        "videoId": "PxnbCiNtH9w",
+        "title": "찜닭 레시피, 교과서가 될 영상🥇✨",
+        "channel": "김진순 점심시간",
+        "channelId": "UC9She1e6OWUpwJpwZtbqhjQ",
+        "thumbnail": "https://i.ytimg.com/vi/PxnbCiNtH9w/mqdefault.jpg",
+        "durationSec": 78,
+        "viewCount": 2862483,
+        "embeddable": true,
+        "score": 10.91,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "hRXz6fveHEw",
+        "title": "온가족 다같이 먹는 부드럽고 단짠한 안매운 #간장찜닭 레시피🍗",
+        "channel": "웅이어무니",
+        "channelId": "UC5WCEIemd9jCiJJ3AiW0KtA",
+        "thumbnail": "https://i.ytimg.com/vi/hRXz6fveHEw/mqdefault.jpg",
+        "durationSec": 68,
+        "viewCount": 9411,
+        "embeddable": true,
+        "score": 5.95,
+        "descIngredients": [
+          "절단닭 700g",
+          "감자 1개",
+          "당근 1개",
+          "양파 1개",
+          "(선택) 버섯, 당면, 대파",
+          "물 2컵",
+          "다진마늘 1작은술",
+          "간장 4큰술",
+          "올리고당 1.5큰술",
+          "맛술 2큰술",
+          "참기름 0.5큰술"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "Sl2soHoPCs8",
+        "title": "어남선생 류수영 안동찜닭 레시피 #cooking #kfood",
+        "channel": "87아빠",
+        "channelId": "UCnF9f__AJdi10A0fA3xO3kQ",
+        "thumbnail": "https://i.ytimg.com/vi/Sl2soHoPCs8/mqdefault.jpg",
+        "durationSec": 53,
+        "viewCount": 3111772,
+        "embeddable": true,
+        "score": 2.99,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": "Sl2soHoPCs8",
+    "pickedAt": "2026-10-05T03:07:29.441Z",
+    "pickedBy": "auto"
+  },
+  "cheese-chicken-galbi": {
+    "query": "치즈닭갈비 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:29.831Z",
+    "candidates": [
+      {
+        "videoId": "ra5Sll_-V3Y",
+        "title": "유아식 간장닭갈비치즈덮밥",
+        "channel": "시니맘",
+        "channelId": "UCBU4hwPmuFhgSfw_BnA2m6A",
+        "thumbnail": "https://i.ytimg.com/vi/ra5Sll_-V3Y/mqdefault.jpg",
+        "durationSec": 137,
+        "viewCount": 1742,
+        "embeddable": true,
+        "score": 4.48,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "eCv94UkIKjg",
+        "title": "가장 맛있게 닭가슴살 한 끼 채우는 방법은 치즈치밥",
+        "channel": "진지인 JINJIIN",
+        "channelId": "UCDykKnTaa59d_VWGoITzD7w",
+        "thumbnail": "https://i.ytimg.com/vi/eCv94UkIKjg/mqdefault.jpg",
+        "durationSec": 32,
+        "viewCount": 3591883,
+        "embeddable": true,
+        "score": 3.11,
+        "descIngredients": [
+          "저당 고추장 1t (일반 고추장 가능)",
+          "고춧가루 1T",
+          "저당 케찹 0.5T",
+          "저당 굴소스 0.5T",
+          "간장 0.5T",
+          "알룰로스 1T",
+          "다진 마늘 1t",
+          "물 1T",
+          "후추추"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "qzrqxIjRiDg",
+        "title": "닭다리살 간장조림 너무 맛있습니다.",
+        "channel": "으니지니차니네 요리터",
+        "channelId": "UCkcNuZtqkm6KkEDYA599CQQ",
+        "thumbnail": "https://i.ytimg.com/vi/qzrqxIjRiDg/mqdefault.jpg",
+        "durationSec": 44,
+        "viewCount": 962232,
+        "embeddable": true,
+        "score": 1.97,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": null,
+    "secondSearchedAt": "2026-10-05T03:07:30.241Z"
+  },
+  "pork-shoulder-grill": {
+    "query": "돈육목살구이 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:30.686Z",
+    "candidates": [
+      {
+        "videoId": "Gw0geSDINs4",
+        "title": "[100만✨️] 집에서 간단하게 만드는 목살갈비양념구이",
+        "channel": "오메추 : 오늘의 메뉴를 추천합니다.",
+        "channelId": "UCrSokje0qVLme9cJDsbB3sg",
+        "thumbnail": "https://i.ytimg.com/vi/Gw0geSDINs4/mqdefault.jpg",
+        "durationSec": 33,
+        "viewCount": 1087495,
+        "embeddable": true,
+        "score": 2.07,
+        "descIngredients": [],
+        "descSource": null,
+        "descNeedsAi": true
+      },
+      {
+        "videoId": "GX_0zL310Ec",
+        "title": "돼지고기 목살 + 버터 + 마늘",
+        "channel": "개미수리",
+        "channelId": "UCE5gz_07CFI8gQhcO2z3ChA",
+        "thumbnail": "https://i.ytimg.com/vi/GX_0zL310Ec/mqdefault.jpg",
+        "durationSec": 28,
+        "viewCount": 453286,
+        "embeddable": true,
+        "score": 1.31,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "mYx6l8kS9Cc",
+        "title": "목살은 이렇게 드세요 #목살구이 #목살 #목살레시피 #목살스테이크 #cooking #요리로그 #koreanfood #집밥 #저녁반찬 #메인메뉴",
+        "channel": "보보홈쿡",
+        "channelId": "UCkEI5rVB2xHysOTU7racPtQ",
+        "thumbnail": "https://i.ytimg.com/vi/mYx6l8kS9Cc/mqdefault.jpg",
+        "durationSec": 43,
+        "viewCount": 68080,
+        "embeddable": true,
+        "score": -0.33,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": "mYx6l8kS9Cc",
+    "secondSearchedAt": "2026-10-05T03:07:31.099Z",
+    "pickedAt": "2026-10-05T03:09:44.551Z",
+    "pickedBy": "auto"
+  },
+  "pork-bulgogi-rice-bowl": {
+    "query": "돈육불고기덮밥 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:31.501Z",
+    "candidates": [
+      {
+        "videoId": "rui3VxqTCYE",
+        "title": "편식 심한 우리 아기, 밥 한그릇 뚝딱! 아기 소불고기 유아식 레시피",
+        "channel": "지오지아로그 JIO JIA LOG",
+        "channelId": "UCKkV92JmhHxo_c18B3fbi2w",
+        "thumbnail": "https://i.ytimg.com/vi/rui3VxqTCYE/mqdefault.jpg",
+        "durationSec": 60,
+        "viewCount": 38772,
+        "embeddable": true,
+        "score": 7.18,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "zed5rH2pFMg",
+        "title": "정호영 셰프 소불고기 레시피 #소불고기 #정호영",
+        "channel": "87아빠",
+        "channelId": "UCnF9f__AJdi10A0fA3xO3kQ",
+        "thumbnail": "https://i.ytimg.com/vi/zed5rH2pFMg/mqdefault.jpg",
+        "durationSec": 33,
+        "viewCount": 6042724,
+        "embeddable": true,
+        "score": 3.56,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "4WmGK2hfxVA",
+        "title": "🥬5분 한그릇 유아식 소고기 된장 알배추밥❤️ #유아식 #아기이유식 #이유식만들기",
+        "channel": "호랑어멈 Tiger mom",
+        "channelId": "UCt_gN3K9b064P8yLTl4aeKA",
+        "thumbnail": "https://i.ytimg.com/vi/4WmGK2hfxVA/mqdefault.jpg",
+        "durationSec": 38,
+        "viewCount": 805310,
+        "embeddable": true,
+        "score": 1.81,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": null,
+    "secondSearchedAt": "2026-10-05T03:07:32.267Z"
+  },
+  "braised-mackerel-radish": {
+    "query": "고등어무조림 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:32.617Z",
+    "candidates": [
+      {
+        "videoId": "kL2CMH53KSk",
+        "title": "고등어무조림 이 방법은 환호성을 지릅니다✔️ 맛집 뺨치는 고등어조림 레시피",
+        "channel": "엄마의손맛",
+        "channelId": "UCKrhyP3raTJQ38m-US2uMjg",
+        "thumbnail": "https://i.ytimg.com/vi/kL2CMH53KSk/mqdefault.jpg",
+        "durationSec": 698,
+        "viewCount": 226890,
+        "embeddable": true,
+        "score": 20.71,
+        "descIngredients": [
+          "고등어조림✅"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "iZje2cwLPmg",
+        "title": "고등어간장조림 레시피 - 아이들도 먹기 좋은 고등어간장조림 만드는법",
+        "channel": "얌얌튜브_YamYamTube",
+        "channelId": "UC7jzwEsRLAMeELbnTOFbZ7A",
+        "thumbnail": "https://i.ytimg.com/vi/iZje2cwLPmg/mqdefault.jpg",
+        "durationSec": 374,
+        "viewCount": 68577,
+        "embeddable": true,
+        "score": 19.67,
+        "descIngredients": [
+          "고등어 1마리",
+          "물 300ml",
+          "다시마 1장",
+          "마늘 7개",
+          "생강 1개",
+          "꽈리고추 8개",
+          "전분가루 1/2컵",
+          "식용유 약간",
+          "간장 4큰술",
+          "청주 4큰술",
+          "설탕 3큰술",
+          "맛술 4큰술",
+          "후춧가루 약간",
+          "한식 조리기능사 국가기술자격증",
+          "중식 조리기능사 국가기술자격증",
+          "양식 조리기능사 국가기술자격증",
+          "바리스타 자격증 보유"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "knuNrzuN4l8",
+        "title": "비린내 싸악~ 잡는 비법의 '고등어조림' 레시피!",
+        "channel": "추추의 한끼식사",
+        "channelId": "UCA_HPCVwiZZNKqQpVJWEhxA",
+        "thumbnail": "https://i.ytimg.com/vi/knuNrzuN4l8/mqdefault.jpg",
+        "durationSec": 89,
+        "viewCount": 5160092,
+        "embeddable": true,
+        "score": 11.43,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": "kL2CMH53KSk",
+    "pickedAt": "2026-10-05T03:07:32.617Z",
+    "pickedBy": "auto"
+  },
+  "rolled-omelet": {
+    "query": "달걀말이 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:32.988Z",
+    "candidates": [
+      {
+        "videoId": "sXLkKIXE05Q",
+        "title": "들어가는 건 별거 없는데 왜 이렇게 맛있지? 3분 계란말이 비법 | 전국집밥자랑 ep.39",
+        "channel": "전국집밥자랑",
+        "channelId": "UCY60BF0M8RkXvmMQeKp2PSg",
+        "thumbnail": "https://i.ytimg.com/vi/sXLkKIXE05Q/mqdefault.jpg",
+        "durationSec": 277,
+        "viewCount": 1518961,
+        "embeddable": true,
+        "score": 22.36,
+        "descIngredients": [
+          "・ 계란 5개",
+          "・ 소금 반 큰술",
+          "・ 쯔유 한 큰술",
+          "・ 식용유",
+          "・ 케첩(이미 위 재료들로 간은 딱 맞아요, 기호에 따라 추가하세요!)"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "OWIUE2szVsw",
+        "title": "계란말이(달걀말이) 쉽게 만드는 꿀팁/기본 계란말이 만들기",
+        "channel": "열혈집밥러",
+        "channelId": "UCdzRetklJZcznLAjW0pHgpQ",
+        "thumbnail": "https://i.ytimg.com/vi/OWIUE2szVsw/mqdefault.jpg",
+        "durationSec": 314,
+        "viewCount": 750781,
+        "embeddable": true,
+        "score": 21.75,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "YbkdB5WaIIo",
+        "title": "한 접시 싹- 비우는 부드럽고 촉촉한 식당계란말이. 결정적 '한 스푼'을 넣으세요!",
+        "channel": "딸을 위한 레시피 Recipes for daughters",
+        "channelId": "UC37fRkl_iIjDAr9pf0FFzGA",
+        "thumbnail": "https://i.ytimg.com/vi/YbkdB5WaIIo/mqdefault.jpg",
+        "durationSec": 241,
+        "viewCount": 367247,
+        "embeddable": true,
+        "score": 21.13,
+        "descIngredients": [
+          "계란 5알",
+          "쪽파 30g",
+          "당근 20g",
+          "계란물 간하기",
+          "참치액 ½큰술(Tbsp)",
+          "소금한꼬집",
+          "감자전분 1작은술(tsp)",
+          "물 2큰술(Tbsp)",
+          "⚠️이 영상은 ‘딸을위한레시피’에서 제작하였으며,"
+        ],
+        "descSource": "rule"
+      }
+    ],
+    "picked": "sXLkKIXE05Q",
+    "pickedAt": "2026-10-05T03:07:32.989Z",
+    "pickedBy": "auto"
+  },
+  "three-color-egg-custard": {
+    "query": "삼색달걀찜 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:33.428Z",
+    "candidates": [
+      {
+        "videoId": "pw2xSERbl2k",
+        "title": "[퀸레시피]서양식 계란찜ㆍ눈으로 먼저 즐기는 시금치프리타타",
+        "channel": "둥이맘' 봄내향기🌱",
+        "channelId": "UCKkOXFOE5bbwV-rRWQjyd3A",
+        "thumbnail": "https://i.ytimg.com/vi/pw2xSERbl2k/mqdefault.jpg",
+        "durationSec": 205,
+        "viewCount": 405,
+        "embeddable": true,
+        "score": 15.22,
+        "descIngredients": [
+          "시금치150g. 베이컨 or 햄. 방울토마토10개",
+          "계란5개. 생크림 or 우유100g. 송화소금1t.",
+          "베이컨과 방울토마토 썰어주기"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "3q3HaPjX9Ik",
+        "title": "학창 시절 맛 그대로! 탱글탱글 급식달걀찜🏫 #급식 #달걀찜 #레시피",
+        "channel": "신나는셰프 김선영",
+        "channelId": "UC7kL_BjLwKUawdsKlRgNv-w",
+        "thumbnail": "https://i.ytimg.com/vi/3q3HaPjX9Ik/mqdefault.jpg",
+        "durationSec": 146,
+        "viewCount": 101860,
+        "embeddable": true,
+        "score": 8.02,
+        "descIngredients": [
+          "📌재료📌 [ 1스푼 = 밥수저(10ml) / 1컵 = 200ml ]",
+          "쪽파, 당근 등 고명은 기호대로"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "7IfFj-3Lrlk",
+        "title": "[새우계란찜] 군더더기 없는 깔끔한 맛!!  #shorts",
+        "channel": "기분좋은 레시피  Pleasant Recipe.",
+        "channelId": "UCavxlM9uOWS0MwC9tpCJvLg",
+        "thumbnail": "https://i.ytimg.com/vi/7IfFj-3Lrlk/mqdefault.jpg",
+        "durationSec": 60,
+        "viewCount": 1589,
+        "embeddable": true,
+        "score": 4.4,
+        "descIngredients": [
+          "계란 7개.",
+          "다시마 우린물 200ml.",
+          "소금 1/2작은술.",
+          "참치액젓 2큰술.",
+          "생강술 1큰술.",
+          "새우 6마리.",
+          "참기름."
+        ],
+        "descSource": "rule"
+      }
+    ],
+    "picked": null,
+    "secondSearchedAt": "2026-10-05T03:07:33.848Z"
+  },
+  "zucchini-namul": {
+    "query": "애호박나물 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:34.215Z",
+    "candidates": [
+      {
+        "videoId": "dica6C-wPn4",
+        "title": "3-3) 애호박볶음 만드는 법. 초간단! 참기름, 소금 끝! 반달말고 채썰면 더 맛나요. 호박나물,호박볶음",
+        "channel": "[윤이련]50년 요리비결",
+        "channelId": "UCL01un1rw1MU3wj7-oEELQQ",
+        "thumbnail": "https://i.ytimg.com/vi/dica6C-wPn4/mqdefault.jpg",
+        "durationSec": 169,
+        "viewCount": 1081389,
+        "embeddable": true,
+        "score": 10.07,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "5_HyHbaI7qk",
+        "title": "♥엄마표요리_초간단 애호박볶음 [※ 제목클릭하면 레시피 자세히 볼수있음]",
+        "channel": "엄마표요리Mom'S Cooking",
+        "channelId": "UCG6I6NdRq2xqK7xrgMolnkQ",
+        "thumbnail": "https://i.ytimg.com/vi/5_HyHbaI7qk/mqdefault.jpg",
+        "durationSec": 50,
+        "viewCount": 1355816,
+        "embeddable": true,
+        "score": 2.26,
+        "descIngredients": [
+          "애호박, 참기름, 소금"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "sCC7JDRd0UE",
+        "title": "간단한 반찬 레시피! 애호박볶음 만드는 법",
+        "channel": "오메추 : 오늘의 메뉴를 추천합니다.",
+        "channelId": "UCrSokje0qVLme9cJDsbB3sg",
+        "thumbnail": "https://i.ytimg.com/vi/sCC7JDRd0UE/mqdefault.jpg",
+        "durationSec": 13,
+        "viewCount": 952640,
+        "embeddable": true,
+        "score": 1.96,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "xPYCZt53-Kc",
+        "title": "\"애호박나물\" 어렵게 하지마세요 이 방법이 가장 맛있습니다 ",
+        "channel": "김대석 셰프TV",
+        "channelId": "UC1g9JaEVLOFGhH8hpaK--Jg",
+        "thumbnail": "https://i.ytimg.com/vi/xPYCZt53-Kc/mqdefault.jpg",
+        "durationSec": 224,
+        "viewCount": 137946,
+        "embeddable": true,
+        "score": 20.28,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": "xPYCZt53-Kc",
+    "secondSearchedAt": "2026-10-05T03:07:34.589Z",
+    "pickedAt": "2026-10-05T03:07:34.590Z",
+    "pickedBy": "auto"
+  },
+  "perilla-leaf-namul": {
+    "query": "깻잎나물 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:35.015Z",
+    "candidates": [
+      {
+        "videoId": "wSGFeXg-lZY",
+        "title": "깻잎순(바라깻잎)으로 진작 해먹을걸.. '이것'넣어 졸였더니 대박집 그 맛!",
+        "channel": "딸을 위한 레시피 Recipes for daughters",
+        "channelId": "UC37fRkl_iIjDAr9pf0FFzGA",
+        "thumbnail": "https://i.ytimg.com/vi/wSGFeXg-lZY/mqdefault.jpg",
+        "durationSec": 291,
+        "viewCount": 589198,
+        "embeddable": true,
+        "score": 21.54,
+        "descIngredients": [
+          "깻잎순(바라깻잎) 300g",
+          "매콤고추 3-4개",
+          "들기름 ½큰술(Tbps)",
+          "통깨 ½큰술(Tbps)",
+          "진/양조간장 1큰술(Tbps)",
+          "국간장 1큰술(Tbps)",
+          "참치액 ½큰술(Tbps)",
+          "다진마늘 ½큰술(Tbps)",
+          "물엿 2큰술(Tbps)",
+          "들기름 1큰술(Tbps)",
+          "참기름 1큰술(Tbps)",
+          "⚠️이 영상은 ‘딸을위한레시피’에서 제작하였으며,"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "dXwkgm-faKY",
+        "title": "깻잎으로 만드는 최고의 반찬! [깻잎 들깨볶음] 정말 맛있어요🥇",
+        "channel": "딸을 위한 레시피 Recipes for daughters",
+        "channelId": "UC37fRkl_iIjDAr9pf0FFzGA",
+        "thumbnail": "https://i.ytimg.com/vi/dXwkgm-faKY/mqdefault.jpg",
+        "durationSec": 249,
+        "viewCount": 353362,
+        "embeddable": true,
+        "score": 21.1,
+        "descIngredients": [
+          "깻잎 300g (바라깻잎 사용하시면 경제적이예요)",
+          "물 50ml",
+          "들기름 1Tbsp",
+          "거피 들깨가루 2Tbsp",
+          "참치액 1Tbsp (없으면 멸치/까나리 액젓 가능)",
+          "시판용 국간장 1Tbsp (집간장은 간보면서 맞추기)",
+          "다진파 2Tbsp (흰부분 사용)",
+          "간마늘 1Tbsp"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "OLajixiC-3o",
+        "title": "깻잎향이 진하게 올라오는~ '깻잎순볶음' 레시피!",
+        "channel": "추추의 한끼식사",
+        "channelId": "UCA_HPCVwiZZNKqQpVJWEhxA",
+        "thumbnail": "https://i.ytimg.com/vi/OLajixiC-3o/mqdefault.jpg",
+        "durationSec": 63,
+        "viewCount": 2367496,
+        "embeddable": true,
+        "score": 10.75,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": null,
+    "secondSearchedAt": "2026-10-05T03:07:35.398Z"
+  },
+  "seaweed-stem-stirfry": {
+    "query": "미역줄기무침 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:35.794Z",
+    "candidates": [
+      {
+        "videoId": "tibFp9LH9Ak",
+        "title": "물에 먼저 불리지마세요! 성공률100%_맛있는 미역줄기볶음은 이렇게 만들어야 대박입니다🥇",
+        "channel": "딸을 위한 레시피 Recipes for daughters",
+        "channelId": "UC37fRkl_iIjDAr9pf0FFzGA",
+        "thumbnail": "https://i.ytimg.com/vi/tibFp9LH9Ak/mqdefault.jpg",
+        "durationSec": 385,
+        "viewCount": 2523831,
+        "embeddable": true,
+        "score": 22.8,
+        "descIngredients": [
+          "염장미역줄기 300g",
+          "양파 1/4개(40g)",
+          "당근 조금(20g)",
+          "식용유 1큰술(Tbsp)",
+          "참기름 1큰술(Tbsp)",
+          "다진마늘 1큰술(Tbsp)",
+          "참치액 ½큰술(Tbsp)",
+          "맛술 1큰술(Tbsp)",
+          "간간하게 드시려면 참치액/소금 추가",
+          "⚠️이 영상은 ‘딸을위한레시피’에서 제작하였으며,"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "EBwvj0dfVro",
+        "title": "실제로 반찬가게에서 사용했던 레시피! '미역줄기볶음' 알려드릴게요",
+        "channel": "추추의 한끼식사",
+        "channelId": "UCA_HPCVwiZZNKqQpVJWEhxA",
+        "thumbnail": "https://i.ytimg.com/vi/EBwvj0dfVro/mqdefault.jpg",
+        "durationSec": 48,
+        "viewCount": 5707225,
+        "embeddable": true,
+        "score": 3.51,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "b_DkTxCZRC8",
+        "title": "[⭐️100만⭐️] 반찬가게에선, 3분이면 만드는 ‘미역 줄기 볶음’⁉️",
+        "channel": "김진순 점심시간",
+        "channelId": "UC9She1e6OWUpwJpwZtbqhjQ",
+        "thumbnail": "https://i.ytimg.com/vi/b_DkTxCZRC8/mqdefault.jpg",
+        "durationSec": 47,
+        "viewCount": 2125658,
+        "embeddable": true,
+        "score": 2.65,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": "tibFp9LH9Ak",
+    "secondSearchedAt": "2026-10-05T03:07:36.138Z",
+    "pickedAt": "2026-10-05T03:09:44.551Z",
+    "pickedBy": "auto"
+  },
+  "lettuce-salad": {
+    "query": "상추무침 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:36.581Z",
+    "candidates": [
+      {
+        "videoId": "Ai7VcUKglSA",
+        "title": "[상추무침]상추!아직도 생으로 무치나요?시금치무침보다 훨씬 맛있는 밑반찬  상추나물 고추장무침!",
+        "channel": "양장금주부",
+        "channelId": "UCKm-cusLT76t3t4s9OgCqcA",
+        "thumbnail": "https://i.ytimg.com/vi/Ai7VcUKglSA/mqdefault.jpg",
+        "durationSec": 167,
+        "viewCount": 2537717,
+        "embeddable": true,
+        "score": 10.81,
+        "descIngredients": [
+          "데친상추350g",
+          "쪽파30g",
+          "천일염1큰술",
+          "고추장1큰술",
+          "고추가루1큰술",
+          "마늘1/2큰술",
+          "식초1큰술",
+          "설탕2/3큰술",
+          "들기름1큰술",
+          "통깨약간",
+          "계량컵200ml",
+          "밥수저(큰술)",
+          "커피수저(티스푼)"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "0f1aMkjWbIo",
+        "title": "이렇게 해서라도 많이 드셔야 해요 #상추 #무침 #레시피",
+        "channel": "쿡톡 (빛 & 소금)",
+        "channelId": "UCmzaVMzEPxg2z-aFpVBUBBg",
+        "thumbnail": "https://i.ytimg.com/vi/0f1aMkjWbIo/mqdefault.jpg",
+        "durationSec": 53,
+        "viewCount": 860619,
+        "embeddable": true,
+        "score": 1.87,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "rg-vv_IsrQA",
+        "title": "✅ 오이무침 레시피 (얼렁뚱땅 레시피)",
+        "channel": "밥하는옆집언니🍚",
+        "channelId": "UCFMGU6hlAwndnU5t9ARRTRA",
+        "thumbnail": "https://i.ytimg.com/vi/rg-vv_IsrQA/mqdefault.jpg",
+        "durationSec": 50,
+        "viewCount": 435025,
+        "embeddable": true,
+        "score": 1.28,
+        "descIngredients": [
+          "오이 2개",
+          "굵은소금, 참기름, 깨, 참치액(추가)"
+        ],
+        "descSource": "rule"
+      }
+    ],
+    "picked": "Ai7VcUKglSA",
+    "pickedAt": "2026-10-05T03:07:36.582Z",
+    "pickedBy": "auto"
+  },
+  "tuna-mayo-rice-ball": {
+    "query": "참치마요주먹밥 유아식 만들기",
+    "searchedAt": "2026-10-05T03:07:37.046Z",
+    "candidates": [
+      {
+        "videoId": "KOt93tPfX0k",
+        "title": "참치캔 있으세요? 주먹밥 이렇게 만들면 감탄이 절로나요! | 노마요네즈 참치 계란 주먹밥",
+        "channel": "두리식탁Duri's table",
+        "channelId": "UCw9v5IIv33ac21mQ89Z-hpw",
+        "thumbnail": "https://i.ytimg.com/vi/KOt93tPfX0k/mqdefault.jpg",
+        "durationSec": 109,
+        "viewCount": 80274,
+        "embeddable": true,
+        "score": 7.81,
+        "descIngredients": [
+          "참치캔 85g 2개",
+          "다진 마늘 1 작은술",
+          "설탕 1 큰술",
+          "미림 1 큰술",
+          "간장 1 큰술",
+          "식용유 1/2 큰술",
+          "참기름 1/2 큰술",
+          "밥 2공기",
+          "조미 김가루",
+          "계란 2개",
+          "소금 한 꼬집",
+          "식용유 1 큰술",
+          "♤레시피:"
+        ],
+        "descSource": "rule"
+      },
+      {
+        "videoId": "VfWkhnT5T9s",
+        "title": "[유아식레시피] - 참치마요주먹밥",
+        "channel": "태린맘마",
+        "channelId": "UCwNwt6C-fNs90odjuwrhCxA",
+        "thumbnail": "https://i.ytimg.com/vi/VfWkhnT5T9s/mqdefault.jpg",
+        "durationSec": 64,
+        "viewCount": 1213,
+        "embeddable": true,
+        "score": 4.17,
+        "descIngredients": [],
+        "descSource": null
+      },
+      {
+        "videoId": "CrGU1WK8f90",
+        "title": "순식간에 없어지는 참치 주먹밥 계란말이",
+        "channel": "빼미네식탁",
+        "channelId": "UCfbe8K8YCfNP6EnJ034krIw",
+        "thumbnail": "https://i.ytimg.com/vi/CrGU1WK8f90/mqdefault.jpg",
+        "durationSec": 26,
+        "viewCount": 7026641,
+        "embeddable": true,
+        "score": 3.69,
+        "descIngredients": [],
+        "descSource": null
+      }
+    ],
+    "picked": "VfWkhnT5T9s",
+    "pickedAt": "2026-10-05T03:07:37.047Z",
     "pickedBy": "auto"
   }
 }
